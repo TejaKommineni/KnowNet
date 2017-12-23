@@ -1,0 +1,2507 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.1)  25 SEP 2017 10:22
+entering extended mode
+**./final-thesis.tex
+(final-thesis.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+(uuthesis2e.cls
+Document Class: uuthesis2e 1998/04/01 v1.3 University of Utah Thesis Class
+Document Style `uuthesis2e'. Version 1.8d - 6 Apr 1996
+(Chicago.clo) ("C:\Program Files\MiKTeX 2.9_1\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+Using 11pt option
+Option 11pt uses 5pt for 'tiny': microfilm needs 2mm.
+\footheight=\dimen102
+\numberofappendices=\count79
+\c@part=\count80
+\c@chapter=\count81
+\@titlesize=\dimen103
+\@maxsize=\dimen104
+\c@figure=\count82
+\c@table=\count83
+\descriptionmargin=\dimen105
+\minilength=\skip41
+\c@oldchapter=\count84
+\c@oldtocdepth=\count85
+) ("C:\Program Files\MiKTeX 2.9_1\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks14
+\thm@bodyfont=\toks15
+\thm@headfont=\toks16
+\thm@notefont=\toks17
+\thm@headpunct=\toks18
+\thm@preskip=\skip42
+\thm@postskip=\skip43
+\thm@headsep=\skip44
+\dth@everypar=\toks19
+LaTeX Info: Redefining \qed on input line 264.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\mathpazo.sty"
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+\c@section=\count86
+\c@subsection=\count87
+\c@paragraph=\count88
+\c@subsubsection=\count89
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen106
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen107
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks21
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks22
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks23
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (amssymb.sty
+Package: amssymb 1996/11/03 v2.2b
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\tools\bm.sty"
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+\symboldupright=\mathgroup10
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+) (bibnames.sty
+This is bibnames.sty, Version 1.04 <13 June 1992>
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\beebe\texnames.sty"
+This is texnames.sty, Version 1.09 <16 March 1993>
+)) (citesort.sty
+\@minsofar=\count102
+\@min=\count103
+\@cite@temp=\count104
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\base\graphpap.sty"
+Package: graphpap 1994/08/09 v1.0c Standard LaTeX graphpap package (LL)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip48
+\LTright=\skip49
+\LTpre=\skip50
+\LTpost=\skip51
+\LTchunksize=\count106
+\LTcapwidth=\dimen117
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count107
+\LT@rows=\count108
+\c@LT@tables=\count109
+\c@LT@chunks=\count110
+\LT@p@ftn=\toks26
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip52
+\multirow@cntb=\count111
+\multirow@dima=\skip53
+\bigstrutjot=\dimen118
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen119
+\pgfutil@tempdimb=\dimen120
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfutil-common-lists.
+tex"))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box32
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfkeysfiltered.code.
+tex"
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen121
+\pgf@y=\dimen122
+\pgf@xa=\dimen123
+\pgf@ya=\dimen124
+\pgf@xb=\dimen125
+\pgf@yb=\dimen126
+\pgf@xc=\dimen127
+\pgf@yc=\dimen128
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count112
+\c@pgf@countb=\count113
+\c@pgf@countc=\count114
+\c@pgf@countd=\count115
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+ ("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\systemlayer\pgfsys-common-pdf.d
+ef"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\systemlayer\pgfsyssoftpath.code
+.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count116
+\pgfsyssoftpath@bigbuffer@items=\count117
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\systemlayer\pgfsysprotocol.code
+.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) ("C:\Program Files\MiKTeX 2.9_1\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen129
+\pgfmath@count=\count118
+\pgfmath@box=\box33
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.basic.cod
+e.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.trigonome
+tric.code.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.random.co
+de.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.compariso
+n.code.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.base.code
+.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.round.cod
+e.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.misc.code
+.tex")
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfunctions.integerar
+ithmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count119
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorepoints.code.t
+ex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen130
+\pgf@picmaxx=\dimen131
+\pgf@picminy=\dimen132
+\pgf@picmaxy=\dimen133
+\pgf@pathminx=\dimen134
+\pgf@pathmaxx=\dimen135
+\pgf@pathminy=\dimen136
+\pgf@pathmaxy=\dimen137
+\pgf@xx=\dimen138
+\pgf@xy=\dimen139
+\pgf@yx=\dimen140
+\pgf@yy=\dimen141
+\pgf@zx=\dimen142
+\pgf@zy=\dimen143
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorepathconstruct
+.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen144
+\pgf@path@lasty=\dimen145
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorepathusage.cod
+e.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen146
+\pgf@shorten@start@additional=\dimen147
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorescopes.code.t
+ex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box34
+\pgf@hbox=\box35
+\pgf@layerbox@main=\box36
+\pgf@picture@serial@count=\count120
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoregraphicstate.
+code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen148
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoretransformatio
+ns.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen149
+\pgf@pt@y=\dimen150
+\pgf@pt@temp=\dimen151
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorequick.code.te
+x"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoreobjects.code.
+tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorepathprocessin
+g.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorearrows.code.t
+ex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen152
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoreshade.code.te
+x"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen153
+\pgf@sys@shading@range@num=\count121
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoreexternal.code
+.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box37
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorelayers.code.t
+ex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcoretransparency.
+code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\basiclayer\pgfcorepatterns.code
+.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\modules\pgfmoduleshapes.code.te
+x"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box38
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\compatibility\pgfcomp-version-0-6
+5.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen154
+\pgf@nodesepend=\dimen155
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\compatibility\pgfcomp-version-1-1
+8.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) ("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen156
+\pgffor@skip=\dimen157
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\frontendlayer\tikz\tikz.code.te
+x"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\libraries\pgflibraryplothandler
+s.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count122
+\pgfplotmarksize=\dimen158
+)
+\tikz@lastx=\dimen159
+\tikz@lasty=\dimen160
+\tikz@lastxsaved=\dimen161
+\tikz@lastysaved=\dimen162
+\tikzleveldistance=\dimen163
+\tikzsiblingdistance=\dimen164
+\tikz@figbox=\box39
+\tikz@figbox@bg=\box40
+\tikz@tempbox=\box41
+\tikz@tempbox@bg=\box42
+\tikztreelevel=\count123
+\tikznumberofchildren=\count124
+\tikznumberofcurrentchild=\count125
+\tikz@fig@count=\count126
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\modules\pgfmodulematrix.code.te
+x"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count127
+\pgfmatrixcurrentcolumn=\count128
+\pgf@matrix@numberofcolumns=\count129
+)
+\tikz@expandcount=\count130
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\frontendlayer\tikz\libraries\ti
+kzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\frontendlayer\tikz\libraries\ti
+kzlibrarydecorations.markings.code.tex"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\frontendlayer\tikz\libraries\ti
+kzlibrarydecorations.code.tex"
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\modules\pgfmoduledecorations.co
+de.tex"
+\pgfdecoratedcompleteddistance=\dimen165
+\pgfdecoratedremainingdistance=\dimen166
+\pgfdecoratedinputsegmentcompleteddistance=\dimen167
+\pgfdecoratedinputsegmentremainingdistance=\dimen168
+\pgf@decorate@distancetomove=\dimen169
+\pgf@decorate@repeatstate=\count131
+\pgfdecorationsegmentamplitude=\dimen170
+\pgfdecorationsegmentlength=\dimen171
+)
+\tikz@lib@dec@box=\box43
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\pgf\libraries\decorations\pgflibrar
+ydecorations.markings.code.tex"))
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\tools\varioref.sty"
+Package: varioref 2016/02/16 v1.5c package for extended references (FMi)
+\c@vrcnt=\count132
+)
+(uuthesis-index.sty
+Package: uuthesis-index 2016/05/03 v1.01
+
+===============================================================================
+
+
+This is uuthesis-index.sty version 1.01 <3 May 2016>
+
+===============================================================================
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `final-thesis.idx'.
+
+
+Writing index file final-thesis.idx
+) (uuthesis-2016-h.sty
+Package: uuthesis-2016-h 2016/05/02 v1.08
+
+===============================================================================
+
+
+This is uuthesis-2016-h.sty version 1.08 <2 May 2016>
+
+===============================================================================
+
+(dissertationapproval.sty)
+\uuthesis@chaptersectionspace=\dimen172
+) (uuthesis-color-headings.sty
+Package: uuthesis-color-headings 2016/04/04 v1.07
+
+===============================================================================
+
+
+This is uuthesis-color-headings.sty version 1.07 <4 April 2016>
+
+WARNING: Color in theses is still experimental, and subject to approval by
+the University of Utah Thesis Office! One of their concerns is that color
+pages printed on black-and-white printers should not have text disappear
+because it is too light to see against a white paper background.
+===============================================================================
+
+(rgb.sty)) (coloralias.sty
+Package: coloralias 2004/06/25 v0.00 Support for colorname aliases
+)
+Package hocbook Info: Redefining color utahheadingcolor on input line 112.
+Package hocbook Info: Redefining color utahtheoremcolor on input line 113.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\base\textcomp.sty"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count133
+\@cmidlb=\count134
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count135
+\@lastruleclass=\count136
+\@thisrulewidth=\dimen185
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\listings\listings.sty"
+\lst@mode=\count137
+\lst@gtempboxa=\box44
+\lst@token=\toks39
+\lst@length=\count138
+\lst@currlwidth=\dimen186
+\lst@column=\count139
+\lst@pos=\count140
+\lst@lostspace=\dimen187
+\lst@width=\dimen188
+\lst@newlines=\count141
+\lst@lineno=\count142
+\abovecaptionskip=\skip54
+\belowcaptionskip=\skip55
+\lst@maxwidth=\dimen189
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count143
+\lst@skipnumbers=\count144
+\lst@framebox=\box45
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\csquotes\csquotes.sty"
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count145
+)
+\csq@reset=\count146
+\csq@gtype=\count147
+\csq@glevel=\count148
+\csq@qlevel=\count149
+\csq@maxlvl=\count150
+\csq@tshold=\count151
+\csq@ltx@everypar=\toks40
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\csquotes\csquotes.def"
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\csquotes\csquotes.cfg"
+File: csquotes.cfg 
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count152
+\float@exts=\toks41
+\float@box=\box46
+\@float@everytoks=\toks42
+\@floatcapt=\box47
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\tools\xr.sty"
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen190
+\captionmargin@=\dimen191
+\captionwidth=\dimen192
+\caption@tempdima=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip \captionlineski
+p \baselineskip =\captionlineskip \setbox \@tempboxa \hbox {{#1}. #2}\ifdim \wd
+ \@tempboxa >\hsize \unhbox \@tempboxa \par \else \hbox to \hsize {\box \@tempb
+oxa \hfil }\fi .
+\c@ContinuedFloat=\count153
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\caption\ltcaption.sty"
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+))
+\c@subfigure=\count154
+\c@subtable=\count155
+)
+(mythesis.sty)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+ (final-thesis.aux (introduction.aux) (modernnics.aux
+
+LaTeX Warning: Label `takeaway:impact-membw' multiply defined.
+
+
+LaTeX Warning: Label `takeaway:impact-membw' multiply defined.
+
+) (applications.aux) (migration.aux) (relatedwork.aux) (conclusion.aux))
+\openout1 = `final-thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 208.
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 208.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 208.
+
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 208.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 208.
+
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count156
+\scratchdimen=\dimen197
+\scratchbox=\box48
+\nofMPsegments=\count157
+\nofMParguments=\count158
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen198
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
+\everyMPtoPDFconversion=\toks44
+) ("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9_1\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count162
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]#3->\par \ifcaptionON \addc
+ontentsline {\csname ext@#1\endcsname }{#1} {\protect \numberline {\csname the#
+1\endcsname }{\ignorespaces #2}} \fi \begingroup \@parboxrestore \normalsize \@
+makecaption {\csname fnum@#1\endcsname }{\ignorespaces #3}\par \endgroup .
+
+
+Package caption Warning: Forced redefinition of \caption since the
+(caption)                unsupported(!) package option `compatibility=false'
+(caption)                was given.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 212.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 212
+.
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 212
+.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\omszplm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 212
+.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 212
+.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 212.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 212.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 212.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 212.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 212.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 212.
+
+Title.
+[-1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 213.
+
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\ts1ppl.fd"
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Copyright.
+[-1]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 214.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 214.
+ [2]
+
+Package xcolor Warning: Incompatible color definition on input line 216.
+
+(abstract.tex
+Underfull \hbox (badness 4505) in paragraph at lines 22--24
+[]\OT1/ppl/m/n/10.95 These systems were designed with On-Line Transactional Pro
+cessing (OLTP)
+ []
+
+)
+Abstract.
+[3]
+Dedication.
+[4]
+
+Package xcolor Warning: Incompatible color definition on input line 219.
+
+(final-thesis.toc)
+\tf@toc=\write5
+\openout5 = `final-thesis.toc'.
+
+
+Contents.
+[5]
+
+Package xcolor Warning: Incompatible color definition on input line 220.
+
+List of Figures.
+(final-thesis.lof)
+\tf@lof=\write6
+\openout6 = `final-thesis.lof'.
+
+ [6]
+
+Package xcolor Warning: Incompatible color definition on input line 236.
+
+(acknowledge.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7])
+Acknowledgements.
+[8]
+\openout2 = `introduction.aux'.
+
+ (introduction.tex
+DEBUG: @chapter: arg 1 = [Introduction]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax I
+ntroduction}]
+CHAPTER 1.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 5--16
+\OT1/ppl/m/n/10.95 In-memory databases effectively eliminate disk Input/Output 
+(I/O) as a concern,
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 17--24
+\OT1/ppl/m/n/10.95 huge transfers of data, we profiled a modern NIC with a focu
+s on massive data
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 25--41
+\OT1/ppl/m/n/10.95 recommendations for a database designer are provided, and ta
+keaways from our
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 25--41
+\OT1/ppl/m/n/10.95 future directions on how this design will apply to column-or
+iented databases.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[2]
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[3]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [4]
+Underfull \hbox (badness 1270) in paragraph at lines 131--135
+\OT1/ppl/m/n/10.95 storage system. We lay out some experiments that highlight i
+ssues with current
+ []
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 144.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 144.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 144.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 144.
+
+Package xcolor Warning: Incompatible color definition on input line 144.
+
+
+Package xcolor Warning: Incompatible color definition on input line 144.
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[5]
+Underfull \hbox (badness 1389) in paragraph at lines 191--194
+[]\OT1/ppl/b/n/10.95 Evaluation of server impact during transmission\OT1/ppl/m/
+n/10.95 : We measure performance
+ []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[6]
+Underfull \hbox (badness 1242) in paragraph at lines 201--206
+[]\OT1/ppl/b/n/10.95 Experiments to motivate fast and efficient reconfiguration
+\OT1/ppl/m/n/10.95 : This is the first
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 201--206
+\OT1/ppl/m/n/10.95 that leverages high throughput, kernel bypass networking fab
+rics. We laid
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 201--206
+\OT1/ppl/m/n/10.95 out experiments that show how even the state-of-the-art syst
+ems for cluster
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 201--206
+\OT1/ppl/m/n/10.95 reconfiguration becomes suboptimal with its locality constra
+ints and overall
+ []
+
+)
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[7]
+\openout2 = `modernnics.aux'.
+
+ (modernnics.tex
+DEBUG: @chapter: arg 1 = [Drawing Lessons from Modern NICs]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax D
+rawing Lessons from Modern NICs}]
+CHAPTER 2.
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 4--11
+[]\OT1/ppl/m/n/10.95 Network Interface Cards have grown complex and present opp
+ortunities and
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 4--11
+\OT1/ppl/m/n/10.95 challenges as part of a modern distributed system. It is imp
+erative that today's
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8
+
+
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 23.
+
+
+Package xcolor Warning: Incompatible color definition on input line 23.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[9]
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [10]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 108.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 108.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 108.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 108.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 108.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [11]
+
+Package xcolor Warning: Incompatible color definition on input line 128.
+
+
+Package xcolor Warning: Incompatible color definition on input line 128.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 154.
+
+
+Package xcolor Warning: Incompatible color definition on input line 154.
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 156--161
+[]\OT1/ppl/m/n/10.95 In our original implementation, we used a common shared bu
+ffer pool for
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [12]
+
+Package xcolor Warning: Incompatible color definition on input line 162.
+
+
+Package xcolor Warning: Incompatible color definition on input line 162.
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+Underfull \hbox (badness 1515) in paragraph at lines 180--181
+[]\OT1/ppl/m/n/10.95 A breakdown of CPU overhead in transmission; we see that t
+he additional
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 185.
+
+
+Package xcolor Warning: Incompatible color definition on input line 185.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 198.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 198.
+
+Underfull \hbox (badness 1210) in paragraph at lines 186--201
+[]\OT1/ppl/m/n/10.95 We explored how the different designs trade-off database s
+erver efficiency and
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 186--201
+\OT1/ppl/m/n/10.95 performance by building a simple model of an in-memory datab
+ase system that
+ []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [13]
+
+Package xcolor Warning: Incompatible color definition on input line 215.
+
+
+Package xcolor Warning: Incompatible color definition on input line 215.
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [14]
+Underfull \hbox (badness 1490) in paragraph at lines 236--240
+[]\OT1/ppl/m/n/10.95 Figure 2.3[] shows a comparison of transmission performanc
+e of different verbs
+ []
+
+(takeaway-verbs.tex
+Underfull \hbox (badness 1577) in paragraph at lines 12--12
+[][][][] \OT1/ppl/m/n/10.95 avoids invoking receiver; server must induce
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [15]
+
+Package xcolor Warning: Incompatible color definition on input line 251.
+
+
+Package xcolor Warning: Incompatible color definition on input line 251.
+
+
+Package xcolor Warning: Incompatible color definition on input line 263.
+
+
+Package xcolor Warning: Incompatible color definition on input line 263.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [16]
+(takeaway-tput.tex
+Underfull \hbox (badness 10000) in paragraph at lines 338--1
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [17]
+Underfull \hbox (badness 2050) in paragraph at lines 11--11
+[]\OT1/ppl/m/n/10.95 Bigger records can saturate the NIC; Zero Copy is
+ []
+
+)
+
+Package xcolor Warning: Incompatible color definition on input line 358.
+
+
+Package xcolor Warning: Incompatible color definition on input line 358.
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 361--375
+\OT1/ppl/m/n/10.95 performance gains, we profiled our benchmark code for CPU ut
+ilization, memory
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [18]
+
+Package xcolor Warning: Incompatible color definition on input line 377.
+
+
+Package xcolor Warning: Incompatible color definition on input line 377.
+
+(takeaway-cpu-overhead.tex
+Underfull \hbox (badness 10000) in paragraph at lines 394--1
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [19])
+
+Package xcolor Warning: Incompatible color definition on input line 448.
+
+
+Package xcolor Warning: Incompatible color definition on input line 448.
+
+(takeaway-cpu-cycles.tex
+Underfull \hbox (badness 10000) in paragraph at lines 449--1
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[20]
+Underfull \hbox (badness 6725) in paragraph at lines 11--11
+[]\OT1/ppl/m/n/10.95 Most efficient CPU utilization for transmission is
+ []
+
+)
+
+Package xcolor Warning: Incompatible color definition on input line 504.
+
+
+Package xcolor Warning: Incompatible color definition on input line 504.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [21]
+(takeaway-impact-membw.tex
+Underfull \hbox (badness 10000) in paragraph at lines 518--1
+
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[22]
+
+Package xcolor Warning: Incompatible color definition on input line 536.
+
+
+Package xcolor Warning: Incompatible color definition on input line 536.
+
+(takeaway-impact-membw-ratio.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]\OT1/ppl/m/n/10.95 Chapter 3[] discusses a hybrid approach yielding
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[23]
+
+Package xcolor Warning: Incompatible color definition on input line 550.
+
+
+Package xcolor Warning: Incompatible color definition on input line 550.
+
+(takeaway-impact-ddiobw.tex
+Underfull \hbox (badness 10000) in paragraph at lines 559--1
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [24]
+LaTeX Font Info:    Font shape `TS1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `TS1/ppl/b/n' tried instead on input line 10.
+)
+
+Package xcolor Warning: Incompatible color definition on input line 573.
+
+
+Package xcolor Warning: Incompatible color definition on input line 573.
+
+(takeaway-impact-ddiobw-savings.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[25]
+
+Package xcolor Warning: Incompatible color definition on input line 586.
+
+
+Package xcolor Warning: Incompatible color definition on input line 586.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[26]
+
+Package xcolor Warning: Incompatible color definition on input line 604.
+
+
+Package xcolor Warning: Incompatible color definition on input line 604.
+
+(takeaway-impact-pciebw.tex
+Underfull \hbox (badness 10000) in paragraph at lines 605--1
+
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 9--9
+[]\OT1/ppl/m/n/10.95 The memory utilization because of PCIe peaks as
+ []
+
+)
+
+Package xcolor Warning: Incompatible color definition on input line 611.
+
+
+Package xcolor Warning: Incompatible color definition on input line 611.
+
+(fig-mem-regions.tex
+<figures/fig-mem-regions.pdf, id=123, 427.5975pt x 216.81pt>
+File: figures/fig-mem-regions.pdf Graphic file (type pdf)
+
+<use figures/fig-mem-regions.pdf>
+Package pdftex.def Info: figures/fig-mem-regions.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 219.86298pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (config.tex
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-setup.tex <figures/fig-setup.pdf, id=124, 963.6pt x 542.025pt>
+File: figures/fig-setup.pdf Graphic file (type pdf)
+
+<use figures/fig-setup.pdf>
+Package pdftex.def Info: figures/fig-setup.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 243.90898pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-rdmamodes.tex
+<figures/fig-200B-RDMAverbs.pdf, id=125, 361.35pt x 144.54pt>
+File: figures/fig-200B-RDMAverbs.pdf Graphic file (type pdf)
+
+<use figures/fig-200B-RDMAverbs.pdf>
+Package pdftex.def Info: figures/fig-200B-RDMAverbs.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+<figures/fig-1000B-RDMAverbs.pdf, id=126, 361.35pt x 144.54pt>
+File: figures/fig-1000B-RDMAverbs.pdf Graphic file (type pdf)
+
+<use figures/fig-1000B-RDMAverbs.pdf>
+Package pdftex.def Info: figures/fig-1000B-RDMAverbs.pdf used on input line 6.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+) (fig-zero-copy-tput.tex
+<figures/fig-zero-copy-tput.pdf, id=127, 361.35pt x 144.54pt>
+File: figures/fig-zero-copy-tput.pdf Graphic file (type pdf)
+
+<use figures/fig-zero-copy-tput.pdf>
+Package pdftex.def Info: figures/fig-zero-copy-tput.pdf used on input line 2.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-overheads.tex <figures/fig-overheads.pdf, id=128, 361.35pt x 361.35pt>
+File: figures/fig-overheads.pdf Graphic file (type pdf)
+
+<use figures/fig-overheads.pdf>
+Package pdftex.def Info: figures/fig-overheads.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 433.62335pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-cycles.tex <figures/fig-cycles.pdf, id=129, 361.35pt x 144.54pt>
+File: figures/fig-cycles.pdf Graphic file (type pdf)
+
+<use figures/fig-cycles.pdf>
+Package pdftex.def Info: figures/fig-cycles.pdf used on input line 2.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-membw.tex <figures/fig-membw.pdf, id=130, 361.35pt x 433.62pt>
+File: figures/fig-membw.pdf Graphic file (type pdf)
+
+<use figures/fig-membw.pdf>
+Package pdftex.def Info: figures/fig-membw.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 520.34802pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-membw-ratio.tex
+<figures/fig-membw-ratio.pdf, id=131, 361.35pt x 144.54pt>
+File: figures/fig-membw-ratio.pdf Graphic file (type pdf)
+
+<use figures/fig-membw-ratio.pdf>
+Package pdftex.def Info: figures/fig-membw-ratio.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-ddiobw.tex <figures/fig-ddiobw.pdf, id=132, 361.35pt x 144.54pt>
+File: figures/fig-ddiobw.pdf Graphic file (type pdf)
+
+<use figures/fig-ddiobw.pdf>
+Package pdftex.def Info: figures/fig-ddiobw.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-ddiobw-percent.tex
+<figures/fig-ddiobw-percent.pdf, id=133, 361.35pt x 144.54pt>
+File: figures/fig-ddiobw-percent.pdf Graphic file (type pdf)
+
+<use figures/fig-ddiobw-percent.pdf>
+Package pdftex.def Info: figures/fig-ddiobw-percent.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-pciebw.tex <figures/fig-pciebw.pdf, id=134, 361.35pt x 144.54pt>
+File: figures/fig-pciebw.pdf Graphic file (type pdf)
+
+<use figures/fig-pciebw.pdf>
+Package pdftex.def Info: figures/fig-pciebw.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-pciebw-ratio.tex
+<figures/fig-pciebw-ratio.pdf, id=135, 361.35pt x 144.54pt>
+File: figures/fig-pciebw-ratio.pdf Graphic file (type pdf)
+
+<use figures/fig-pciebw-ratio.pdf>
+Package pdftex.def Info: figures/fig-pciebw-ratio.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+))
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[27]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[28 <./figures/fig-mem-regions.pdf>]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[29 <./figures/fig-setup.pdf>]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[30 <./figures/fig-200B-RDMAverbs.pdf> <./figures/fig-1000B-RDMAverbs.pdf> <./f
+igures/fig-zero-copy-tput.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [31 <./figures/fig-overheads.pdf> <./figures/fig-cycles.pdf>]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[32 <./figures/fig-membw.pdf>]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[33 <./figures/fig-membw-ratio.pdf> <./figures/fig-ddiobw.pdf> <./figures/fig-d
+diobw-percent.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [34 <./figures/fig-pciebw.pdf> <./figures/fig-pciebw-ratio.pdf>]
+\openout2 = `applications.aux'.
+
+ (applications.tex
+DEBUG: @chapter: arg 1 = [Applications for a Client-Assisted Design]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax A
+pplications for a Client-Assisted Design}]
+CHAPTER 3.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 21--24
+[]\OT1/ppl/m/n/10.95 On-Line Analytical Processing (OLAP) and hybrid workloads 
+composed of
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35
+
+
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[36]
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[37]
+
+Package xcolor Warning: Incompatible color definition on input line 123.
+
+
+Package xcolor Warning: Incompatible color definition on input line 123.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[38]
+
+Package xcolor Warning: Incompatible color definition on input line 196.
+
+
+Package xcolor Warning: Incompatible color definition on input line 196.
+
+
+Package xcolor Warning: Incompatible color definition on input line 198.
+
+
+Package xcolor Warning: Incompatible color definition on input line 198.
+
+
+Package xcolor Warning: Incompatible color definition on input line 214.
+
+
+Package xcolor Warning: Incompatible color definition on input line 214.
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[39]
+
+Package xcolor Warning: Incompatible color definition on input line 234.
+
+
+Package xcolor Warning: Incompatible color definition on input line 234.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [40]
+
+Package xcolor Warning: Incompatible color definition on input line 349.
+
+
+Package xcolor Warning: Incompatible color definition on input line 349.
+
+
+Package xcolor Warning: Incompatible color definition on input line 364.
+
+
+Package xcolor Warning: Incompatible color definition on input line 364.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [41]
+
+Package xcolor Warning: Incompatible color definition on input line 388.
+
+
+Package xcolor Warning: Incompatible color definition on input line 388.
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 404--411
+[]\OT1/ppl/m/n/10.95 We argue for the possibility of a different materializatio
+n strategy with more
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [42]
+(takeaway-bwtrees.tex
+Underfull \hbox (badness 10000) in paragraph at lines 421--1
+
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 11--11
+[]\OT1/ppl/m/n/10.95 Use of a large enough base page and updates as
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 11--11
+\OT1/ppl/m/n/10.95 delta records helps in saturating NIC's transmission
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]\OT1/ppl/m/n/10.95 We get a 50% reduction in memory bandwidth
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 11--11
+\OT1/ppl/b/n/10.95 influence the performance of a modern NIC\OT1/ppl/m/n/10.95 
+; To extract
+ []
+
+)
+
+Package xcolor Warning: Incompatible color definition on input line 426.
+
+
+Package xcolor Warning: Incompatible color definition on input line 426.
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [43]
+Underfull \hbox (badness 1406) in paragraph at lines 435--438
+\OT1/ppl/m/n/10.95 is to send the encoding metadata along with the results with
+ client-assisted
+ []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [44]
+(fig-bw-tree.tex <figures/fig-bwtree.pdf, id=297, 427.5975pt x 144.54pt>
+File: figures/fig-bwtree.pdf Graphic file (type pdf)
+
+<use figures/fig-bwtree.pdf>
+Package pdftex.def Info: figures/fig-bwtree.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 146.5753pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-deltas-tput.tex
+<figures/fig-deltas-tput.pdf, id=298, 361.35pt x 144.54pt>
+File: figures/fig-deltas-tput.pdf Graphic file (type pdf)
+
+<use figures/fig-deltas-tput.pdf>
+Package pdftex.def Info: figures/fig-deltas-tput.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-deltas-membw.tex
+<figures/fig-deltas-membw.pdf, id=299, 361.35pt x 144.54pt>
+File: figures/fig-deltas-membw.pdf Graphic file (type pdf)
+
+<use figures/fig-deltas-membw.pdf>
+Package pdftex.def Info: figures/fig-deltas-membw.pdf used on input line 2.
+(pdftex.def)             Requested size: 433.62pt x 173.44931pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-rowstore-colstore.tex
+<figures/fig-rowstore.pdf, id=300, 963.6pt x 542.025pt>
+File: figures/fig-rowstore.pdf Graphic file (type pdf)
+
+<use figures/fig-rowstore.pdf>
+Package pdftex.def Info: figures/fig-rowstore.pdf used on input line 5.
+(pdftex.def)             Requested size: 192.71658pt x 108.405pt.
+
+Overfull \hbox (19.27124pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+<figures/fig-colstore.pdf, id=301, 963.6pt x 542.025pt>
+File: figures/fig-colstore.pdf Graphic file (type pdf)
+
+<use figures/fig-colstore.pdf>
+Package pdftex.def Info: figures/fig-colstore.pdf used on input line 11.
+(pdftex.def)             Requested size: 192.71658pt x 108.405pt.
+
+Overfull \hbox (19.27124pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+))
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [45 <./figures/fig-bwtree.pdf> <./figures/fig-deltas-tput.pdf> <./figures/fig-
+deltas-membw.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [46 <./figures/fig-rowstore.pdf> <./figures/fig-colstore.pdf>]
+\openout2 = `migration.aux'.
+
+ (migration.tex
+DEBUG: @chapter: arg 1 = [NIC Aware Reconfiguration]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax N
+IC Aware Reconfiguration}]
+CHAPTER 4.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 20--25
+[]\OT1/ppl/m/n/10.95 In this chapter, we discuss the state-of-the-art migration
+ protocols and their
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47
+
+
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+
+Package xcolor Warning: Incompatible color definition on input line 61.
+
+
+Package xcolor Warning: Incompatible color definition on input line 61.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [48]
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Package xcolor Warning: Incompatible color definition on input line 88.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[50]
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 115--118
+\OT1/ppl/m/n/10.95 philosophy that calls for minimal interrupts, more popular p
+acket processing
+ []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [51]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[52] (fig-migration-current.tex
+<figures/fig-current-migration.pdf, id=392, 963.6pt x 542.025pt>
+File: figures/fig-current-migration.pdf Graphic file (type pdf)
+
+<use figures/fig-current-migration.pdf>
+Package pdftex.def Info: figures/fig-current-migration.pdf used on input line 2
+.
+(pdftex.def)             Requested size: 433.62pt x 243.90898pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 3--3
+[][]\OT1/ppl/b/n/10.95 Figure 4.1[]\OT1/ppl/m/n/10.95 : |Diagram showing steps 
+involved in the current migration protocol of
+ []
+
+) (fig-bottlenecks.tex
+<figures/fig-bottlenecks.pdf, id=393, 289.08pt x 144.54pt>
+File: figures/fig-bottlenecks.pdf Graphic file (type pdf)
+
+<use figures/fig-bottlenecks.pdf>
+Package pdftex.def Info: figures/fig-bottlenecks.pdf used on input line 2.
+(pdftex.def)             Requested size: 289.07928pt x 144.53963pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+) (fig-colocation.tex
+<figures/fig-colocation.pdf, id=394, 361.35pt x 361.35pt>
+File: figures/fig-colocation.pdf Graphic file (type pdf)
+
+<use figures/fig-colocation.pdf>
+Package pdftex.def Info: figures/fig-colocation.pdf used on input line 2.
+(pdftex.def)             Requested size: 361.34912pt x 361.34912pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[53 <./figures/fig-current-migration.pdf> <./figures/fig-bottlenecks.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [54 <./figures/fig-colocation.pdf>]
+\openout2 = `relatedwork.aux'.
+
+ (relatedwork.tex
+DEBUG: @chapter: arg 1 = [Related Work]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax R
+elated Work}]
+CHAPTER 5.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55
+
+
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 55.
+
+
+Package xcolor Warning: Incompatible color definition on input line 55.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[56]
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Package xcolor Warning: Incompatible color definition on input line 94.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[57]
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[58]
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+)
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[59]
+\openout2 = `conclusion.aux'.
+
+ (conclusion.tex
+DEBUG: @chapter: arg 1 = [Conclusion]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax C
+onclusion}]
+CHAPTER 6.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 14--21
+\OT1/ppl/m/n/10.95 performance of a NIC and the resource utilization of a serve
+r while transferring
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [61]
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[62]
+
+Package xcolor Warning: Incompatible color definition on input line 79.
+
+
+Package xcolor Warning: Incompatible color definition on input line 79.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+
+Package xcolor Warning: Incompatible color definition on input line 96.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[63]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [64]
+(final-thesis.bbl
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+\OT1/cmtt/m/n/10.95 com / page / products _ dyn ? product _ family = 268 & mtag
+ = connectx _ 6 _ en _ ic$\OT1/ppl/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 27--30
+[]\OT1/ppl/m/it/10.95 Mellanox ConnectX-3 product brief\OT1/ppl/m/n/10.95 .  $\
+OT1/cmtt/m/n/10.95 https : / / www . mellanox . com / related-[]docs /
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 37--41
+\OT1/ppl/m/it/10.95 in column-oriented database systems\OT1/ppl/m/n/10.95 , in 
+Proceedings of the 2006 ACM SIGMOD
+ []
+
+
+Underfull \hbox (badness 4927) in paragraph at lines 66--71
+\OT1/ppl/m/it/10.95 Analysis of a Large-scale Key-value Store\OT1/ppl/m/n/10.95
+ , in Proceedings of the 12th ACM
+ []
+
+[65
+
+]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[66]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[67]
+Underfull \hbox (badness 1533) in paragraph at lines 258--262
+\OT1/ppl/m/n/10.95 as part of the 10th USENIX Symposium on Networked Systems De
+sign and
+ []
+
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[68])
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[69] (final-thesis.aux (introduction.aux) (modernnics.aux) (applications.aux)
+(migration.aux) (relatedwork.aux) (conclusion.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 18756 strings out of 493323
+ 348928 string characters out of 3139067
+ 443188 words of memory out of 3000000
+ 21729 multiletter control sequences out of 15000+200000
+ 50792 words of font info for 143 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,10n,71p,821b,1210s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9_1/fonts/enc/dvips/base/8r.enc}<C:/Program Files/
+MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTe
+X 2.9_1/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9_
+1/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1
+/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/publi
+c/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino
+/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb>
+<C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program 
+Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on final-thesis.pdf (78 pages, 508592 bytes).
+PDF statistics:
+ 516 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+

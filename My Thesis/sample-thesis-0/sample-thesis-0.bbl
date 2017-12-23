@@ -1,0 +1,130 @@
+\def \noopsort #1{}
+\begin{thebibliography}{10}
+
+\bibitem{auld2007bayesian}
+{\sc T.~Auld, A.~W. Moore, and S.~F. Gull}, {\em Bayesian neural networks for
+  internet traffic classification}, IEEE Transactions on neural networks, 18
+  (2007), pp.~223--239.
+
+\bibitem{bernaille2006traffic}
+{\sc L.~Bernaille, R.~Teixeira, I.~Akodkenou, A.~Soule, and K.~Salamatian},
+  {\em Traffic classification on the fly}, ACM SIGCOMM Computer Communication
+  Review, 36 (2006), pp.~23--26.
+
+\bibitem{bhuyan2014network}
+{\sc M.~H. Bhuyan, D.~K. Bhattacharyya, and J.~K. Kalita}, {\em Network anomaly
+  detection: methods, systems and tools}, Ieee communications surveys \&
+  tutorials, 16 (2014), pp.~303--336.
+
+\bibitem{boutsidis2009unsupervised}
+{\sc C.~Boutsidis, P.~Drineas, and M.~W. Mahoney}, {\em Unsupervised feature
+  selection for the $ k $-means clustering problem}, in Advances in Neural
+  Information Processing Systems, 2009, pp.~153--161.
+
+\bibitem{buczak2016survey}
+{\sc A.~L. Buczak and E.~Guven}, {\em A survey of data mining and machine
+  learning methods for cyber security intrusion detection}, IEEE Communications
+  Surveys \& Tutorials, 18 (2016), pp.~1153--1176.
+
+\bibitem{dash2002feature}
+{\sc M.~Dash, K.~Choi, P.~Scheuermann, and H.~Liu}, {\em Feature selection for
+  clustering-a filter solution}, in Data Mining, 2002. ICDM 2003. Proceedings.
+  2002 IEEE International Conference on, IEEE, 2002, pp.~115--122.
+
+\bibitem{Derpanis06k-meansclustering}
+{\sc K.~G. Derpanis}, {\em K-means clustering}, 2006.
+
+\bibitem{diibendorfer2005host}
+{\sc T.~Diibendorfer and B.~Plattner}, {\em Host behaviour based early
+  detection of worm outbreaks in internet backbones}, in Enabling Technologies:
+  Infrastructure for Collaborative Enterprise, 2005. 14th IEEE International
+  Workshops on, IEEE, 2005, pp.~166--171.
+
+\bibitem{dubendorfer2005framework}
+{\sc T.~Dubendorfer, A.~Wagner, and B.~Plattner}, {\em A framework for
+  real-time worm attack detection and backbone monitoring}, in Critical
+  Infrastructure Protection, First IEEE International Workshop on, IEEE, 2005,
+  pp.~10--pp.
+
+\bibitem{erman2007semi}
+{\sc J.~Erman, A.~Mahanti, M.~Arlitt, I.~Cohen, and C.~Williamson}, {\em
+  Semi-supervised network traffic classification}, in ACM SIGMETRICS
+  Performance Evaluation Review, vol.~35, ACM, 2007, pp.~369--370.
+
+\bibitem{gao2005towards}
+{\sc Y.~Gao, Z.~Li, and Y.~Chen}, {\em Towards a high-speed routerbased
+  anomaly/intrusion detection system}, Technical Report,  (2005).
+
+\bibitem{gao2006resilient}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em A dos resilient
+  flow-level intrusion detection approach for high-speed networks}, in
+  Distributed Computing Systems, 2006. ICDCS 2006. 26th IEEE International
+  Conference on, IEEE, 2006, pp.~39--39.
+
+\bibitem{garcia2009anomaly}
+{\sc P.~Garcia-Teodoro, J.~Diaz-Verdejo, G.~Maci{\'a}-Fern{\'a}ndez, and
+  E.~V{\'a}zquez}, {\em Anomaly-based network intrusion detection: Techniques,
+  systems and challenges}, computers \& security, 28 (2009), pp.~18--28.
+
+\bibitem{Johnson2000}
+{\sc E.~L. Johnson and H.~Kargupta}, {\em Collective, Hierarchical Clustering
+  from Distributed, Heterogeneous Data}, Springer Berlin Heidelberg, Berlin,
+  Heidelberg, 2000, pp.~221--244.
+
+\bibitem{karasaridis2007wide}
+{\sc A.~Karasaridis, B.~Rexroad, D.~A. Hoeflin, et~al.}, {\em Wide-scale botnet
+  detection and characterization.}, HotBots, 7 (2007), pp.~7--7.
+
+\bibitem{kuhn1955hungarian}
+{\sc H.~W. Kuhn}, {\em The hungarian method for the assignment problem}, Naval
+  Research Logistics (NRL), 2 (1955), pp.~83--97.
+
+\bibitem{livadas2006usilng}
+{\sc C.~Livadas, R.~Walsh, D.~Lapsley, and W.~T. Strayer}, {\em Usilng machine
+  learning technliques to identify botnet traffic}, in Local Computer Networks,
+  Proceedings 2006 31st IEEE Conference on, IEEE, 2006, pp.~967--974.
+
+\bibitem{moore2005internet}
+{\sc A.~W. Moore and D.~Zuev}, {\em Internet traffic classification using
+  bayesian analysis techniques}, in ACM SIGMETRICS Performance Evaluation
+  Review, vol.~33, ACM, 2005, pp.~50--60.
+
+\bibitem{doi:10.1093/comjnl/26.4.354}
+{\sc F.~Murtagh}, {\em A survey of recent advances in hierarchical clustering
+  algorithms}, The Computer Journal, 26 (1983), pp.~354--359.
+
+\bibitem{nguyen2008survey}
+{\sc T.~T. Nguyen and G.~Armitage}, {\em A survey of techniques for internet
+  traffic classification using machine learning}, IEEE Communications Surveys
+  \& Tutorials, 10 (2008), pp.~56--76.
+
+\bibitem{peddabachigari2007modeling}
+{\sc S.~Peddabachigari, A.~Abraham, C.~Grosan, and J.~Thomas}, {\em Modeling
+  intrusion detection system using hybrid intelligent systems}, Journal of
+  network and computer applications, 30 (2007), pp.~114--132.
+
+\bibitem{strayer2008botnet}
+{\sc W.~T. Strayer, D.~Lapsely, R.~Walsh, and C.~Livadas}, {\em Botnet
+  detection based on network behavior}, in Botnet detection, Springer, 2008,
+  pp.~1--24.
+
+\bibitem{thang2011anomaly}
+{\sc T.~M. Thang and J.~Kim}, {\em The anomaly detection by using dbscan
+  clustering with multiple parameters}, in Information Science and Applications
+  (ICISA), 2011 International Conference on, IEEE, 2011, pp.~1--5.
+
+\bibitem{wolf2014choicenet}
+{\sc T.~Wolf, J.~Griffioen, K.~L. Calvert, R.~Dutta, G.~N. Rouskas, I.~Baldin,
+  and A.~Nagurney}, {\em Choicenet: toward an economy plane for the internet},
+  ACM SIGCOMM Computer Communication Review, 44 (2014), pp.~58--65.
+
+\bibitem{zhang2003intrusion}
+{\sc Y.~Zhang, W.~Lee, and Y.-A. Huang}, {\em Intrusion detection techniques
+  for mobile wireless networks}, Wireless Networks, 9 (2003), pp.~545--556.
+
+\bibitem{zhao2006detection}
+{\sc Q.~Zhao, J.~Xu, and A.~Kumar}, {\em Detection of super sources and
+  destinations in high-speed networks: Algorithms, analysis and evaluation},
+  IEEE Journal on Selected Areas in Communications, 24 (2006), pp.~1840--1852.
+
+\end{thebibliography}

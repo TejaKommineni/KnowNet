@@ -1,0 +1,362 @@
+\def \noopsort #1{}
+\begin{thebibliography}{10}
+
+\bibitem{cx6}
+{\em {ConnectX\textregistered-6} en single/dual-port adapter asic supporting
+  200gbe}.
+\newblock
+  \url{http://www.mellanox.com/page/products_dyn?product_family=268&mtag=connectx_6_en_ic}.
+\newblock Accessed: 01-18-2017.
+
+\bibitem{dpdk}
+{\em {DPDK} documentation}.
+\newblock \url{http://dpdk.org/doc/guides-16.04/}.
+
+\bibitem{intelpcm}
+{\em {Intel} performance counter monitor}.
+\newblock \url{http://www.intel.com/software/pcm}.
+\newblock Accessed: 01-07-2017.
+
+\bibitem{ddio}
+{\em {Intel}\textregistered {D}ata {D}irect {I/O} technology}.
+\newblock
+  \url{http://www.intel.com/content/www/us/en/io/data-direct-i-o-technology.html}.
+\newblock Accessed: 10-19-2016.
+
+\bibitem{cx3}
+{\em {Mellanox ConnectX-3} product brief}.
+\newblock
+  \url{https://www.mellanox.com/related-docs/prod_adapter_cards/ConnectX3_EN_Card.pdf}.
+
+\bibitem{cx4}
+{\em {Mellanox ConnectX-4} product brief}.
+\newblock
+  \url{http://www.mellanox.com/related-docs/prod_adapter_cards/PB_ConnectX-4_VPI_Card.pdf}.
+
+\bibitem{cstorecompression}
+{\sc D.~Abadi, S.~Madden, and M.~Ferreira}, {\em Integrating compression and
+  execution in column-oriented database systems}, in Proceedings of the 2006
+  ACM SIGMOD international conference on Management of data, ACM, 2006,
+  pp.~671--682.
+
+\bibitem{monetdb}
+{\sc D.~J. Abadi, P.~A. Boncz, and S.~Harizopoulos}, {\em Column-oriented
+  database systems}, Proceedings of the VLDB Endowment, 2 (2009),
+  pp.~1664--1665.
+
+\bibitem{cstorevsrowstore}
+{\sc D.~J. Abadi, S.~R. Madden, and N.~Hachem}, {\em Column-stores vs.
+  row-stores: How different are they really?}, in Proceedings of the 2008 ACM
+  SIGMOD international conference on Management of data, ACM, 2008,
+  pp.~967--980.
+
+\bibitem{cstore-material}
+{\sc D.~J. Abadi, D.~S. Myers, D.~J. DeWitt, and S.~R. Madden}, {\em
+  Materialization strategies in a column-oriented dbms}, in Data Engineering,
+  2007. ICDE 2007. IEEE 23rd International Conference on, IEEE, 2007,
+  pp.~466--475.
+
+\bibitem{dbmsproctime}
+{\sc A.~Ailamaki, D.~J. DeWitt, M.~D. Hill, and D.~A. Wood}, {\em Dbmss on a
+  modern processor: Where does time go?}, in VLDB" 99, Proceedings of 25th
+  International Conference on Very Large Data Bases, September 7-10, 1999,
+  Edinburgh, Scotland, UK, no.~DIAS-CONF-1999-001, 1999, pp.~266--277.
+
+\bibitem{fb-workload}
+{\sc B.~Atikoglu, Y.~Xu, E.~Frachtenberg, S.~Jiang, and M.~Paleczny}, {\em
+  {W}orkload {A}nalysis of a {L}arge-scale {K}ey-value {S}tore}, in Proceedings
+  of the 12th ACM SIGMETRICS/PERFORMANCE Joint International Conference on
+  Measurement and Modeling of Computer Systems, SIGMETRICS '12, New York, NY,
+  USA, 2012, ACM.
+
+\bibitem{slow}
+{\sc C.~Binnig, A.~Crotty, A.~Galakatos, T.~Kraska, and E.~Zamanian}, {\em
+  {T}he {E}nd of {S}low {N}etworks: {I}t's {T}ime for a {R}edesign},
+  Proceedings of the VLDB Endowment, 9 (2016), pp.~528--539.
+
+\bibitem{pcie}
+{\sc R.~Budruk, D.~Anderson, and T.~Shanley}, {\em PCI express system
+  architecture}, Addison-Wesley Professional, 2004.
+
+\bibitem{finegrained}
+{\sc M.~J. Carey, M.~J. Franklin, and M.~Zaharioudakis}, {\em Fine-grained
+  sharing in a page server OODBMS}, vol.~23, ACM, 1994.
+
+\bibitem{hicamp}
+{\sc M.~Chan, H.~Litz, and D.~R. Cheriton}, {\em Rethinking network stack
+  design with memory snapshots.}, in HotOS, 2013.
+
+\bibitem{albatross}
+{\sc S.~Das, S.~Nishimura, D.~Agrawal, and A.~El~Abbadi}, {\em Albatross:
+  lightweight elasticity in shared storage databases for the cloud using live
+  data migration}, Proceedings of the VLDB Endowment, 4 (2011), pp.~494--505.
+
+\bibitem{hekaton}
+{\sc C.~Diaconu, C.~Freedman, E.~Ismert, P.~Larson, P.~Mittal, R.~Stonecipher,
+  N.~Verma, and M.~Zwilling}, {\em Hekaton: {SQL} server's memory-optimized
+  {OLTP} engine}, in SIGMOD, 2013.
+
+\bibitem{farm}
+{\sc A.~Dragojevi{\'c}, D.~Narayanan, M.~Castro, and O.~Hodson}, {\em {FaRM}:
+  {F}ast {R}emote {M}emory}, in {USENIX} {NSDI}, Seattle, WA, Apr. 2014, USENIX
+  Association.
+
+\bibitem{farmtx}
+{\sc A.~Dragojevi\'c, D.~Narayanan, E.~B. Nightingale, M.~Renzelmann,
+  A.~Shamis, A.~Badam, and M.~Castro}, {\em { No compromises: distributed
+  transactions with consistency, availability, and performance}}, in SOSP,
+  2015.
+
+\bibitem{squall}
+{\sc A.~J. Elmore, V.~Arora, R.~Taft, A.~Pavlo, D.~Agrawal, and A.~El~Abbadi},
+  {\em Squall: Fine-grained live reconfiguration for partitioned main memory
+  databases}, in Proceedings of the 2015 ACM SIGMOD International Conference on
+  Management of Data, ACM, 2015, pp.~299--313.
+
+\bibitem{zephyr}
+{\sc A.~J. Elmore, S.~Das, D.~Agrawal, and A.~El~Abbadi}, {\em Zephyr: live
+  migration in shared nothing databases for elastic cloud platforms}, in
+  Proceedings of the 2011 ACM SIGMOD International Conference on Management of
+  data, ACM, 2011, pp.~301--312.
+
+\bibitem{memcached-orig}
+{\sc B.~Fitzpatrick}, {\em Distributed caching with memcached}, Linux journal,
+  2004 (2004), p.~5.
+
+\bibitem{lockfreedom}
+{\sc K.~Fraser}, {\em Practical lock-freedom}, PhD thesis, University of
+  Cambridge, 2004.
+
+\bibitem{rdmapatent}
+{\sc K.~Gildea, R.~Govindaraju, D.~Grice, P.~Hochschild, and F.~C. Chang}, {\em
+  Remote direct memory access system and method}, Aug.~30 2004.
+\newblock US Patent App. 10/929,943.
+
+\bibitem{hyrise-hybridstores}
+{\sc M.~Grund, J.~Kr{\"u}ger, H.~Plattner, A.~Zeier, P.~Cudre-Mauroux, and
+  S.~Madden}, {\em Hyrise: a main memory hybrid storage engine}, Proceedings of
+  the VLDB Endowment, 4 (2010), pp.~105--116.
+
+\bibitem{databasecracking}
+{\sc S.~Idreos, M.~L. Kersten, S.~Manegold, et~al.}, {\em Database cracking.},
+  in CIDR, vol.~7, 2007, pp.~68--78.
+
+\bibitem{inmemorycracking}
+{\sc S.~Idreos, S.~Manegold, H.~Kuno, and G.~Graefe}, {\em Merging what's
+  cracked, cracking what's merged: adaptive indexing in main-memory
+  column-stores}, Proceedings of the VLDB Endowment, 4 (2011), pp.~586--597.
+
+\bibitem{herd}
+{\sc A.~Kalia, M.~Kaminsky, and D.~G. Andersen}, {\em {U}sing {RDMA}
+  {E}fficiently for {K}ey-value {S}ervices}, in Proceedings of the 2014 ACM
+  SIGCOMM Conference, SIGCOMM '14, New York, NY, USA, 2014, ACM.
+
+\bibitem{rdma}
+{\sc A.~Kalia, M.~Kaminsky, and D.~G. Andersen}, {\em {D}esign {G}uidelines for
+  {H}igh {P}erformance {RDMA} {S}ystems}, in 2016 USENIX Annual Technical
+  Conference (USENIX ATC 16), Denver, CO, June 2016, USENIX Association.
+
+\bibitem{fasst}
+{\sc A.~Kalia, M.~Kaminsky, and D.~G. Andersen}, {\em Fasst: fast, scalable and
+  simple distributed transactions with two-sided (rdma) datagram rpcs}, in 12th
+  USENIX Symposium on Operating Systems Design and Implementation (OSDI 16),
+  USENIX Association, 2016, pp.~185--201.
+
+\bibitem{hstore}
+{\sc R.~Kallman, H.~Kimura, J.~Natkins, A.~Pavlo, A.~Rasin, S.~Zdonik, E.~P.
+  Jones, S.~Madden, M.~Stonebraker, Y.~Zhang, et~al.}, {\em H-store: a
+  high-performance, distributed main memory transaction processing system},
+  Proceedings of the VLDB Endowment, 1 (2008), pp.~1496--1499.
+
+\bibitem{slik}
+{\sc A.~Kejriwal, A.~Gopalan, A.~Gupta, Z.~Jia, S.~Yang, and J.~Ousterhout},
+  {\em {SLIK}: {S}calable {L}ow-{L}atency {I}ndexes for a {K}ey-{V}alue
+  {S}tore}, in {USENIX} Annual Technical Conference, Denver, CO, June 2016.
+
+\bibitem{hyperhybrid}
+{\sc A.~Kemper and T.~Neumann}, {\em Hyper: A hybrid oltp\&olap main memory
+  database system based on virtual memory snapshots}, in Data Engineering
+  (ICDE), 2011 IEEE 27th International Conference on, IEEE, 2011, pp.~195--206.
+
+\bibitem{imdmpaper}
+{\sc A.~Kesavan, R.~Ricci, and R.~Stutsman}, {\em To copy or not to copy:
+  Making in-memory databases fast on modern {NICs}}, in Proceedings of the
+  Fourth International Workshop on In-Memory Data Management and Analytics
+  ({IMDM}), Sept. 2016.
+
+\bibitem{mmdbmstutorial}
+{\sc P.-{\AA}. Larson and J.~Levandoski}, {\em Modern main-memory database
+  systems}, Proceedings of the VLDB Endowment, 9 (2016), pp.~1609--1610.
+
+\bibitem{ramcloudtx}
+{\sc C.~Lee, S.~J. Park, A.~Kejriwal, S.~Matsushita, and J.~Ousterhout}, {\em
+  Implementing linearizability at large scale and low latency}, in Proceedings
+  of the 25th Symposium on Operating Systems Principles, ACM, 2015, pp.~71--86.
+
+\bibitem{deuteronomy}
+{\sc J.~Levandoski, D.~Lomet, S.~Sengupta, R.~Stutsman, and R.~Wang}, {\em
+  {H}igh {P}erformance {T}ransactions in {D}euteronomy}, in Proc. of {CIDR},
+  2015.
+
+\bibitem{bw-tree}
+{\sc J.~J. Levandoski, D.~B. Lomet, and S.~Sengupta}, {\em {T}he {B}w-{T}ree:
+  {A} {B}-tree for {N}ew {H}ardware {P}latforms}, in International Conference
+  on Data Engineering (ICDE), IEEE, 2013.
+
+\bibitem{rdmabillion}
+{\sc S.~Li, H.~Lim, V.~W. Lee, J.~H. Ahn, A.~Kalia, M.~Kaminsky, D.~G.
+  Andersen, O.~Seongil, S.~Lee, and P.~Dubey}, {\em Architecting to achieve a
+  billion requests per second throughput on a single key-value store server
+  platform}, in ACM SIGARCH Computer Architecture News, vol.~43, ACM, 2015,
+  pp.~476--488.
+
+\bibitem{rdmagfs}
+{\sc S.~Liang, W.~Yu, and D.~K. Panda}, {\em High performance block i/o for
+  global file system (gfs) with infiniband rdma}, in 2006 International
+  Conference on Parallel Processing (ICPP'06), IEEE, 2006, pp.~391--398.
+
+\bibitem{htm-old}
+{\sc S.~Lie, K.~Asanovic, B.~C. Kuszmaul, and C.~E. Leiserson}, {\em Hardware
+  transactional memory},  (2004).
+
+\bibitem{mica}
+{\sc H.~Lim, D.~Han, D.~G. Andersen, and M.~Kaminsky}, {\em {MICA: A Holistic
+  Approach to Fast In-Memory Key-Value Storage}}, in 11th USENIX Symposium on
+  Networked Systems Design and Implementation (NSDI 14), Seattle, WA, Apr.
+  2014.
+
+\bibitem{tell}
+{\sc S.~Loesing, M.~Pilman, T.~Etter, and D.~Kossmann}, {\em {O}n the {D}esign
+  and {S}calability of {D}istributed {S}hared-{D}ata {D}atabases}, in
+  Proceedings of the 2015 ACM SIGMOD International Conference on Management of
+  Data, SIGMOD '15, New York, NY, USA, 2015, ACM.
+
+\bibitem{htm}
+{\sc D.~Makreshanski, J.~Levandoski, and R.~Stutsman}, {\em To lock, swap, or
+  elide: on the interplay of hardware transactional memory and lock-free
+  indexing}, Proceedings of the VLDB Endowment, 8 (2015), pp.~1298--1309.
+
+\bibitem{lockfreeht}
+{\sc M.~M. Michael}, {\em High performance dynamic lock-free hash tables and
+  list-based sets}, in Proceedings of the fourteenth annual ACM symposium on
+  Parallel algorithms and architectures, ACM, 2002, pp.~73--82.
+
+\bibitem{pilaf}
+{\sc C.~Mitchell, Y.~Geng, and J.~Li}, {\em Using one-sided rdma reads to build
+  a fast, cpu-efficient key-value store.}, in USENIX Annual Technical
+  Conference, 2013, pp.~103--114.
+
+\bibitem{tcpoffload}
+{\sc J.~C. Mogul}, {\em Tcp offload is a dumb idea whose time has come.}, in
+  HotOS, 2003, pp.~25--30.
+
+\bibitem{zerocopyrangequery}
+{\sc D.~H. Nguyen, M.~T.~C. Van An~Le, T.~V. Pham, and N.~Thoai}, {\em
+  Accelerating range query execution of in-memory stores: A performance study}.
+
+\bibitem{nishtala2013scaling}
+{\sc R.~Nishtala, H.~Fugal, S.~Grimm, M.~Kwiatkowski, H.~Lee, H.~C. Li,
+  R.~McElroy, M.~Paleczny, D.~Peek, P.~Saab, et~al.}, {\em Scaling memcache at
+  facebook}, in Presented as part of the 10th USENIX Symposium on Networked
+  Systems Design and Implementation (NSDI 13), 2013, pp.~385--398.
+
+\bibitem{fb-memcache}
+{\sc R.~Nishtala, H.~Fugal, S.~Grimm, M.~Kwiatkowski, H.~Lee, H.~C. Li,
+  R.~McElroy, M.~Paleczny, D.~Peek, P.~Saab, D.~Stafford, T.~Tung, and
+  V.~Venkataramani}, {\em {S}caling {M}emcache at {F}acebook}, in Symposium on
+  Networked Systems Design and Implementation (NSDI), Lombard, IL, 2013,
+  USENIX.
+
+\bibitem{raft}
+{\sc D.~Ongaro and J.~K. Ousterhout}, {\em In search of an understandable
+  consensus algorithm.}, in USENIX Annual Technical Conference, 2014,
+  pp.~305--319.
+
+\bibitem{ongaro2011fast}
+{\sc D.~Ongaro, S.~M. Rumble, R.~Stutsman, J.~Ousterhout, and M.~Rosenblum},
+  {\em Fast crash recovery in ramcloud}, in Proceedings of the Twenty-Third ACM
+  Symposium on Operating Systems Principles, ACM, 2011, pp.~29--41.
+
+\bibitem{ramcloudosr}
+{\sc J.~Ousterhout, P.~Agrawal, D.~Erickson, C.~Kozyrakis, J.~Leverich,
+  D.~Mazi{\`e}res, S.~Mitra, A.~Narayanan, G.~Parulkar, M.~Rosenblum, et~al.},
+  {\em The case for ramclouds: scalable high-performance storage entirely in
+  dram}, ACM SIGOPS Operating Systems Review, 43 (2010), pp.~92--105.
+
+\bibitem{ramcloud}
+{\sc J.~Ousterhout, A.~Gopalan, A.~Gupta, A.~Kejriwal, C.~Lee, B.~Montazeri,
+  D.~Ongaro, S.~J. Park, H.~Qin, M.~Rosenblum, S.~Rumble, R.~Stutsman, and
+  S.~Yang}, {\em The {RAMC}loud {S}torage {S}ystem}, ACM Transactions on
+  Computer Systems, 33 (2015), pp.~7:1--7:55.
+
+\bibitem{pfister2001introduction}
+{\sc G.~F. Pfister}, {\em An introduction to the infiniband architecture}, High
+  Performance Mass Storage and Parallel I/O, 42 (2001), pp.~617--632.
+
+\bibitem{rdmacase}
+{\sc J.~Pinkerton}, {\em The case for rdma}, RDMA Consortium, May, 29 (2002),
+  p.~27.
+
+\bibitem{hybridinmemorycolstore}
+{\sc H.~Plattner}, {\em A common database approach for oltp and olap using an
+  in-memory column database}, in Proceedings of the 2009 ACM SIGMOD
+  International Conference on Management of data, ACM, 2009, pp.~1--2.
+
+\bibitem{infinibandhugepages}
+{\sc R.~Rex, F.~Mietke, W.~Rehm, C.~Raisch, and H.-N. Nguyen}, {\em Improving
+  communication performance on infiniband by using efficient data placement
+  strategies}, in 2006 IEEE International Conference on Cluster Computing,
+  IEEE, 2006, pp.~1--7.
+
+\bibitem{Ricci+:OSR15}
+{\sc R.~Ricci, G.~Wong, L.~Stoller, K.~Webb, J.~Duerig, K.~Downie, and
+  M.~Hibler}, {\em Apt: A platform for repeatable research in computer
+  science}, {ACM} {SIGOPS} Operating Systems Review, 49 (2015).
+
+\bibitem{hyper}
+{\sc W.~R\"{o}diger, T.~M\"{u}hlbauer, A.~Kemper, and T.~Neumann}, {\em
+  {H}igh-speed {Q}uery {P}rocessing over {H}igh-speed {N}etworks}, Proc. VLDB
+  Endow.,  (2015).
+
+\bibitem{ramcloudfast}
+{\sc S.~M. Rumble, A.~Kejriwal, and J.~Ousterhout}, {\em Log-structured memory
+  for dram-based storage}, in Proceedings of the 12th USENIX Conference on File
+  and Storage Technologies (FAST 14), 2014, pp.~1--16.
+
+\bibitem{cstore}
+{\sc M.~Stonebraker, D.~J. Abadi, A.~Batkin, X.~Chen, M.~Cherniack,
+  M.~Ferreira, E.~Lau, A.~Lin, S.~Madden, E.~O'Neil, et~al.}, {\em C-store: a
+  column-oriented dbms}, in Proceedings of the 31st international conference on
+  Very large data bases, VLDB Endowment, 2005, pp.~553--564.
+
+\bibitem{ryan-thesis}
+{\sc R.~S. Stutsman}, {\em Durability and crash recovery in distributed
+  in-memory storage systems}, PhD thesis, Stanford University, 2013.
+
+\bibitem{Cloudlab:URL}
+{\sc {The CloudLab Team}}, {\em Cloudlab web site}.
+\newblock \url{https://cloudlab.us}.
+
+\bibitem{zerocopy04}
+{\sc V.~Tipparaju, G.~Santhanaraman, J.~Nieplocha, and O.~Panda}, {\em
+  Host-assisted zero-copy remote memory access communication on infiniband}, in
+  Parallel and Distributed Processing Symposium, 2004. Proceedings. 18th
+  International, IEEE, 2004, p.~31.
+
+\bibitem{silo}
+{\sc S.~Tu, W.~Zheng, E.~Kohler, B.~Liskov, and S.~Madden}, {\em Speedy
+  transactions in multicore in-memory databases}, in Proceedings of the
+  Twenty-Fourth ACM Symposium on Operating Systems Principles, ACM, 2013,
+  pp.~18--32.
+
+\bibitem{unetkernelbypass}
+{\sc T.~Von~Eicken, A.~Basu, V.~Buch, and W.~Vogels}, {\em U-net: A user-level
+  network interface for parallel and distributed computing}, in ACM SIGOPS
+  Operating Systems Review, vol.~29, ACM, 1995, pp.~40--53.
+
+\bibitem{drtm}
+{\sc X.~Wei, J.~Shi, Y.~Chen, R.~Chen, and H.~Chen}, {\em {F}ast {I}n-memory
+  {T}ransaction {P}rocessing {U}sing {RDMA} and {HTM}}, in Proceedings of
+  {SOSP}, SOSP '15, New York, NY, USA, 2015, ACM.
+
+\end{thebibliography}

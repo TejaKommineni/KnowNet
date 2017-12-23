@@ -1,0 +1,69 @@
+\contentsline {chapter}{\uppercase {Abstract}}{iii}
+\contentsline {chapter}{LIST OF FIGURES}{vi}
+\contentsline {chapter}{\uppercase {Acknowledgements}}{vii}
+\unhbox \voidb@x \\[-1.2ex] \kern -1.5em\contentsline {}{\textbf {CHAPTERS}}{}
+\contentsline {chapter}{\numberline {1.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Introduction}\global \uuthesis@needtocspacetrue }{1}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {1.1}Contributions}{5}
+\contentsline {chapter}{\numberline {2.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Drawing Lessons from Modern NICs}\global \uuthesis@needtocspacetrue }{8}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {2.1}Zero Copy and Copy Out}{9}
+\contentsline {section}{\numberline {2.2}Memory Bandwidth}{10}
+\contentsline {section}{\numberline {2.3}NIC Structures in Detail}{10}
+\contentsline {subsection}{\numberline {2.3.1}Structural Differences in Zero Copy and Copy Out}{11}
+\contentsline {section}{\numberline {2.4}DDIO}{12}
+\contentsline {section}{\numberline {2.5}Inlining}{12}
+\contentsline {section}{\numberline {2.6}Eliminating Contention}{13}
+\contentsline {section}{\numberline {2.7}Evaluation}{13}
+\contentsline {subsection}{\numberline {2.7.1}Experiment Setup}{14}
+\contentsline {subsection}{\numberline {2.7.2}Comparing RDMA Modes for Transmission}{14}
+\contentsline {subsection}{\numberline {2.7.3}Record Sizes}{16}
+\contentsline {subsection}{\numberline {2.7.4}Performance Impact of Data Layout}{16}
+\contentsline {section}{\numberline {2.8}System Impact}{18}
+\contentsline {subsection}{\numberline {2.8.1}Breakdown of CPU Costs}{19}
+\contentsline {subsection}{\numberline {2.8.2}CPU Efficiency of Transmission}{20}
+\contentsline {subsection}{\numberline {2.8.3}Memory Bandwidth}{21}
+\contentsline {subsection}{\numberline {2.8.4}Memory Bandwidth and Transmission Throughput}{23}
+\contentsline {subsection}{\numberline {2.8.5}DDIO Traffic}{24}
+\contentsline {subsection}{\numberline {2.8.6}DDIO Savings in Copy Out}{25}
+\contentsline {section}{\numberline {2.9}Anomaly in Transmission Throughput}{26}
+\contentsline {subsection}{\numberline {2.9.1}PCIe Induced DRAM Accesses and Throughput}{27}
+\contentsline {section}{\numberline {2.10}Conclusions}{27}
+\contentsline {chapter}{\numberline {3.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Applications for a Client-Assisted Design}\global \uuthesis@needtocspacetrue }{35}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {3.1}Bw-Trees}{36}
+\contentsline {section}{\numberline {3.2}Lock-free Indexing}{37}
+\contentsline {section}{\numberline {3.3}Delta Records}{37}
+\contentsline {section}{\numberline {3.4}NIC Implications for Bw-Tree}{38}
+\contentsline {section}{\numberline {3.5}Evaluation}{39}
+\contentsline {subsection}{\numberline {3.5.1}Extending the Delta Format to Clients}{39}
+\contentsline {subsection}{\numberline {3.5.2}Throughput and Efficiency of Delta Records}{40}
+\contentsline {subsection}{\numberline {3.5.3}Tuning Page Consolidation}{40}
+\contentsline {subsection}{\numberline {3.5.4}Impact on Memory Bandwidth}{41}
+\contentsline {subsection}{\numberline {3.5.5}Impact on Garbage Collection}{41}
+\contentsline {section}{\numberline {3.6}Zero Copy for Column Stores}{42}
+\contentsline {section}{\numberline {3.7}Conclusion}{43}
+\contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {NIC Aware Reconfiguration}\global \uuthesis@needtocspacetrue }{47}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {4.1}State-of-the-Art}{47}
+\contentsline {section}{\numberline {4.2}Migration in RAMCloud}{48}
+\contentsline {subsection}{\numberline {4.2.1}Current Protocol}{48}
+\contentsline {subsection}{\numberline {4.2.2}Locality in RAMCloud}{50}
+\contentsline {section}{\numberline {4.3}Design Guidelines for a New Protocol}{51}
+\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{55}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {5.1}In-memory Databases}{55}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {subsection}{\numberline {5.1.1}Column Stores}{56}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {subsection}{\numberline {5.1.2}Lock Freedom}{57}
+\contentsline {section}{\numberline {5.2}RDMA in Databases}{57}
+\contentsline {section}{\numberline {5.3}Data Migration}{57}
+\contentsline {section}{\numberline {5.4}Data Transfer in Fast Networks}{58}
+\contentsline {section}{\numberline {5.5}Summary}{59}
+\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Conclusion}\global \uuthesis@needtocspacetrue }{60}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {6.1}Future Directions}{62}
+\contentsline {section}{\numberline {6.2}Lessons Learned}{63}
+\contentsline {section}{\numberline {6.3}Parting Thoughts}{63}
+\contentsline {chapter}{REFERENCES}{65}

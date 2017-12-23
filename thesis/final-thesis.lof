@@ -1,0 +1,20 @@
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Key structures involved in network transmission.\relax }}{28}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Experiment setup. Each of the 15 clients communicate to a pinned thread on the server.\relax }}{29}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Transmission rate for 200 B records over different RDMA verbs and varying S/G lengths. We only show \lstinline [basicstyle=\ttfamily ,language=C++]|WRITE| at full capacity and \lstinline [basicstyle=\ttfamily ,language=C++]|READ| at one read per transmission.\relax }}{30}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Transmission rate for 1000 B records over different RDMA verbs and varying S/G lengths. We only show \lstinline [basicstyle=\ttfamily ,language=C++]|WRITE| at full capacity and \lstinline [basicstyle=\ttfamily ,language=C++]|READ| at one read per transmission.\relax }}{30}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Transmission throughput for Zero Copy and Copy Out.\relax }}{30}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Breakdown of absolute CPU overheads for transmission.\relax }}{31}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Cycles per transmitted byte for large and small records with Zero Copy and Copy Out. Note the log-scale axes.\relax }}{31}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Measured memory bandwidth impact on the system during transmission.\relax }}{32}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Ratio of memory bandwidth to transmission throughput.\relax }}{33}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces DRAM accesses (MB/s) LLC misses from DDIO. vs throughput.\relax }}{33}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Percentage of LLC misses that contribute to total memory bandwidth consumed.\relax }}{33}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces DRAM accesses (MB/s) due to LLC misses due to PCIe.\relax }}{34}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Ratio of DRAM accesses because of PCIe to transmission throughput.\relax }}{34}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The structure of a Bw-Tree.\relax }}{45}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Delta throughput\relax }}{45}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Observed memory bandwidth impact varying delta records on a 16\nobreakspace {}KB base page.\relax }}{45}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Figure showing a possible design for Zero Copy on hybrid data layouts.\relax }}{46}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagram showing steps involved in the current migration protocol of RAMCloud.\relax }}{53}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Analysis of bottlenecks in RAMCloud's current migration protocol.\relax }}{53}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Colocation plot. Collective throughput and fraction of useful work and communication overhead over server spread.\relax }}{54}

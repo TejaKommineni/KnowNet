@@ -1,0 +1,70 @@
+%%% -*-LaTeX-*-
+
+\chapter{BACKGROUND}
+
+Gaining insights from the network data using Machine Learning and Data Mining is a trending research area. There is a lot of confusion within the literature about the terms ML, DM as they often employ the same methods and therefore overlap significantly. Hence, below we describe the process of ML and DM briefly and establish why we have chosen Data Mining for building our system.
+
+Machine Learning is a method of generating rules from past data to predict the future.
+A Machine Learning approach usually consists of two phases:
+training and testing. The following steps are usually performed:
+\begin{itemize}
+	\item Identifying attributes (features) and classes from training data.
+	\item Choosing a subset of the attributes for classification.
+	\item Choosing a ML algorithm to create a model using the training data.
+	\item Use the trained model to classify the unknown data.
+\end{itemize}	
+
+Data Mining is the process of extracting implicit, previously unknown and potentially useful information from data. Data mining is generally considered as a step in the process of Knowledge Discovery from Data (KDD). KDD usually consists of the following steps:
+\begin{itemize}
+	\item Selection of raw data from which knowledge has to be extracted.
+	\item Preprocessing the data to perform cleaning and filtering to avoid noise.
+	\item Transforming the data so that all the attributes in the raw data are aligned towards achieving the common goal. 
+	\item Applying Data Mining algorithms to find rules or patterns.
+	\item Interpret the observations of the above step and validate them.
+	
+\end{itemize}
+
+As outlined above though both the techniques have similar steps of preprocessing data they differ on the end goal while ML maps the data set to known classes DM tries to find patterns out of the data set.
+
+The decision of the approach that we want to employ in our problem solving also depends on the type of data we have in hand. If the data is completely labeled, the problem is called supervised learning and generally the task is to find a function or model that explains the data. The approaches such as curve fitting or machine-learning methods are used to model the data to the underlying problem. The label is generally the business or problem variable that experts assume has relation to the collected data.  When a portion of the data is labeled during acquisition of the data or by human experts, the problem is called semi-supervised learning. The addition of the labeled data greatly helps to solve the problem. In general case the semi-supervised learning problem is converted to supervised learning problem by labeling the whole data set using the known labeled data and again the same machine-learning methods can be employed here. In unsupervised learning problems, we don't have any labels in the given data set and the main task is to find patterns, structures, or knowledge from this unlabeled data.   
+
+The dataset that we used for addressing our problem is flow data collected at routers which is explained in detail in the next section. This flow data generally comes without any labels. As, explained above if the data in hand doesn't have any labels the problem we are solving is called unsupervised learning problem. Also, in the introduction we have mentioned that the main goal of this work is to extract host behaviors from the aggregate data. This problem falls under a category of finding implicit/unseen patterns. Thus, having unlabeled data and the problem that we are trying to solve led us to use Data Mining techniques in building our system.
+
+\subsection{Unsupervised Learning}  \label{unsupervised}
+As we are approaching our problem using unsupervised techniques in Data Mining. Here is a brief explanation of different techniques within unsupervised learning.
+Unsupervised learning problems can be further grouped into clustering and association problems. A clustering problem is where you want to discover the inherent groupings in the data,and find patterns. An association rule learning problem is where you want to discover rules that describe large portions of your data, such as given an event X there is a chance of event Y happening. Since, we aim to find the inherent groupings our focus will be on clustering techniques. Clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). Cluster analysis itself is not one specific algorithm, but the general task to be solved. It can be achieved by various algorithms that differ significantly in their notion of what constitutes a cluster and how to efficiently find them.
+
+Connectivity models \cite{doi:10.1093/comjnl/26.4.354}, these models are based on the notion that the data points closer in data space exhibit more similarity to each other than the data points lying farther away. These models can follow two approaches. In the first approach, they start with classifying all data points into separate clusters  then aggregating them as the distance decreases. In the second approach, all data points are classified as a single cluster and then partitioned as the distance increases. Also, the choice of distance function is subjective. Examples of these models are hierarchical clustering algorithm and its variants.
+
+Centroid models, These are iterative clustering algorithms in which the notion of similarity is derived by the closeness of a data point to the centroid of the clusters. K-Means clustering algorithm \cite{Derpanis06k-meansclustering} is a popular algorithm that falls into this category. In these models, the number of clusters required at the end have to be mentioned beforehand, which makes it important to have prior knowledge of the dataset. These models run iteratively to find the local optimum.
+
+Distribution models\cite{Johnson2000}, These clustering models are based on the notion of how probable is it that all data points in the cluster belong to the same distribution (For example: Normal, Gaussian). A popular example of these models is Expectation-maximization algorithm which uses multivariate normal distributions.
+
+Density Models \cite{thang2011anomaly}, These models search the data space for areas of varied density of data points in the data space. It isolates various different density regions and assign the data points within these regions in the same cluster. Popular examples of density models are DBSCAN and OPTICS.
+
+The choice of clustering model depends on the data in hand, amount of prior information that we have about the data and the problem we ought to solve. In our case we have chosen Centroid models to solve our problem and specifically the K-Means algorithm. Before, discussing about why K-Means in design section let us look at what K-Means algorithm is all about.
+
+K-means clustering [17] is a clustering analysis algorithm that groups objects based on their feature values into K disjoint clusters. Objects that are classified into the same cluster have similar feature values. K is a positive integer number specifying the number of clusters, and has to be given in advance. Here are the four steps of the K-means clustering
+algorithm:
+
+\begin{itemize}
+	\item Define the number of clusters K.
+	
+	\item Initialize the K cluster centroids. This can be done by arbitrarily dividing all objects into K clusters, computing their centroids, and verifying that all centroids are different from each other. Alternatively, the centroids can be initialized to K arbitrarily chosen, different objects.
+	
+	\item Iterate over all objects and compute the distances to the centroids of all clusters. Assign each object to the cluster with the nearest centroid.
+	
+	\item Recalculate the centroids of both modified clusters.
+	
+	\item Repeat step 3 until the centroids do not change any more.
+\end{itemize}
+
+A distance function is required in order to compute the
+distance (i.e. similarity) between two objects. The most commonly used distance function is the Euclidean one which is defined as:
+
+\begin{center}
+	\boldsymbol{$ d(x,y) = \sqrt{\sum_{i = 1}^{m}(x_i-y_i)^2}$}
+\end{center}
+
+where x = (x1, ..., xm) and y = (y1, ..., ym) are two input vectors with m quantitative features. In the Euclidean distance function, all features contribute equally to the function value. However, since different features are usually measured with different metrics or at different scales, they must be normalized
+before applying the distance function.

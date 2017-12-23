@@ -1,0 +1,36 @@
+%%% -*-LaTeX-*-
+
+\chapter{Introduction}
+
+Understanding the behaviour of flows at port level is well studied whereas understanding the
+behaviour of hosts and groups of hosts is less well studied. The latter is helpful to network admins in making
+informed decisions in day to day activities. Network administrators perform various network mangement activities and equipping them with right information will lead to better performance. 
+Our system analyzes daily network data and extracts host behaviors out of it.  Behavior of a host is an aggregate of the amount of traffic that it sends both in terms of packets and bytes, the set of destinations it tries to connect to , the set of protocols it uses over some time period. For the purposes of our study the time period that we choose is a day. There is nothing inherent about choosing day as a time frame but we expect that the way networks are used varies from the days to nights and a day would be long enough to capture all these variations. These behaviors help us in learning more about what is going in the network. 
+This behavior extraction helped us in gaining interesting insights into our network data.
+
+
+Presently, admins use different tools to mange their networks which provide network-related metrics by default. It is interesting to know about amount of bytes being transferred on the wire but what is more interesting is knowing that half of your traffic is comprised of DNS requests or one fourth of the traffic contains scanners trying to gain access of systems within the network. This is extremely valuable information and serious network monitoring tools should provide this information in addition to the general metrics provided by them such as inbound and outbound traffic, dropped packets and others. Some examples of behaviors that system administrators would be interested in knowing are:
+\begin{itemize}
+	\item If hosts are behaving as clients or servers. This gives admin a clear picture of how the network is being used and who are the major contributors to the traffic.
+	\item If there are a group of hosts that exchange large number of packets containing small bytes then it is normal interactive traffic in the network.	
+	\item If a group of hosts are sending data to a single host. This could be an example of off-site back ups and network admin can use this information to plan the bandwidth accordingly.
+	\item If a group of hosts are trying to scan on multiple ports then it is highly likely that these could be servers trying to infiltrate into the network and admins could take actions appropriately.
+	
+\end{itemize}
+
+Capacity Planning, Traffic Classification, Security Management are few of day to day activities performed by network administrator. We explain here how extracting host behaviors could help network admins in performing these network management activities in an efficent way. Network capacity planning is the process of ensuring that sufficient bandwidth is provisioned such that the committed core network service-level agreements can be met. Generally, core capacity planning is triggered by the admins when they observe that the utilization statistics of a network have crossed a threshold value or when they have data that suggest that congestion issues are likely to occur in the network. But there are a few consequences to this approach, firstly, following a rule based approach without understanding the total network demands will not suffice. There could be situations where even doubling the capacity of network when it is being used at half its capacity will not guarantee SLAs. Secondly, rule based provisioning could lead to over provisioning.Our approach of examining Host level behavior helps in understanding the network-wide traffic demands there by ensuring capacity planning. It helps the network admin to understand the types of host behaviors that are leading to congestion. A lot of bandwidth growth is among hosts that behave same way. And a network operator one might want to decide if the traffic is legitimate or not and act upon. A legitimate case would be when hosts are trying to backup to a server and the network is filled to its capacity. In this case the capacity of network has to be increased. There could be an other situation where there is high amount if bi-directional traffic and these hosts could be bit-torrent users in this case instead of increasing the capacity of network we would decrease it or take suitable action.
+
+Above we have outlined how host behaviors ease the enterprise network management. But, extracting these behaviors from the given NetFlow data requires more than aggregation of network statistics. This is where we have approached data mining techniques to solve this problem. Specifically, we used an unsupervised approach called clustering to extract these behaviors. We also applied other data mining methods to measure the quality of our clustering and find the divergence of host behaviors over a given time.  
+
+
+\section{Contributions}
+\textbf{"By combining clustering and other data mining techniques we can produce a view of host behaviors that helps network administrators to understand behavior of the networks. This system complements existing network analysis tools to ease network management."}
+
+The following are the main contributions from this work which supports and provides evidence for the thesis statement.
+
+1) We have built a system that uses data mining techniques to extract host behaviors from the given Netflow data.
+
+2) We have built a tool to analyze the host behaviors in different dimensions and render it visually to help administrator take decisions.\\
+
+
+The rest of this paper is structured as follows. Section 2 gives a background of data mining. Section 3 presents the design of our system. Section 4 provides the implementation details, while Section 5 discusses related work and plugs our work into context. Section 6 evaluates our system  and demonstrates our claims. Finally, we outline items for future work in Section 7.

@@ -1,0 +1,64 @@
+Feb 2 , 2017   -  3117 scanners
+
+Mar 1, 2017    - 5474 scanners
+
+Mar 10, 2017    - 4315 scanners
+
+April 19, 2017  - 6152 scanners
+
+April 21, 2017 - 9295 scanners
+
+April 22 to May 18 scanners are constant with a count of around 200.
+
+
+Jan 24 2017, 29k Small UDP Flows 
+
+Mar 04 2017, 28k Small UDP Flows 
+
+Mar 09 2017, 39k Small UDP Flows 
+
+April 19, 2017  30k Small UDP Flows 
+
+April 21, 2017  28k Small UDP Flows
+
+
+Jan 24, 2017, 8.5K Heavy DNS Query Responses
+
+Mar 09 2017, 6k Heavy DNS Query Responses
+
+April 21, 2017  4k Heavy DNS Query Responses
+
+April 22 to May 18 Heavy DNS Query Responses are constant with a count of around 1000.
+
+Heavy DNS Query Responses has sharp down falls.
+
+
+Jan 19, 2017, 20K Small TCP flows
+
+Feb 9, 2017, 15K Small TCP flows
+
+April 19, 2017  - 15k Small TCP flows
+
+April 21, 2017 - 16k Small TCP flows
+
+Small TCP Flows also has sharp down falls.
+
+April 22 to May 18 Small TCP Flows are constant with a count of around 1500.
+
+
+Jan 30, 2017, 12K Low Incoming DNS Queries
+
+May 20, 2017, 11K Low Incoming DNS Queries
+
+
+Mar 4, 2017, 4K Heavy Incoming DNS Queries
+
+
+May 21,2017 10k Low DNS Query Responses
+
+
+
+
+
+For example on Jan 8 - The hike in small TCP flows is attributed to miscalassification between Small TCP and Small UDP flows.
+

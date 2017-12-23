@@ -1,0 +1,120 @@
+\relax 
+\citation{dbmsproctime}
+\citation{ramcloudosr}
+\citation{tcpoffload}
+\citation{rdmapatent,rdmacase,rdma}
+\citation{pcie}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Drawing Lessons from Modern NICs}\global \uuthesis@needtocspacetrue }{8}}
+\newlabel{chap:modernnics}{{2}{8}}
+\citation{unetkernelbypass}
+\@writefile{toc}{\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Zero Copy and Copy Out}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Memory Bandwidth}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}NIC Structures in Detail}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Structural Differences in Zero Copy and Copy Out}{11}}
+\citation{ddio}
+\citation{rdma}
+\citation{imdmpaper}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}DDIO}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Inlining}{12}}
+\citation{Ricci+:OSR15}
+\citation{Cloudlab:URL}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Eliminating Contention}{13}}
+\newlabel{sec:code-optimisation}{{2.6}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Evaluation}{13}}
+\citation{infinibandhugepages}
+\citation{farm,rdma}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7.1}Experiment Setup}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7.2}Comparing RDMA Modes for Transmission}{14}}
+\citation{pilaf}
+\citation{zerocopyrangequery}
+\citation{fb-memcache,fb-workload}
+\newlabel{takeaway:verbs}{{2.7.2}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7.3}Record Sizes}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7.4}Performance Impact of Data Layout}{16}}
+\newlabel{sec:zero-copy-tput}{{2.7.4}{16}}
+\citation{ramcloud}
+\citation{intelpcm}
+\newlabel{takeaway:tput}{{2.7.4}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.8}System Impact}{18}}
+\newlabel{sec:impact}{{2.8}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.1}Breakdown of CPU Costs}{19}}
+\newlabel{sec:overhead}{{2.8.1}{19}}
+\newlabel{takeaway:cpu-overhead}{{2.8.1}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.2}CPU Efficiency of Transmission}{20}}
+\citation{ramcloudfast}
+\newlabel{takeaway:cpu-cycles}{{2.8.2}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.3}Memory Bandwidth}{21}}
+\newlabel{takeaway:impact-membw}{{2.8.3}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.4}Memory Bandwidth and Transmission Throughput}{23}}
+\newlabel{sec:membw-savings}{{2.8.4}{23}}
+\newlabel{takeaway:impact-membw-ratio}{{2.8.4}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.5}DDIO Traffic}{24}}
+\newlabel{takeaway:impact-membw}{{2.8.5}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8.6}DDIO Savings in Copy Out}{25}}
+\newlabel{sec:ddiobw-savings}{{2.8.6}{25}}
+\newlabel{takeaway:impact-ddiobw-savings}{{2.8.6}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.9}Anomaly in Transmission Throughput}{26}}
+\newlabel{sec:anomaly}{{2.9}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9.1}PCIe Induced DRAM Accesses and Throughput}{27}}
+\newlabel{takeaway:impact-membw}{{2.9.1}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.10}Conclusions}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Key structures involved in network transmission.\relax }}{28}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:mem-regions}{{2.1}{28}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Experimental cluster configuration.\relax }}{28}}
+\newlabel{tbl:config}{{2.1}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Experiment setup. Each of the 15 clients communicate to a pinned thread on the server.\relax }}{29}}
+\newlabel{fig:setup}{{2.2}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Transmission rate for 200 B records over different RDMA verbs and varying S/G lengths. We only show \lstinline [basicstyle=\ttfamily  ,language=C++]|WRITE| at full capacity and \lstinline [basicstyle=\ttfamily  ,language=C++]|READ| at one read per transmission.\relax }}{30}}
+\newlabel{fig:200B_transrate}{{2.3}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Transmission rate for 1000 B records over different RDMA verbs and varying S/G lengths. We only show \lstinline [basicstyle=\ttfamily  ,language=C++]|WRITE| at full capacity and \lstinline [basicstyle=\ttfamily  ,language=C++]|READ| at one read per transmission.\relax }}{30}}
+\newlabel{fig:1000B_transrate}{{2.4}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Transmission throughput for Zero Copy and Copy Out.\relax }}{30}}
+\newlabel{fig:zero-copy-tput}{{2.5}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Breakdown of absolute CPU overheads for transmission.\relax }}{31}}
+\newlabel{fig:overheads}{{2.6}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Cycles per transmitted byte for large and small records with Zero Copy and Copy Out. Note the log-scale axes.\relax }}{31}}
+\newlabel{fig:cycles}{{2.7}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Measured memory bandwidth impact on the system during transmission.\relax }}{32}}
+\newlabel{fig:membw}{{2.8}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Ratio of memory bandwidth to transmission throughput.\relax }}{33}}
+\newlabel{fig:membw-ratio}{{2.9}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces DRAM accesses (MB/s) LLC misses from DDIO. vs throughput.\relax }}{33}}
+\newlabel{fig:ddiobw}{{2.10}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Percentage of LLC misses that contribute to total memory bandwidth consumed.\relax }}{33}}
+\newlabel{fig:ddiobw-percent}{{2.11}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces DRAM accesses (MB/s) due to LLC misses due to PCIe.\relax }}{34}}
+\newlabel{fig:pciebw}{{2.12}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Ratio of DRAM accesses because of PCIe to transmission throughput.\relax }}{34}}
+\newlabel{fig:pciebw-ratio}{{2.13}{34}}
+\@setckpt{modernnics}{
+\setcounter{page}{35}
+\setcounter{equation}{0}
+\setcounter{enumi}{1}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{1}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{figure}{13}
+\setcounter{table}{1}
+\setcounter{oldchapter}{0}
+\setcounter{oldtocdepth}{0}
+\setcounter{section}{10}
+\setcounter{subsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subsubsection}{0}
+\setcounter{parentequation}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{vrcnt}{0}
+\setcounter{lstnumber}{1}
+\setcounter{float@type}{8}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{lstlisting}{0}
+}

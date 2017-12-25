@@ -14,9 +14,13 @@ level doesnt help us in understanding the total activities each host is undertak
 doesnt figure out which hosts are behaving alike as flow is just an instance of communication
 between two hosts. Hence, we want to aggregate by hosts and group them by
 understanding their behaviour.
+
+
 As we have millions of flows and thousands of hosts to work on, we used data mining
 techniques to find the structure and present them to admins to help them make decisions
 and ease enterprise network management.
+
+
 We have built a system that consumes flow records of network as input and determines
 the host behaviors in the network and groups the hosts accordingly. We also built an
 accompanying tool to this system that analyzes the host behaviors in different dimensions.

@@ -154,8 +154,8 @@
 %%%\degree                 {Master of Science}
 %%% However, multiline degrees are possible, and are done like this:
 \degree                 {Master of Science \\
-                         in \\
-                         Computer Science}
+	in \\
+	Computer Science}
 
 %%% College- and Department-level definitions:
 \approvaldepartment     {Computer Science}
@@ -181,114 +181,114 @@
 
 %%% Dates that must be adjusted for each academic term, and be permitted
 %%% according to the University of Utah Thesis Office:
-\submitdate             {May 2017}
-\copyrightyear          {2017}
+\submitdate             {May 2018}
+\copyrightyear          {2018}
 
 %%% Dates on which committee members approved the thesis
-\chairdateapproved      {}
-\firstdateapproved      {}
-\seconddateapproved     {}
-\thirddateapproved      {}
-\fourthdateapproved     {}
+\chairdateapproved      {23 Feb 2017}
+\firstdateapproved      {23 Feb 2017}
+\seconddateapproved     {23 Feb 2017}
+\thirddateapproved      {23 Feb 2017}
+\fourthdateapproved     {23 Feb 2017}
 
 %%% ====================================================================
 %%% Typesetting begins here:
 
 \begin{document}
-
-%% Comment out items by inserting a percent % character
-\frontmatterformat
-\titlepage
-\copyrightpage
-\dissertationapproval
-\setcounter {page}     {2}             % UofU Thesis Office demands abstract on p. iii: start one lower
-\preface    {abstract} {Abstract}
-%\preface    {timeline-preface} {Timeline}
-
-
-%\dedicationpage
-\tableofcontents
-\listoffigures
-\listoftables
-%
-%%% Optional front matter page(s), made from source "notation.tex". If
-%%% you don't need it, then comment out the \optionalfront command
-%%% line!  The first argument is the (unnumbered) section header for
-%%% the text supplied by the file input by the second argument; that
-%%% file must NOT contain \chapter, \section, \subsection, \ldots{}
-%%% sectioning commands.
-
-%\optionalfront {Notation and Symbols} {\input{notation}}
-
-%%% Uncomment this is you want the contents of acknowledge.tex typeset here.
-%%% Note that both "Acknowledgement" and "Acknowledgment" are accepted
-%%% spellings of that word.
-
-% \preface{acknowledge}{Acknowledgements}
-
-%%% Demonstrations of thesis typesetting features for the sample thesis.
-%%% Once you have seen the examples, you can comment out this line.
-%%: \optionalfront {Typesetting Experiments} {\input{samples.tex}}
-
-\maintext       % Start normal page numbering: parts and chapters follow.
-
-\pagestyle{headings} % NEW for sample-thesis-6
-
-\include {chap1}
-\include {chap2}
-\include {chap3}
-\include {chap4}
-\include {chap5}
-\include {chap6}
-% \numberofappendices = 1   % Set 0 for none, else number of appendices.
-\numberofappendices = 3
-\appendix       % Chapters, sections are now appendix style A, A.1, A.2, B, C, D, ...
-
-%%\include {appa}
-%%\include {appb}
-%%\include {appc}
-
-%%% The choice of bibliography style is a major decision, jointly made
-%%% by you, your thesis advisor and the thesis editor. Common choices are
-%%% one of the four standard BibTeX styles (abbrv, alpha, plain, and unsrt),
-%%% or enhanced styles like acm, amsplain, siam, and hundreds of others
-%%% available in TeX Live, and other Unix and Windows TeX distributions.
-%%%
-%%% Do NOT handcode your reference list, because you are unlikely to
-%%% achieve consistency or conformance to the University of Utah Thesis Office
-%%% requirements: let BibTeX do that tedious job for you!
-%%%
-%%% Remember that reference-list metadata in BibTeX files remains
-%%% constant across journals and publishers, and is are often reused
-%%% in other documents and shared with others, whereas formatted
-%%% reference-list styles change: with BibTeX, you only need to record
-%%% the metadata once.
-%%%
-%%% If you prefer named, rather than numeric or tagged citations, you
-%%% may use styles such as authordate{1,2,3,4}, chicago, harvard, or
-%%% natbib.  Be aware, however, that most of those require an
-%%% additional \usepackage{} command to supply \LaTeX{} with
-%%% definitions of commands that the style needs, and that there are
-%%% usually several flavors of LaTeX citation commands beyond the
-%%% standard \cite{} command that you need to understand before you
-%%% can use them properly in your prose.
-
-%%% This tells BibTeX to read siam.bst from the first directory where
-%%% it is found in the BSTINPUTS search path:
-
-\bibliographystyle{siam}
-
-%%% This can also specify a comma-separated list (without embedded
-%%% spaces) of *.bib files found by BibTeX in its BIBINPUTS search
-%%% path.  The argument \jobname means the base name of the top-level
-%%% LaTeX file, avoiding an unnecessary filename dependence here.
-%%%
-%%% BibTeX writes only one .bbl file, no matter how many *.bib files
-%%% are listed here, using the name \jobname.bbl.
-%%%
-%%% LaTeX reads BibTeX's formatted reference list from the file
-%%% \jobname.bbl.
-
-\bibliography{\jobname}
-
-\end {document}
+	
+	%% Comment out items by inserting a percent % character
+	\frontmatterformat
+	\titlepage
+	\copyrightpage
+	\dissertationapproval
+	\setcounter {page}     {2}             % UofU Thesis Office demands abstract on p. iii: start one lower
+	\preface    {abstract} {Abstract}
+	%\preface    {timeline-preface} {Timeline}
+	
+	
+	%\dedicationpage
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	%
+	%%% Optional front matter page(s), made from source "notation.tex". If
+	%%% you don't need it, then comment out the \optionalfront command
+	%%% line!  The first argument is the (unnumbered) section header for
+	%%% the text supplied by the file input by the second argument; that
+	%%% file must NOT contain \chapter, \section, \subsection, \ldots{}
+	%%% sectioning commands.
+	
+	%\optionalfront {Notation and Symbols} {\input{notation}}
+	
+	%%% Uncomment this is you want the contents of acknowledge.tex typeset here.
+	%%% Note that both "Acknowledgement" and "Acknowledgment" are accepted
+	%%% spellings of that word.
+	
+	% \preface{acknowledge}{Acknowledgements}
+	
+	%%% Demonstrations of thesis typesetting features for the sample thesis.
+	%%% Once you have seen the examples, you can comment out this line.
+	%%: \optionalfront {Typesetting Experiments} {\input{samples.tex}}
+	
+	\maintext       % Start normal page numbering: parts and chapters follow.
+	
+	\pagestyle{headings} % NEW for sample-thesis-6
+	
+	\include {chap1}
+	\include {chap2}
+	\include {chap3}
+	\include {chap4}
+	\include {chap5}
+	\include {chap6}
+	% \numberofappendices = 1   % Set 0 for none, else number of appendices.
+	\numberofappendices = 3
+	\appendix       % Chapters, sections are now appendix style A, A.1, A.2, B, C, D, ...
+	
+	%%\include {appa}
+	%%\include {appb}
+	%%\include {appc}
+	
+	%%% The choice of bibliography style is a major decision, jointly made
+	%%% by you, your thesis advisor and the thesis editor. Common choices are
+	%%% one of the four standard BibTeX styles (abbrv, alpha, plain, and unsrt),
+	%%% or enhanced styles like acm, amsplain, siam, and hundreds of others
+	%%% available in TeX Live, and other Unix and Windows TeX distributions.
+	%%%
+	%%% Do NOT handcode your reference list, because you are unlikely to
+	%%% achieve consistency or conformance to the University of Utah Thesis Office
+	%%% requirements: let BibTeX do that tedious job for you!
+	%%%
+	%%% Remember that reference-list metadata in BibTeX files remains
+	%%% constant across journals and publishers, and is are often reused
+	%%% in other documents and shared with others, whereas formatted
+	%%% reference-list styles change: with BibTeX, you only need to record
+	%%% the metadata once.
+	%%%
+	%%% If you prefer named, rather than numeric or tagged citations, you
+	%%% may use styles such as authordate{1,2,3,4}, chicago, harvard, or
+	%%% natbib.  Be aware, however, that most of those require an
+	%%% additional \usepackage{} command to supply \LaTeX{} with
+	%%% definitions of commands that the style needs, and that there are
+	%%% usually several flavors of LaTeX citation commands beyond the
+	%%% standard \cite{} command that you need to understand before you
+	%%% can use them properly in your prose.
+	
+	%%% This tells BibTeX to read siam.bst from the first directory where
+	%%% it is found in the BSTINPUTS search path:
+	
+	\bibliographystyle{siam}
+	
+	%%% This can also specify a comma-separated list (without embedded
+	%%% spaces) of *.bib files found by BibTeX in its BIBINPUTS search
+	%%% path.  The argument \jobname means the base name of the top-level
+	%%% LaTeX file, avoiding an unnecessary filename dependence here.
+	%%%
+	%%% BibTeX writes only one .bbl file, no matter how many *.bib files
+	%%% are listed here, using the name \jobname.bbl.
+	%%%
+	%%% LaTeX reads BibTeX's formatted reference list from the file
+	%%% \jobname.bbl.
+	
+	\bibliography{\jobname}
+	
+	\end {document}

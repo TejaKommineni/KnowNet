@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  25 DEC 2017 08:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  2 JAN 2018 20:11
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -513,8 +513,7 @@ This is uuthesis-2016-h.sty version 1.08 <2 May 2016>
 (dissertationapproval.sty)
 \uuthesis@chaptersectionspace=\dimen172
 ) (mythesis.sty) (sample-thesis-0.aux (chap1.aux)
-(chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux)
-(tbl-timeline-preface.aux))
+(chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux))
 \openout1 = `sample-thesis-0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 197.
@@ -687,7 +686,22 @@ DEBUG: @chapter: arg 1 = [Introduction]
 DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax I
 ntroduction}]
 CHAPTER 1.
-[1
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 5.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 5.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 5.
+
+Underfull \vbox (badness 4132) has occurred while \output is active []
+
+ [1
 
 
 ]
@@ -696,15 +710,15 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 [2]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 26.
+(Font)              scaled to size 15.0049pt on input line 24.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 26.
+(Font)              scaled to size 10.42007pt on input line 24.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 26.
+(Font)              scaled to size 15.0049pt on input line 24.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 26.
+(Font)              scaled to size 10.42007pt on input line 24.
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
@@ -727,16 +741,8 @@ CHAPTER 2.
 ]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 33.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 33.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 33.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 33.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 33.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 33.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1047,13 +1053,13 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 [35] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
 (chap5.aux) (chap6.aux)) ) 
 Here is how much of TeX's memory you used:
- 13901 strings out of 493323
- 271597 string characters out of 3138204
- 307983 words of memory out of 3000000
- 17025 multiletter control sequences out of 15000+200000
- 51637 words of font info for 145 fonts, out of 3000000 for 9000
+ 13909 strings out of 493323
+ 271645 string characters out of 3138204
+ 307695 words of memory out of 3000000
+ 17034 multiletter control sequences out of 15000+200000
+ 56855 words of font info for 158 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,65p,2152b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,9n,65p,2153b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9_1/fonts/enc/dvips/base/8
 r.enc}<C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
@@ -1065,7 +1071,7 @@ onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/u
 rw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino
 /uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb>
 <C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (42 pages, 933777 bytes).
+Output written on sample-thesis-0.pdf (42 pages, 934069 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

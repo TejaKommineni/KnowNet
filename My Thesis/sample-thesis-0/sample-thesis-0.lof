@@ -1,9 +1,10 @@
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture.}}{8}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NetFlow Fields captured in a Flow }}{10}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Skewed data before transformation}}{15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized data}}{15}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Elbow Method}}{19}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Silhouette Method}}{21}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Plot of number of clusters formed over a time period.}}{30}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Compare Host Behaviors on two days.}}{30}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Compare Host Behaviors over a time period.}}{31}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces SolarWinds in comparison with our system}}{2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture.}}{10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces NetFlow Fields captured in a Flow }}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Skewed data before transformation}}{17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized data}}{17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Elbow Method}}{21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Silhouette Method}}{23}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Plot of number of clusters formed over a time period.}}{32}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Compare Host Behaviors on two days.}}{32}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Compare Host Behaviors over a time period.}}{33}

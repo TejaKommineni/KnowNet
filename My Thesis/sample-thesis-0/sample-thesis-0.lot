@@ -1,7 +1,7 @@
-\contentsline {table}{\numberline {3.1}{\ignorespaces Netflow Raw Data.}}{10}
-\contentsline {table}{\numberline {3.2}{\ignorespaces After Handling Missing Data}}{12}
-\contentsline {table}{\numberline {3.3}{\ignorespaces After Converting Categorical data to Numerical}}{12}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Aggregated data by Source IP}}{13}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Cluster Centers}}{21}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Cluster Labeling}}{23}
-\contentsline {table}{\numberline {6.1}{\ignorespaces Planned Evaluations}}{31}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Netflow Raw Data.}}{12}
+\contentsline {table}{\numberline {3.2}{\ignorespaces After Handling Missing Data}}{14}
+\contentsline {table}{\numberline {3.3}{\ignorespaces After Converting Categorical data to Numerical}}{14}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Aggregated data by Source IP}}{15}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Cluster Centers}}{23}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Cluster Labeling}}{25}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Planned Evaluations}}{33}

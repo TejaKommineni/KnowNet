@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  3 JAN 2018 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  11 JAN 2018 21:01
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -706,51 +706,39 @@ File: intro.png Graphic file (type png)
  <use intro.png>
 Package pdftex.def Info: intro.png used on input line 22.
 (pdftex.def)             Requested size: 447.77634pt x 202.65868pt.
+Missing character: There is no Ô in font pplr7t!
+Missing character: There is no ¨ in font pplr7t!
+Missing character: There is no Å in font pplr7t!
 
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
 [2 <./intro.png>]
-Missing character: There is no Ô in font pplr7t!
-Missing character: There is no ¨ in font pplr7t!
-Missing character: There is no Å in font pplr7t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
 [3]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 50.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 50.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 50.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 50.
+)
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [4]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 54.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 54.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 54.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 54.
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-
- []
-
-)
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[5]
 \openout2 = `chap2.aux'.
 
- (chap2.tex
+
+(chap2.tex
 DEBUG: @chapter: arg 1 = [BACKGROUND]
 DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax B
 ACKGROUND}]
 CHAPTER 2.
-[6
+[5
 
 
 
@@ -760,24 +748,21 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 33.
 
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[7])
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[8])
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[9]
+[8]
 \openout2 = `chap3.aux'.
 
  (chap3.tex
@@ -785,42 +770,57 @@ DEBUG: @chapter: arg 1 = [Design Overview]
 DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax D
 esign Overview}]
 CHAPTER 3.
-<architecture.png, id=65, 1254.6875pt x 436.63126pt>
-File: architecture.png Graphic file (type png)
- <use architecture.png>
-Package pdftex.def Info: architecture.png used on input line 16.
-(pdftex.def)             Requested size: 501.86612pt x 174.6494pt.
-
-[10
 
 
+pdfTeX warning: pdflatex.exe (file ./architecture.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<architecture.pdf, id=62, 794.97pt x 614.295pt>
+File: architecture.pdf Graphic file (type pdf)
+ <use architecture.pdf>
+Package pdftex.def Info: architecture.pdf used on input line 16.
+(pdftex.def)             Requested size: 556.4752pt x 430.00356pt.
 
- <./architecture.png>] <netflow.png, id=71, 484.30937pt x 197.23688pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9
+
+
+
+]
+Underfull \vbox (badness 7238) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [10 <./architecture.pdf>] <netflow.png, id=71, 484.30937pt x 197.23688pt>
 File: netflow.png Graphic file (type png)
 
 <use netflow.png>
 Package pdftex.def Info: netflow.png used on input line 32.
 (pdftex.def)             Requested size: 390.25534pt x 158.93936pt.
- <raw_data.png, id=72, 963.6pt x 542.025pt>
-File: raw_data.png Graphic file (type png)
 
-<use raw_data.png>
-Package pdftex.def Info: raw_data.png used on input line 44.
-(pdftex.def)             Requested size: 385.43317pt x 216.80615pt.
 
+pdfTeX warning: pdflatex.exe (file ./raw_data.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<raw_data.pdf, id=72, 794.97pt x 614.295pt>
+File: raw_data.pdf Graphic file (type pdf)
+ <use raw_data.pdf>
+Package pdftex.def Info: raw_data.pdf used on input line 45.
+(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [11 <./netflow.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [11]
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [12 <./netflow.png> <./raw_data.png>]
-<missing_data.png, id=81, 564.1075pt x 372.89313pt>
+ [12 <./raw_data.pdf>] <missing_data.png, id=82, 564.1075pt x 372.89313pt>
 File: missing_data.png Graphic file (type png)
- <use missing_data.png>
-Package pdftex.def Info: missing_data.png used on input line 60.
+
+<use missing_data.png>
+Package pdftex.def Info: missing_data.png used on input line 62.
 (pdftex.def)             Requested size: 338.4671pt x 223.7376pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -828,31 +828,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [13]
-<categorical.png, id=85, 565.11125pt x 368.37625pt>
+ [13 <./missing_data.png>] <categorical.png, id=88, 565.11125pt x 368.37625pt>
 File: categorical.png Graphic file (type png)
- <use categorical.png>
-Package pdftex.def Info: categorical.png used on input line 72.
+
+<use categorical.png>
+Package pdftex.def Info: categorical.png used on input line 75.
 (pdftex.def)             Requested size: 339.06937pt x 221.02744pt.
 
+Underfull \vbox (badness 7869) has occurred while \output is active []
+
+
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [14 <./missing_data.png> <./categorical.png>]
-<aggregated.png, id=90, 719.68875pt x 199.74625pt>
+ [14 <./categorical.png>] <aggregated.png, id=92, 719.68875pt x 199.74625pt>
 File: aggregated.png Graphic file (type png)
- <use aggregated.png>
-Package pdftex.def Info: aggregated.png used on input line 81.
+
+<use aggregated.png>
+Package pdftex.def Info: aggregated.png used on input line 84.
 (pdftex.def)             Requested size: 431.81659pt x 119.84866pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [15 <./aggregated.png>] <feature.png, id=94, 351.3125pt x 250.9375pt>
+ [15 <./aggregated.png>] <feature.png, id=96, 351.3125pt x 250.9375pt>
 File: feature.png Graphic file (type png)
 
 <use feature.png>
 Package pdftex.def Info: feature.png used on input line 97.
 (pdftex.def)             Requested size: 316.17831pt x 225.84164pt.
- <transformed.png, id=95, 351.3125pt x 250.9375pt>
+ <transformed.png, id=97, 351.3125pt x 250.9375pt>
 File: transformed.png Graphic file (type png)
 
 <use transformed.png>
@@ -864,82 +870,73 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [16 <./feature.png>]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [17 <./feature.png> <./transformed.png>]
+ [17 <./transformed.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [18]
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [19]
-Missing character: There is no ‚ in font pplr7t!
-Missing character: There is no Ä in font pplr7t!
-Missing character: There is no ô in font pplr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[20] <elbow.png, id=115, 1028.34187pt x 578.16pt>
+<elbow.png, id=114, 1028.34187pt x 578.16pt>
 File: elbow.png Graphic file (type png)
  <use elbow.png>
 Package pdftex.def Info: elbow.png used on input line 170.
 (pdftex.def)             Requested size: 411.32947pt x 231.2599pt.
 
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[20]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [21 <./elbow.png>] <silhouette.png, id=119, 702.625pt x 501.875pt>
+ [21 <./elbow.png>] <silhouette.png, id=121, 702.625pt x 501.875pt>
 File: silhouette.png Graphic file (type png)
 
 <use silhouette.png>
 Package pdftex.def Info: silhouette.png used on input line 195.
 (pdftex.def)             Requested size: 421.57825pt x 301.12732pt.
- <cluster_centers.png, id=120, 589.70313pt x 325.71687pt>
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[22 <./silhouette.png>]
+<cluster_centers.png, id=126, 589.70313pt x 325.71687pt>
 File: cluster_centers.png Graphic file (type png)
 
 <use cluster_centers.png>
-Package pdftex.def Info: cluster_centers.png used on input line 205.
+Package pdftex.def Info: cluster_centers.png used on input line 222.
 (pdftex.def)             Requested size: 353.8246pt x 195.43163pt.
 
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[22]
-Underfull \vbox (badness 2932) has occurred while \output is active []
-
-
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[23 <./silhouette.png> <./cluster_centers.png>]
-<cluster_label.png, id=128, 396.98312pt x 428.09938pt>
+<cluster_label.png, id=127, 396.98312pt x 428.09938pt>
 File: cluster_label.png Graphic file (type png)
  <use cluster_label.png>
 Package pdftex.def Info: cluster_label.png used on input line 229.
 (pdftex.def)             Requested size: 238.1917pt x 256.8616pt.
 
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [24])
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[25 <./cluster_label.png>]
+[23]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [24 <./cluster_centers.png> <./cluster_label.png>])
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[25]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
@@ -1002,47 +999,44 @@ DEBUG: @chapter: arg 1 = [Results]
 DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax R
 esults}]
 CHAPTER 6.
-<constant.png, id=153, 281.55188pt x 177.16188pt>
+[31
+
+
+
+] <constant.png, id=158, 281.55188pt x 177.16188pt>
 File: constant.png Graphic file (type png)
  <use constant.png>
-Package pdftex.def Info: constant.png used on input line 30.
+Package pdftex.def Info: constant.png used on input line 39.
 (pdftex.def)             Requested size: 281.55118pt x 177.16144pt.
 
-Underfull \vbox (badness 2269) has occurred while \output is active []
-
- [31
-
-
-
-]
-<tool_compare_days.png, id=157, 961.09062pt x 473.26813pt>
+<tool_compare_days.png, id=159, 961.09062pt x 473.26813pt>
 File: tool_compare_days.png Graphic file (type png)
 
 <use tool_compare_days.png>
 Package pdftex.def Info: tool_compare_days.png used on input line 45.
 (pdftex.def)             Requested size: 432.48679pt x 212.96869pt.
 
-<tool_compare_week.png, id=158, 963.6pt x 542.025pt>
+<tool_compare_week.png, id=160, 963.6pt x 542.025pt>
 File: tool_compare_week.png Graphic file (type png)
 
 <use tool_compare_week.png>
 Package pdftex.def Info: tool_compare_week.png used on input line 56.
 (pdftex.def)             Requested size: 433.616pt x 243.90898pt.
 
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[32 <./constant.png> <./tool_compare_days.png>]
-<evaluation.png, id=163, 682.04813pt x 406.01688pt>
+<evaluation.png, id=161, 682.04813pt x 406.01688pt>
 File: evaluation.png Graphic file (type png)
  <use evaluation.png>
-Package pdftex.def Info: evaluation.png used on input line 68.
+Package pdftex.def Info: evaluation.png used on input line 69.
 (pdftex.def)             Requested size: 409.23204pt x 243.612pt.
 
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[33 <./tool_compare_week.png> <./evaluation.png>]
+[32 <./constant.png>]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[33 <./tool_compare_days.png> <./tool_compare_week.png>]
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ô in font pplr7t!
@@ -1055,7 +1049,7 @@ Missing character: There is no ù in font pplr7t!
 )
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [34]
+ [34 <./evaluation.png>]
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
@@ -1068,13 +1062,13 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 [37] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
 (chap5.aux) (chap6.aux)) ) 
 Here is how much of TeX's memory you used:
- 13919 strings out of 493323
- 271750 string characters out of 3138204
- 307735 words of memory out of 3000000
- 17043 multiletter control sequences out of 15000+200000
+ 13923 strings out of 493323
+ 271780 string characters out of 3138204
+ 307764 words of memory out of 3000000
+ 17047 multiletter control sequences out of 15000+200000
  56855 words of font info for 158 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,65p,2153b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,9n,65p,2153b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9_1/fonts/enc/dvips/base/8
 r.enc}<C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
@@ -1086,9 +1080,9 @@ onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/u
 rw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino
 /uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb>
 <C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (44 pages, 1243438 bytes).
+Output written on sample-thesis-0.pdf (44 pages, 1435987 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
+ 222 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

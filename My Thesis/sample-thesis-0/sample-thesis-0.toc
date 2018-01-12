@@ -4,24 +4,26 @@
 \unhbox \voidb@x \\[-1.2ex] \kern -1.5em\contentsline {}{\textbf {CHAPTERS}}{}
 \contentsline {chapter}{\numberline {1.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Introduction}\global \uuthesis@needtocspacetrue }{1}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {1.1}Contributions}{5}
-\contentsline {chapter}{\numberline {2.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {BACKGROUND}\global \uuthesis@needtocspacetrue }{6}
-\contentsline {subsection}{\numberline {2.0.1}Unsupervised Learning}{7}
-\contentsline {chapter}{\numberline {3.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Design Overview}\global \uuthesis@needtocspacetrue }{10}
+\contentsline {section}{\numberline {1.1}Contributions}{4}
+\contentsline {chapter}{\numberline {2.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {BACKGROUND}\global \uuthesis@needtocspacetrue }{5}
+\contentsline {subsection}{\numberline {2.0.1}Unsupervised Learning}{6}
+\contentsline {chapter}{\numberline {3.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Design Overview}\global \uuthesis@needtocspacetrue }{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {3.1}Components}{10}
+\contentsline {section}{\numberline {3.1}Components}{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsection}{\numberline {3.1.1}Netflow Collection}{10}
+\contentsline {subsection}{\numberline {3.1.1}Netflow Collection}{9}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {subsubsection}{\numberline {3.1.1.1}What is NetFlow}{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsection}{\numberline {3.1.2}Feature Engineering}{11}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {3.1.2.1}Missing Data}{12}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Missing Data}{11}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.2}Converting categorical to Numerical Variables}{13}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.3}Feature Scaling}{15}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {3.1.2.4}Feature Transformation}{16}
+\contentsline {subsubsection}{\numberline {3.1.2.4}Feature Transformation}{15}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.5}Feature Selection}{16}
 \contentsline {section}{\numberline {3.2}Pattern Detector}{18}
@@ -34,5 +36,5 @@
 \contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{30}
 \contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{31}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {6.1}Evaluation}{33}
+\contentsline {section}{\numberline {6.1}Evaluation}{32}
 \contentsline {chapter}{REFERENCES}{36}

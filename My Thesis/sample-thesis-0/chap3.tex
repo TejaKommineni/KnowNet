@@ -10,24 +10,24 @@ different components fit into the architecture.
 \section{Components}
 
 Our design is comprised of four essential components: Netflow Collection, Feature Engineering, Pattern Detector, and
-applications as shown in figure~\ref{fig:arch}.
+applications as shown in \figref{arch}.
 
-\begin{figure}[ht]
-	\centerline{\includegraphics[scale = 0.4]{architecture.png}}
+\begin{figure}[t]
+	\centerline{\includegraphics[scale = 0.7]{architecture.pdf}}
 	\caption{Architecture.}%
 	\figlabel{arch}
 \end{figure}
 
 \subsection{Netflow Collection}
 While the term NetFlow has become a de-facto industry standard, many other network hardware manufacturers support alternative flow technologies namely Jflow, s-flow, NetStream, etc.. The University servers from which we have collected the data for this experiment have been equipped with NetFlow on it which led to using NetFlow as our Flow technology. 
-\subsubsection*{What is NetFlow}
+\subsubsection{What is NetFlow}
 NetFlow is a proprietary protocol for collecting IP flow packets information on networks. Though some variant versions exist, a NetFlow record summarizes a network traffic flow as its source and destination IP addresses, source and destination ports, transportation protocol as well as the traffic volume transmitted during this flow session. NetFlow operates by creating new flow cache entries when a packet is received that belongs to a new flow. Each flow cache keeps track of the number of bytes and packets of similar traffic during certain period of time until the cache expires, then this information is exported to a collector. 
 
 The captured flows are exported to NetFlow collectors at frequent intervals. The flows that are to be exported are determined based on the following rules: 1) when it is inactive for a certain time without receiving any new packets. 2) If the flow is active than max threshold time which is configurable. 3) If a TCP flag (FIN / RST) indicates the flow is terminated. NetFlow provides a powerful tool to keep track of what kind of traffic is going on the network, and are widely used for network monitoring. Most vendors support different flavors of similar flow monitoring approaches and a common standardization is done within the IETF IPFIX working group.
 
-There are different variants of NetFlow with each advanced version giving additional information about the flow. The fields that we used in our experiment and that are supported across the versions are in figure ~\ref{fig:netflow}.
+There are different variants of NetFlow with each advanced version giving additional information about the flow. The fields that we used in our experiment and that are supported across the versions are in \figref{netflow}.
 
-\begin{figure}[ht]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.9\textwidth]{netflow.png}
 	\caption{NetFlow Fields captured in a Flow }
@@ -40,9 +40,10 @@ Feature Engineering is the process of transforming raw
 data into features that better represent the underlying structure to the models so that they increase the accuracy of the model when applied on unseen data. This step comes before modeling and after seeing the data.
 Features extracted from the data directly influence the models generated and predictions made out of it. The better the features are the better the results will be. The results that we achieve when we are using ML/DM approaches are a factor of the data set in hand, the features generated , the prediction model and the way the problem is framed. Most of the times even simpler models perform better if the features describe the structure inherent to the data. 
 Below we describe different steps involved in the Feature Engineering with sample set of data.
-\begin{table}[ht]
-	\centerline{\includegraphics[scale = 0.4]{raw_data.png}}
+\begin{table}[b]
 	\caption{Netflow Raw Data.}%
+	\centerline{\includegraphics[scale = 0.6]{raw_data.pdf}}
+	
 	 \tablabel{raw_data}
 \end{table}
  
@@ -56,9 +57,10 @@ Below we describe different steps involved in the Feature Engineering with sampl
 
 3) Delete columns that are missing too many values to be useful. If a feature is missing too many values, or if there is not enough information available to make reasonable assumptions about how to replace the missing values, you can delete the column entirely. If the feature does not provide useful information, including it can slow down the model's runtime. For many algorithms, having many noisy or uninformative columns can actually degrade their performance. In those cases, deleting these columns during data preparation is the best policy. In our case there were handful of columns that fell under this category and are discarded. flags shown in the \tabref{raw_data} is one among them. After handling missing values our data looks as in \tabref{missing_data}.
 
-\begin{table}[ht]
-	\centerline{\includegraphics[scale = 0.6]{missing_data.png}}
+\begin{table}[b]
 	\caption{After Handling Missing Data}%
+	\centerline{\includegraphics[scale = 0.6]{missing_data.png}}
+	
 	\tablabel{missing_data}
 \end{table}
 
@@ -68,18 +70,18 @@ Below we describe different steps involved in the Feature Engineering with sampl
 Features could be either numerical or categorical variables. When dealing with algorithms that work on numerical data we have to make sure that the categorical variables are handled.
 For example, in our case feature protocol, has values such as TCP, UDP and others. One approach is to encode them as 0, 1, and 2, respectively converting them to numerical variables. This could pose a problem when using distance measuring algorithms as the distance between the encoded attributes, like 1 (UDP) minus 0 (TCP) doesn't mean anything. Another approach would be to create a feature for each value of the categorical variable and mark it as 0 or 1 based on if the value is present or not. There are both pros and cons to this method. The pros are if we choose to aggregate the values on all features this conversion gives a numerical value to work with. The cons are scaling and standardization could be affected. \tabref{categorical} represents data set after this step.
 
-\begin{table}[ht]
-	\centerline{\includegraphics[scale = 0.6]{categorical.png}}
+\begin{table}[b]
 	\caption{After Converting Categorical data to Numerical}%
+	\centerline{\includegraphics[scale = 0.6]{categorical.png}}
 	\tablabel{categorical}
 \end{table}
 
 Above two steps fall under a family of techniques called data cleaning. After the data cleaning and removing the irrelevant columns of data using domain knowledge we aggregated netflow data based on source IP as our work focuses learning about hosts from their aggregate data. The \tabref{aggregated} shows a sample of aggregated data with ten features.
 The first record in the \tabref{aggregated} conveys the information that in the given data set the host 59.2.154.56 (source IP) had appeared 450 times. Out of those 450 instances it had contacted 116 unique hosts. A total of 110 different source ports were used in the 450 flows and all the packets were sent to single destination port. The columns TCP, UDP, ICMP indicate how many of these flows fall under each category. So of the 450 flows there are 406 flows in which TCP protocol was used , 4 had UDP protocol used and the rest 40 had used ICMP protocol. And the columns Total Duration, Total Bytes, Total Packets indicate the respective information exchanged by this sourceIP on a whole. This aggregated data is what we use for learning host behaviors. But, before that we have to apply few other feature engineering techniques as described below.
 
-\begin{table}[ht]
-	\centerline{\includegraphics[scale = 0.6]{aggregated.png}}
+\begin{table}[b]
 	\caption{Aggregated data by Source IP}%
+	\centerline{\includegraphics[scale = 0.6]{aggregated.png}}	
 	\tablabel{aggregated}
 \end{table}
 
@@ -88,18 +90,16 @@ The first record in the \tabref{aggregated} conveys the information that in the 
 Feature Scaling/Feature Normalization, a method used to standardize the range of independent features of data. Failure to standardize variables might result in algorithms placing undue significance to variables that are on a higher scale. For example from the \tabref{aggregated} it is evident that the total packets and total bytes have higher magnitude compared to total flows and destinations. This range difference shouldn't bias our results.
 There are different ways to do feature scaling namely, Min-Max scaling, Variance scaling, L2 normalization etc.. The choice depends on the data and different statistics of it such as Mean, Variance, L2 norm. Scaling is not advisable in all instances we might	loose valuable information if applied without proper thought. In our case we have chosen simple Min-Max scaling as our goal was merely to change the range of the data and not the distribution and Min-Max scaling helps us in achieving this at a lower cost.
 
-
-
 \subsubsection{Feature Transformation} 
 Transforming Non-normal distribution to Normal, many ML/DM tools perform well on normalized data and having skewed data will give inaccurate results. Log transformations are generally used to normalize the skewed data which is the case with most network data. After transforming the data if it doesn't capture the essence of original data we could look at other options such as square root, cube root. BoxCox is also another technique that changes the distribution of variables from non-normal to normal or near normal. \figref{feature} shows the distribution of a feature Total Flows from our aggregated data, as seen from the graph it is heavily skewed towards left and this can be directly attributed to the data set we have in hand. The graph indicates that in most instances number of flows in which a source IP appears is less than 100 and hence we employ transformation techniques to decrease the amount of skewness in the data.  \figref{feature_transformed} shows the same data after applying log transformation. 
 
-\begin{figure}[ht]
+\begin{figure}[t]
 	\centerline{\includegraphics[scale = 0.9]{feature.png}}
 	\caption{Skewed data before transformation}%
 	\figlabel{feature}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[t]
 	\centerline{\includegraphics[scale = 0.9]{transformed.png}}
 	\caption{Normalized data}%
 	\figlabel{feature_transformed}
@@ -151,13 +151,13 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  \begin{itemize}
  	\item Compute k-means clustering for different values of k. For instance, by varying k from 1 to 50 clusters.
  	
- 	\item For each k, calculate the total within-cluster sum of square ($W_k$).\\
+ 	\item For each k, calculate the total within-cluster sum of square ($W_k$).
  	\begin{center}
  	 	\boldsymbol{$D_k = \sum_{x_i \in C_k} \sum_{x_j \in C_k} ||{x_i -x_j}||^2$}	 \\
  	 	
  	 	
  	 	\boldsymbol{$ W_k = \sum_{1}^{K} \frac{1}{n_k} D_k$}
- 	\end{center} 
+ 	\end{center}  
     Where K is the number of clusters, $n_k$ is the number of points in cluster k and $D_k$ is the sum of distances between all points in the cluster.
  	\item Plot the curve of wss according to the number of clusters k. 	
  	\item The location of a bend (knee) in the plot is generally considered as an indicator of the appropriate number of clusters.
@@ -166,7 +166,7 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  	The graph depicts the amount of information we are gaining with addition of each cluster. the first clusters will add much information, but at some point the marginal gain will drop, giving an angle in the graph. The number of clusters are chosen at this point, hence the elbow criterion. \figref{elbow} shows the elbow curve obtained for our data set on a chosen day. This method gave us a value of 7 for K.
  	
 
-\begin{figure}[ht]
+\begin{figure}[t]
 	\centerline{\includegraphics[scale = 0.4]{elbow.png}}
 	\caption{Elbow Method}%
 	\figlabel{elbow}
@@ -191,7 +191,7 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  
   The intuition behind this approach is for a point as a(i) is a measure of how dissimilar i is to its own cluster, a small value means it is well matched. Furthermore, a large b(i) implies that i is badly matched to its neighboring cluster. Thus an s(i) close to one means that the data is appropriately clustered. if s(i) is close to negative one, then by the same logic we see that i would be more appropriate if it was clustered in its neighboring cluster. The average s(i) over all data of a cluster is a measure of how tightly grouped all the data in the cluster are. Thus the average s(i) over all data of the entire dataset is a measure of how appropriately the data have been clustered. \figref{silhouette} shows the the plot obtained using silhouette technique. 
  
- \begin{figure}[ht]
+ \begin{figure}[t]
  	\centerline{\includegraphics[scale = 0.6]{silhouette.png}}
  	\caption{Silhouette Method}%
  	\figlabel{silhouette}
@@ -200,12 +200,6 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
 \subsubsection*{Cluster Labeling}
 
 We chose a reference day for labeling the clusters. Since the number of clusters are only seven we had manually inspected each cluster and labeled them based on the contents of the cluster. \tabref{cluster_centers} shows clusters formed and the cluster centers. The first row describes that the cluster 1 has hosts which on an average sent 10 outgoing flows by using 9 different source ports targeting a single destination on the same port and all those flows were UDP flows. 
-
-\begin{table}[ht]
-	\centerline{\includegraphics[scale = 0.6]{cluster_centers.png}}
-	\caption{Cluster Centers}%
-	\tablabel{cluster_centers}
-\end{table}
 
 We have mapped each of these clusters to human understandable classes which is shown in \tabref{cluster_label}. The clusters represent the host behaviors as follows:
 
@@ -223,11 +217,17 @@ We have mapped each of these clusters to human understandable classes which is s
 	\item Cluster 6 represents anomalous hosts trying to scan through the network  by sending heavy packets or trying to gain unauthorized access through open ports. 
 \end{itemize}
 
+\begin{table}[b]
+	\caption{Cluster Centers}%
+	\centerline{\includegraphics[scale = 0.6]{cluster_centers.png}}
+	
+	\tablabel{cluster_centers}
+\end{table}
 
-
-\begin{table}[ht]
+\begin{table}[b]
+		\caption{Cluster Labeling}%
 	\centerline{\includegraphics[scale = 0.6]{cluster_label.png}}
-	\caption{Cluster Labeling}%
+
 	\tablabel{cluster_label}
 \end{table}
 

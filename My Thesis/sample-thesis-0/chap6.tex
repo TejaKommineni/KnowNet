@@ -2,34 +2,29 @@
 
 \chapter{Results}
 
-In this chapter we describe the results of our experiments so far and illustrate how they are a step towards our thesis goal.
+In this chapter we describe the results of our experiments so far and illustrate how they are a step towards our thesis goal.
 
 \begin{itemize}
+	\item We were able to extract different host behaviors of interest to network admin, here we are mentioning two of them, namely scanners and DNS Query Responses. The cluster that contains scanners have a high
+	
+	\item 
+	We were able to extract different host behaviors of interest to network admin, here we are mentioning two of them, namely scanners and DNS Query Responses. The cluster that contains scanners have a high
+\end{itemize}
 
-\item We were able to extract different host behaviors of interest to network admin, here
-we are mentioning two of them, namely scanners and DNS Query Responses. The
-cluster that contains scanners have a high incoming traffic trying to infiltrate the
-network by scanning for open ports. The amount of packets and bytes transferred
-by hosts in this cluster is unsubstantial. The behavior exhibited by the hosts of this
+\begin{itemize}
+\item We were able to extract different host behaviors of interest to network admin, here we are mentioning two of them, namely scanners and DNS Query Responses. The cluster that contains scanners have a high incoming traffic trying to infiltrate the
+network by scanning for open ports. The amount of packets and bytes transferred by hosts in this cluster is unsubstantial. The behavior exhibited by the hosts of this
 cluster can be used by the network admin to monitor the security of the network.
 The cluster that contains DNS Query Responses has heavy traffic aiming at a single
 port. Studying about this cluster behavior over time will give an edge in planning
 bandwidth of the network. The remarkable feature of our system is that it has extracted
-the above behaviors without any prior knowledge of the hosts in the system
-or the input Netflow data.
-
+the above behaviors without any prior knowledge of the hosts in the system or the input Netflow data.
 \item We have observed that over periods of short intervals of time(few weeks), the number
 of clusters have remained fairly constant which indicates that there has been no
 rapid change in the behaviors exhibited by the hosts. And our system performed
 seemingly well by choosing a constant number of clusters at the stage of pattern
 detection. Figure \figref{constant} represents how the number of clusters formed for a months
 data are close to constant.
-
-\begin{figure}[ht]
-	\centerline{\includegraphics{constant.png}}
-	\caption{ Plot of number of clusters formed over a time period.}%
-	\figlabel{constant}
-\end{figure} 
 
 \item  By mapping cluster behaviors of a given day with a reference day we were also able
 to compare host behaviors. These comparisons can help network admin in capacity
@@ -40,7 +35,13 @@ behaviors on two days as shown in figure \figref{compare_days}
 
 \end{itemize}
 
-\begin{figure}[ht]
+\begin{figure}[t]
+	\centerline{\includegraphics{constant.png}}
+	\caption{ Plot of number of clusters formed over a time period.}%
+	\figlabel{constant}
+\end{figure} 
+
+\begin{figure}[t]
 	\centerline{\includegraphics[scale = 0.45]{tool_compare_days.png}}
 	\caption{Compare Host Behaviors on two days.}%
 	\figlabel{compare_days}
@@ -51,7 +52,7 @@ In the graph each line represents different host behaviors. The X-axis and Y-axi
 represent the date on which this host behavior is observed and the number of hosts
 which exhibited this behavior respectively.
 
-\begin{figure}[ht]
+\begin{figure}[t]
 	\centerline{\includegraphics[scale = 0.45]{tool_compare_week.png}}
 	\caption{Compare Host Behaviors over a time period.}%
 	\figlabel{compare_weeks}
@@ -63,9 +64,9 @@ which exhibited this behavior respectively.
 
 \tabref{evaluation} shows the planned evaluations of our sytsem which will be included in the final thesis defense.
 
-\begin{table}[ht]
+\begin{table}[b]
+		\caption{Planned Evaluations}%
 	\centerline{\includegraphics[scale = 0.6]{evaluation.png}}
-	\caption{Planned Evaluations}%
 	\tablabel{evaluation}
 \end{table}
 

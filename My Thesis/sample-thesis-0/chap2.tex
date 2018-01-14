@@ -36,36 +36,33 @@ Unsupervised learning problems can be further grouped into clustering and associ
 
 Connectivity models \cite{doi:10.1093/comjnl/26.4.354}, work on the premise that data points close to each other exhibit higher similarity than those lying far away. Cluster formation in these models can be done in two ways. Either we can initially consider all the points as a single cluster and then divide them into multiple clusters based on the distnace between data points or we can assume each data point is a cluster on it's own and start merging them as the distance decreases. Hierarchical clustering algorithms fall under this category.
 
-Centroid models, These are iterative clustering algorithms in which the notion of similarity is derived by the closeness of a data point to the centroid of the clusters. K-Means clustering algorithm \cite{Derpanis06k-meansclustering} is a popular algorithm that falls into this category. In these models, the number of clusters required at the end have to be mentioned beforehand, which makes it important to have prior knowledge of the dataset. These models run iteratively to find the local optimum.
+Centroid models, also use distance as their metric in grouping data points to cluster. While Connectivity models consider distance between all points. Centroid models measure distance of a point from cluster centers so as to assign it to the closest center. These models are iterative in nature and come to a halt when the cluster centers don't change. There are different techniques to initially choose cluster centers.  K-Means clustering algorithm \cite{Derpanis06k-meansclustering} is a popular algorithm that falls into this category. K-Center, K-medoids also belong to the same family while K-means tries to minimize 
+ 
+Distribution models\cite{Johnson2000}, Data sets can be fit into different distributions (eg: Normal, Gaussian). The clustering models that group all the data points with similar distribution and generate cluster fall under this category. A well known example of these models is Expectation-maximization algorithm. 
 
-
-
-Distribution models\cite{Johnson2000}, These clustering models are based on the notion of how probable is it that all data points in the cluster belong to the same distribution (For example: Normal, Gaussian). A popular example of these models is Expectation-maximization algorithm which uses multivariate normal distributions.
-
-Density Models \cite{thang2011anomaly}, These models search the data space for areas of varied density of data points in the data space. It isolates various different density regions and assign the data points within these regions in the same cluster. Popular examples of density models are DBSCAN and OPTICS.
+Density Models \cite{thang2011anomaly}, In these models clusters of data points are determined based on the variation of density in the data space. Different density regions with in the data space are found out and all those points that fall under same density region are assigned to the same cluster.Popular examples of density models are DBSCAN and OPTICS.
 
 The choice of clustering model depends on the data in hand, amount of prior information that we have about the data and the problem we ought to solve. In our case we have chosen Centroid models to solve our problem and specifically the K-Means algorithm. Before, discussing about why K-Means in design section let us look at what K-Means algorithm is all about.
 
-K-means clustering [17] is a clustering analysis algorithm that groups objects based on their feature values into K disjoint clusters. Objects that are classified into the same cluster have similar feature values. K is a positive integer number specifying the number of clusters, and has to be given in advance. Here are the four steps of the K-means clustering
+K-means clustering [17] is a clustering algorithm that groups data points based on their feature values into K disjoint clusters. All the points that are classified into the same cluster are similar to each other when compared to those data points in the other clusters. The number of clusters K has to be specified in advance. Here are the four steps of the K-means clustering
 algorithm:
 
 \begin{itemize}
 	\item Define the number of clusters K.
 	
-	\item Initialize the K cluster centroids. This can be done by arbitrarily dividing all objects into K clusters, computing their centroids, and verifying that all centroids are different from each other. Alternatively, the centroids can be initialized to K arbitrarily chosen, different objects.
+	\item Initialize the K cluster centers. We can arbitarily choose K data points from the given data set as cluster centers or apply K-means++ \cite{arthur2007k} algorithm to find the initial K cluster centers. K-means++ helps in careful initial seeding that can output better clusters.
 	
-	\item Iterate over all objects and compute the distances to the centroids of all clusters. Assign each object to the cluster with the nearest centroid.
+	\item Iterate over all data points and compute the distances to the centers of all clusters. Assign each object to the cluster to which it is nearest.
 	
-	\item Recalculate the centroids of both modified clusters.
+	\item Recalculate the cluster centers after the above assignments.
 	
-	\item Repeat step 3 until the centroids do not change any more.
+	\item Repeat step 3 until the cluster centers do not change any more.
 \end{itemize}
+
 A distance function is required in order to compute the
 distance (i.e. similarity) between two objects. The most commonly used distance function is the Euclidean one which is defined as:
 
 \begin{center}
 	\boldsymbol{$ d(x,y) = \sqrt{\sum_{i = 1}^{m}(x_i-y_i)^2}$}
 \end{center}
-
-where x = (x1, ..., xm) and y = (y1, ..., ym) are two input vectors with m quantitative features. In the Euclidean distance function, all features contribute equally to the function value. However, since different features are usually measured with different metrics or at different scales, they must be normalized
-before applying the distance function.
+where $x = (x_1, ..., x_m)$ and $y = (y_1, ..., y_m)$ are two input vectors(data points) with m features. In the Euclidean distance function, each feature is weighted equally. However, in our data set different features are usually measured at different scales. Hence, they must be normalized before applying the distance function.

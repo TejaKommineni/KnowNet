@@ -3,17 +3,14 @@
 \chapter{Design Overview}
 
 Detecting the behaviors implicit in the netflow data and
-using them to build systems that make network management
-easier is the overarching premise of this work. In this chapter we describe the design of our system, and how the
+using them in conjunction with existing tools to make network management easier is the overarching premise of this work. In this chapter we describe the design of our system, and how the
 different components fit into the architecture.
 
 \section{Components}
-
 Our design is comprised of four essential components: Netflow Collection, Feature Engineering, Pattern Detector, and
 applications as shown in \figref{arch}.
-
 \begin{figure}[t]
-	\centerline{\includegraphics[scale = 0.7]{architecture.pdf}}
+	\centerline{\includegraphics[trim=4cm 4cm 4cm 4cm, scale = 0.6]{architecture.pdf}}
 	\caption{Architecture.}%
 	\figlabel{arch}
 \end{figure}

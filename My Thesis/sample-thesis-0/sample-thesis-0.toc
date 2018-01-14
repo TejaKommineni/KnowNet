@@ -15,26 +15,26 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.1.1}What is NetFlow}{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsection}{\numberline {3.1.2}Feature Engineering}{11}
+\contentsline {subsection}{\numberline {3.1.2}Feature Engineering}{10}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.1}Missing Data}{11}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.2}Converting categorical to Numerical Variables}{13}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {3.1.2.3}Feature Scaling}{15}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Feature Scaling}{14}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.4}Feature Transformation}{15}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.5}Feature Selection}{16}
 \contentsline {section}{\numberline {3.2}Pattern Detector}{18}
-\contentsline {section}{\numberline {3.3}Applications}{25}
-\contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{26}
-\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{27}
+\contentsline {section}{\numberline {3.3}Applications}{24}
+\contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{25}
+\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{26}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {5.1}Data Mining and Machine Learning Techniques for Intrusion Detection}{27}
-\contentsline {section}{\numberline {5.2}Machine Learning for Traffic Classification}{28}
-\contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{30}
-\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{31}
+\contentsline {section}{\numberline {5.1}Data Mining and Machine Learning Techniques for Intrusion Detection}{26}
+\contentsline {section}{\numberline {5.2}Machine Learning for Traffic Classification}{27}
+\contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{29}
+\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{30}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {6.1}Evaluation}{32}
-\contentsline {chapter}{REFERENCES}{36}
+\contentsline {section}{\numberline {6.1}Evaluation}{31}
+\contentsline {chapter}{REFERENCES}{35}

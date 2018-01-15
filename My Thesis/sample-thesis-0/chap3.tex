@@ -16,17 +16,17 @@ applications as shown in \figref{arch}.
 \end{figure}
 
 \subsection{Netflow Collection}
-While the term NetFlow has become a de-facto industry standard, many other network hardware manufacturers support alternative flow technologies namely Jflow, s-flow, NetStream, etc.. The University servers from which we have collected the data for this experiment have been equipped with NetFlow on it which led to using NetFlow as our Flow technology. 
+While the term NetFlow has become a de-facto industry standard, many other network hardware manufacturers support alternative flow technologies namely Jflow, s-flow, NetStream, etc.. The University routers from which we have collected the data for this experiment have been equipped with NetFlow on it which led to using NetFlow as our Flow technology. 
 \subsubsection{What is NetFlow}
-NetFlow is a proprietary protocol for collecting IP flow packets information on networks. Though some variant versions exist, a NetFlow record summarizes a network traffic flow as its source and destination IP addresses, source and destination ports, transportation protocol as well as the traffic volume transmitted during this flow session. NetFlow operates by creating new flow cache entries when a packet is received that belongs to a new flow. Each flow cache keeps track of the number of bytes and packets of similar traffic during certain period of time until the cache expires, then this information is exported to a collector. 
+NetFlow is a proprietary protocol for collecting IP flow packets information on networks. There are different variants to this protocol but across all these versions a flow is defined uniquely by its source and destination IP addresses, source and destination ports, transportation protocol. Whenever one of these values changes a new flow is created. For each flow the number of packets, bytes and other network related information are tallied and stored in the routers cache till it expires, then this information is exported to a collector. 
 
 The captured flows are exported to NetFlow collectors at frequent intervals. The flows that are to be exported are determined based on the following rules: 1) when it is inactive for a certain time without receiving any new packets. 2) If the flow is active than max threshold time which is configurable. 3) If a TCP flag (FIN / RST) indicates the flow is terminated. NetFlow provides a powerful tool to keep track of what kind of traffic is going on the network, and are widely used for network monitoring. Most vendors support different flavors of similar flow monitoring approaches and a common standardization is done within the IETF IPFIX working group.
 
 There are different variants of NetFlow with each advanced version giving additional information about the flow. The fields that we used in our experiment and that are supported across the versions are in \figref{netflow}.
 
 \begin{figure}[t]
-	\centering
-	\includegraphics[width=0.9\textwidth]{netflow.png}
+	\centerline{
+	\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.55]{netflow.pdf}}
 	\caption{NetFlow Fields captured in a Flow }
 	\figlabel{netflow}
 \end{figure}
@@ -34,13 +34,12 @@ There are different variants of NetFlow with each advanced version giving additi
 \subsection{Feature Engineering}
 
 Feature Engineering is the process of transforming raw
-data into features that better represent the underlying structure to the models so that they increase the accuracy of the model when applied on unseen data. This step comes before modeling and after seeing the data.
-Features extracted from the data directly influence the models generated and predictions made out of it. The better the features are the better the results will be. The results that we achieve when we are using ML/DM approaches are a factor of the data set in hand, the features generated , the prediction model and the way the problem is framed. Most of the times even simpler models perform better if the features describe the structure inherent to the data. 
+data into features so as to better represent the underlying structure of the data. This helps in increasing the accuracy of the models we build using data mining techniques. This step comes before modeling and after seeing the data.
+Features extracted from the data directly influence the models generated and predictions made out of it. The better the features are the better the results will be. The results that we achieve when we are using DM approaches are a factor of the data set in hand, the features generated , the prediction model and the way the problem is framed. Most of the times even simpler models perform better if the features describe the structure inherent to the data. 
 Below we describe different steps involved in the Feature Engineering with sample set of data.
-\begin{table}[b]
+\begin{table}[t]
 	\caption{Netflow Raw Data.}%
-	\centerline{\includegraphics[scale = 0.6]{raw_data.pdf}}
-	
+	\centerline{\includegraphics[scale = 0.5]{raw_data.pdf}}	
 	 \tablabel{raw_data}
 \end{table}
  
@@ -78,7 +77,7 @@ The first record in the \tabref{aggregated} conveys the information that in the 
 
 \begin{table}[b]
 	\caption{Aggregated data by Source IP}%
-	\centerline{\includegraphics[scale = 0.6]{aggregated.png}}	
+	\centerline{\includegraphics[scale = 0.6]{aggregated.pdf}}	
 	\tablabel{aggregated}
 \end{table}
 

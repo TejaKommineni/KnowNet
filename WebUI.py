@@ -65,6 +65,7 @@ def compareOverTime():
     delta = end_date - start_date  
     z = np.array([start_date + timedelta(days=i) for i in range(delta.days + 1)])
     yvals = {"DNS CLIENTS (Low Volume)":[],"Few Small Flows (TCP)":[],"DNS SERVERS (High Volume)":[],"DNS CLIENTS (High Volume)":[],"DNS SERVERS (Low Volume)":[],"Scanners":[],"Few Small Flows (UDP)":[]}
+    #yvals = {"Small UDP Flows":[],"Low DNS Query Responses":[],"Medium TCP Flows":[],"Heavy Incoming DNS Queries":[], "Small TCP Flows":[],"Low Incoming DNS Queries":[],"Heavy DNS Query Responses":[],"Scanners":[]}
     for i in range(delta.days + 1):
         temp = start_date + timedelta(days=i)        
         mapping, values1, values2, profiles = compare_clusters('01/03/2017',temp.strftime('%d/%m/%Y'))

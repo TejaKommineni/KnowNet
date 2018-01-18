@@ -1,6 +1,12 @@
 \def \noopsort #1{}
 \begin{thebibliography}{10}
 
+\bibitem{arthur2007k}
+{\sc D.~Arthur and S.~Vassilvitskii}, {\em k-means++: The advantages of careful
+  seeding}, in Proceedings of the eighteenth annual ACM-SIAM symposium on
+  Discrete algorithms, Society for Industrial and Applied Mathematics, 2007,
+  pp.~1027--1035.
+
 \bibitem{auld2007bayesian}
 {\sc T.~Auld, A.~W. Moore, and S.~F. Gull}, {\em Bayesian neural networks for
   internet traffic classification}, IEEE Transactions on neural networks, 18

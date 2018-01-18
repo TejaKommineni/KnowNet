@@ -38,7 +38,7 @@ data into features so as to better represent the underlying structure of the dat
 Features extracted from the data directly influence the models generated and predictions made out of it. The better the features are the better the results will be. The results that we achieve when we are using DM approaches are a factor of the data set in hand, the features generated , the prediction model and the way the problem is framed. Most of the times even simpler models perform better if the features describe the structure inherent to the data. 
 Below we describe different steps involved in the Feature Engineering with sample set of data.
 \begin{table}[t]
-	\caption{Netflow Raw Data.}%
+	\caption{Netflow raw data.}%
 	\centerline{\includegraphics[scale = 0.5]{raw_data.pdf}}	
 	 \tablabel{raw_data}
 \end{table}
@@ -47,27 +47,27 @@ Below we describe different steps involved in the Feature Engineering with sampl
 
 \tabref{raw_data} is a sample of network data collected using netflow. In total there are 40 columns for each record with each column capturing different flow information. From the table we can see that there are few missing values. Missing data is a common issue that every data science experiment has to deal with and there could be different reasons why netflow records could be missing some values such as, few filters could be turned on the router that doesn't let the netflow collector collect all the information, overloading of netflow collector and others. We handled Missing data using the following techniques 
 
-1) Replace missing values with the mean. For the features such as duration, total packets and bytes exchanged we assume that missing values are distributed similarly to the values that are present for each source IP. In this case, substituting values that represent the existing distribution, such as the mean, is a reasonable approach. 
+1) Replace missing values with the mean. For the features such as duration, total packets and bytes exchanged we assume that missing values are distributed similarly to the values that are present for each source IP. The rational approach here would be to substitute values using mean as it maintains the existing distribution.
 
-2) Replace missing values with the median/ mode. This is another justifiable way to handle missing-at-random data, although note that it gives a different answer. For categorical data, it's also common to use the mode, the most commonly occurring value. Missing protocols were handled using the mode approach, filling the missing values with the most occurring value for each source IP.
+2) Replace missing values with the median/ mode. This is an other technique to handle missing data, It should be noted that using different statistical measures to replace missing values yield different solutions. Features that have categorical data cannot be handled using mean or median and hence we approach mode to fill in their missing values. The feature protocols was handled using the mode approach, filling the missing values with the most frequently occurring protocol value for that source IP.
 
-3) Delete columns that are missing too many values to be useful. If a feature is missing too many values, or if there is not enough information available to make reasonable assumptions about how to replace the missing values, you can delete the column entirely. If the feature does not provide useful information, including it can slow down the model's runtime. For many algorithms, having many noisy or uninformative columns can actually degrade their performance. In those cases, deleting these columns during data preparation is the best policy. In our case there were handful of columns that fell under this category and are discarded. flags shown in the \tabref{raw_data} is one among them. After handling missing values our data looks as in \tabref{missing_data}.
+3) The question that arises when replacing missing values is what percentage of values can a feature miss atmost. For example, filling in half the values of a feature in this step with a statistic measure is not reasonable. Features of this kind are considered as noise and could affect the effectiveness of the data mining algorithm. The better option here would be to discard the coulmn that has too may missing calues. In our case there were handful of columns that fell under this category and are discarded. flags shown in the \tabref{raw_data} is one among them. After handling missing values our data looks as in \tabref{missing_data}.
 
 \begin{table}[b]
-	\caption{After Handling Missing Data}%
+	\caption{NetFlow raw data after handling missing values}%
 	\centerline{\includegraphics[scale = 0.6]{missing_data.png}}
 	
 	\tablabel{missing_data}
 \end{table}
 
 
-\subsubsection{Converting categorical to Numerical Variables} 
+\subsubsection{Converting Categorical to Numerical Variables} 
 
 Features could be either numerical or categorical variables. When dealing with algorithms that work on numerical data we have to make sure that the categorical variables are handled.
-For example, in our case feature protocol, has values such as TCP, UDP and others. One approach is to encode them as 0, 1, and 2, respectively converting them to numerical variables. This could pose a problem when using distance measuring algorithms as the distance between the encoded attributes, like 1 (UDP) minus 0 (TCP) doesn't mean anything. Another approach would be to create a feature for each value of the categorical variable and mark it as 0 or 1 based on if the value is present or not. There are both pros and cons to this method. The pros are if we choose to aggregate the values on all features this conversion gives a numerical value to work with. The cons are scaling and standardization could be affected. \tabref{categorical} represents data set after this step.
+For example, in our case feature protocol, has values such as TCP, UDP and others. One approach is to encode them as 0, 1, and 2 respectively converting them to numerical variables. This could pose a problem when using distance measuring algorithms as the distance between the encoded attributes, like 1 (UDP) ,0 (TCP) is smaller than 0 (TCP) ,2 (others) generating an unintended meaning to this feature and could lead to biasing of few values. Another approach would be to create a feature for each value of the categorical variable and mark it as 0 or 1 based on if the value is present or not. There are both pros and cons to this method. The pros are if we choose to aggregate the values on all features this conversion gives a numerical value to work with. The cons are scaling and standardization could be affected. \tabref{categorical} represents data set after this step.
 
-\begin{table}[b]
-	\caption{After Converting Categorical data to Numerical}%
+\begin{table}[t]
+	\caption{After Converting categorical data to numerical}%
 	\centerline{\includegraphics[scale = 0.6]{categorical.png}}
 	\tablabel{categorical}
 \end{table}
@@ -77,7 +77,7 @@ The first record in the \tabref{aggregated} conveys the information that in the 
 
 \begin{table}[b]
 	\caption{Aggregated data by Source IP}%
-	\centerline{\includegraphics[scale = 0.6]{aggregated.pdf}}	
+	\centerline{\includegraphics[scale = 0.6]{aggregated.png}}	
 	\tablabel{aggregated}
 \end{table}
 

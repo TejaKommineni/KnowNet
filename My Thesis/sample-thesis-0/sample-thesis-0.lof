@@ -2,9 +2,9 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture.}}{10}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces NetFlow Fields captured in a Flow }}{11}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Skewed data before transformation}}{16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized data}}{17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Elbow Method}}{21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized data}}{16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Elbow Method}}{20}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Silhouette Method}}{22}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Plot of number of clusters formed over a time period.}}{32}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Compare Host Behaviors on two days.}}{33}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Compare Host Behaviors over a time period.}}{33}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Plot of number of clusters formed over a time period.}}{31}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Compare Host Behaviors on two days.}}{32}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Compare Host Behaviors over a time period.}}{32}

@@ -190,8 +190,5 @@ def compare_clusters(start_date,end_date):
     return  mapping, value1, value2, profiles
     
         
-    
-    
-
 if __name__ == '__main__':  # Script executed directly?
     app.run()  # Launch built-in web server and run this Flask webapp

@@ -2,14 +2,86 @@
 
 \chapter{Results}
 
-In this chapter we describe the results of our experiments so far and illustrate how they are a step towards our thesis goal.
+In this chapter we evaluate our system using an implementation of the NetFlow host behavior extractor written in python. Our implementation uses, Our experiments in this section are conducted on , 
 
-\begin{itemize}
-	\item We were able to extract different host behaviors of interest to network admin, here we are mentioning two of them, namely scanners and DNS Query Responses. The cluster that contains scanners have a high
-	
-	\item 
-	We were able to extract different host behaviors of interest to network admin, here we are mentioning two of them, namely scanners and DNS Query Responses. The cluster that contains scanners have a high
-\end{itemize}
+\section{Dataset: description and clustering}
+The traffic analyzed here is collected at the University of Utah's emulab routers \cite{}, This is a private repository that contains traces of ? incoming traffic into the emulab network and no payload. Traffic is collected on a link between ? at a speed of ?.
+
+First, the clustering algorithm is applied on aggregated host data collected from the NetFlow records that belongs to the last 6 months in 2017, hence yieding a set of behaviors(clusters). We have hand picked 7 days of this data for analysis. The chosen days are October 15, October 16, November 14, November 23, December 5, December 12, December 16\footnote{Days are picked without any prioir knowledge}. We made sure that there is a mix of both week days , weekends, normal and heavy traffic days. Each days traffic is treated independently as the same host that appeared on two different days could exhibit different behaviors.
+
+As mentioned in the section \ref{cluster_labeling} we have choosen a reference day for labeling the clusters. We applied following techniques to label the clusters on the reference day. The first one is port-based analysis to identify applications such as web, mail, and DNS. second one is the anomaly detection methods. Finally, a set of heuristic rules to label manually the behavior of the hosts. After the above steps we found the following clusters. Clusters labeled as T consists of hosts which uses few ports on both sides to exchange interactive traffic. Clusters labeled as S consists of hosts which serve clients requests and conversely clusters labeled C consists of hosts which request servers for information. Let us list the differences in these behaviors in detail.
+
+\textbf{Clusters T1-T2} are mostly one-to-one connections, the dominant traffic in these clusters is http/https, ssh and peer to peer traffic. P2P traffic is defined as traffic where hosts uses both TCP and UDP ports concurrently for communication, They also choose arbitary ports for communication. Further analysis, reveals that clusters are split based on packet size and flow size.
+While T1 has long living flows with large average packet sizes. T2 has large number of flows which are short lived and an average packet size less than T1.
+
+\textbf{Clusters C1-C2} are mostly clients which connect to different servers of which C2 is dominated by DNS traffic and C1 comprises of both Web and Mail traffic.
+
+\textbf{Clusters S1} are mostly clients which connect to different servers of which C2 is dominated by DNS traffic and C1 comprises of both Web and Mail traffic.
+
+The above description clearly points out that host based behavior extraction produces a richer and finer classification of host behaviors than a port based classifier. For example, Http traffic is split across different clusters T or S which represents how the same protocol can be used differently in real time scenarios. Same is the case with SSH traffic also. While most of these clusters contain hosts using different protocols. They are similar in the sense that each cluster exhibits different functional behavior such as Server, Client or one-to-one traffic.
+
+The \figref{behaviorsdec12} is a comparison between the classification made by a traditional port based classifer(left) and our host based classifier(right).
+
+\begin{figure}[t]
+	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.5]{dec12-port-behaviors.pdf}}
+	\caption{Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}%
+	\figlabel{behaviorsdec12}
+\end{figure}
+
+
+\section{Cross Validation}
+We have compared our approach with other classification techniques to better understand the significance of our approach.
+
+\textbf{\textit{Cross Validation with a port based classifier}}, We used a classic 
+
+Instead of the labeling by a network expert combining a study of ports, some heuristic rules and an
+anomaly detection step, one could use a classical port-based classifier, known to be failing in many
+cases but still used as a simple, admitted method that is sufficient for legacy traffic [1]. Still, one
+heuristic rule is added to port classification: the ratio of SYN flags in flows is used to detect SYN floods
+(this is made necessary by the large number of SYN flooding anomalies detected in the MAWI traces
+[34]). This port-based and SYN-flag classification procedure (developed first for Dewaele et al. [34])
+labels each host according to the most important class of flows that it sends (or receives). For most
+hosts, a dominant class is found. However, whenever more than a single class of traffic accounting for
+at least 20% of the packets sent (or received), or when the dominant class accounts for less than 50%,
+the host is classified as ‘Mix’ traffic. This procedure is used here as a port-based classification of the
+behavior of hosts: 250 different classes are obtained, and we discuss here the most frequently observed
+as representative: HTTPr or HTTPa (respectively requests/answers), P2P, Ping, SYN, SMTP(r/a),
+DNS(r/a), SSH(r/a) or Mix.
+The cross-validation between the MST-based clustering approach and the port-based (plus SYN-flag)
+classification procedure is reported in Table 1. The sparsity of this table provides us with a first
+satisfactory conclusion: despite the fact that traffic information used in each approach is different and
+independent, the match in host classification is high. This reflects the adequacy of the proposed
+procedure. One can go back to the description of the identified clusters in section 5.3 and check that
+the discussion about the nature of each clusters is coherent with the class given by the port-based
+classification for the majority of the hosts in a given cluster. For instance, T1 is mostly requests in HTTP
+and P2P, whereas T2 groups hosts that answers over HTTP. Hosts in T3 and T4 are performing P2P plus
+some web browsing. The client/server distinction in clusters C and S is particularly well reflected in
+Table 1 by looking at columns HTTPr/a. Clusters P, containing a high number of hosts doing P2P,
+performing activities in the background at the same time as other communications, are not easily
+classified from ports only as doing P2P; hence, they are spread in many other categories and only the
+MST-based clustering on connection patterns identify them as such. Finally, for clusters containing hosts
+associated with a high proportion of anomalies (T4, T6, C3, C6, C7), the port-based classification only
+partially reflects this fact. Ping or SYN flooding is detected from time to time (thanks to the additional
+
+
+
+Finally, our finding is that, in a
+longitudinal study of the traffic, the classes are quite stable over several weeks. The recommendation
+would be to update the classification every couple of months or so. Only in case of anomaly outbreaks
+(e.g. a new major worm or virus), or over a timeframe of several months would the clusters change,
+as the usages and applications on the Internet change.
+
+Below we show the distribution of host behavior on Dec 5th.
+
+
+
+
+
+
+
+
+\section{Synthesized Data: description and clustering}
+
 
 \begin{itemize}
 \item We were able to extract different host behaviors of interest to network admin, here we are mentioning two of them, namely scanners and DNS Query Responses. The cluster that contains scanners have a high incoming traffic trying to infiltrate the

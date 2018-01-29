@@ -39,5 +39,5 @@
 \contentsline {section}{\numberline {6.1}Dataset: description and clustering}{30}
 \contentsline {section}{\numberline {6.2}Cross Validation}{31}
 \contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{33}
-\contentsline {section}{\numberline {6.4}Evaluation}{35}
+\contentsline {section}{\numberline {6.4}Evaluation}{34}
 \contentsline {chapter}{REFERENCES}{38}

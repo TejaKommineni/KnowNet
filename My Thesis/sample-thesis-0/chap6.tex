@@ -32,53 +32,28 @@ The \figref{behaviorsdec12} is a comparison between the classification made by a
 \section{Cross Validation}
 We have compared our approach with other classification techniques to better understand the significance of our approach.
 
-\textbf{\textit{Cross Validation with a port based classifier}}, We used a classic 
+\textbf{\textit{Cross Validation with a port based classifier}}, We used a classic port based classifying technique to cross validate our results. Though, it isn't a perfect measure and fails in many cases it is good enough to classify a host to a particular class in most of the cases.
+In the scenarios when this technique cannot classify a host to particular class we label it as a 'Mix' traffic. The heuristic that we used for labeling as 'Mix' traffic is when the dominant class accounts for less than 50 percent of the traffic by that host. Applying this procedure we observed 20 different classes of traffic, out of which the most frequently observed are discussed here: HTTP, DNS, SSH, MAIL, TELNET, FTP, CHAT, P2P, SMTP, MIX.
 
-Instead of the labeling by a network expert combining a study of ports, some heuristic rules and an
-anomaly detection step, one could use a classical port-based classifier, known to be failing in many
-cases but still used as a simple, admitted method that is sufficient for legacy traffic [1]. Still, one
-heuristic rule is added to port classification: the ratio of SYN flags in flows is used to detect SYN floods
-(this is made necessary by the large number of SYN flooding anomalies detected in the MAWI traces
-[34]). This port-based and SYN-flag classification procedure (developed first for Dewaele et al. [34])
-labels each host according to the most important class of flows that it sends (or receives). For most
-hosts, a dominant class is found. However, whenever more than a single class of traffic accounting for
-at least 20% of the packets sent (or received), or when the dominant class accounts for less than 50%,
-the host is classified as ‘Mix’ traffic. This procedure is used here as a port-based classification of the
-behavior of hosts: 250 different classes are obtained, and we discuss here the most frequently observed
-as representative: HTTPr or HTTPa (respectively requests/answers), P2P, Ping, SYN, SMTP(r/a),
-DNS(r/a), SSH(r/a) or Mix.
-The cross-validation between the MST-based clustering approach and the port-based (plus SYN-flag)
-classification procedure is reported in Table 1. The sparsity of this table provides us with a first
-satisfactory conclusion: despite the fact that traffic information used in each approach is different and
-independent, the match in host classification is high. This reflects the adequacy of the proposed
-procedure. One can go back to the description of the identified clusters in section 5.3 and check that
-the discussion about the nature of each clusters is coherent with the class given by the port-based
-classification for the majority of the hosts in a given cluster. For instance, T1 is mostly requests in HTTP
-and P2P, whereas T2 groups hosts that answers over HTTP. Hosts in T3 and T4 are performing P2P plus
-some web browsing. The client/server distinction in clusters C and S is particularly well reflected in
-Table 1 by looking at columns HTTPr/a. Clusters P, containing a high number of hosts doing P2P,
-performing activities in the background at the same time as other communications, are not easily
-classified from ports only as doing P2P; hence, they are spread in many other categories and only the
-MST-based clustering on connection patterns identify them as such. Finally, for clusters containing hosts
-associated with a high proportion of anomalies (T4, T6, C3, C6, C7), the port-based classification only
-partially reflects this fact. Ping or SYN flooding is detected from time to time (thanks to the additional
+The cross-validation between the port based approach and  our procedure is reported in \tabref{validation}. 
 
+\begin{table}[t]
+	\caption{Cross-valdation of the host behavior extraction with port based analysis.}%
+	\centerline{\includegraphics[scale = 0.6]{validation.pdf}}	
+	\tablabel{validation}
+\end{table}
 
+From the highlited parts in the table we can safely conclude that 
+there we have an high match of host classification which reflects the competence of the proposed procedure. It is also clearly evident from here that the nature of clusters described earlier confirm with the results obtained with cross-validation.The cross-validation also suggests that all the hosts that fall into a particular class based on port based analysis are not necessarily in the same cluster. They are dispersed across the clusters which shows the necessity of a host based behavior extraction.
 
-Finally, our finding is that, in a
-longitudinal study of the traffic, the classes are quite stable over several weeks. The recommendation
-would be to update the classification every couple of months or so. Only in case of anomaly outbreaks
-(e.g. a new major worm or virus), or over a timeframe of several months would the clusters change,
-as the usages and applications on the Internet change.
+For example, clusters S1 clearly shows that the hosts are SSH servers and cluster S2 ?. The distinction of clients is evident from the fact that C2 cluster has majority of DNS traffic and C1 clusters have mail and web traffic going out of the firewall. T1 is mostly requests and responses between hosts spread across different applications. The T2 clusters Mix shows that the hosts in the cluster have high interactive traffic across applications without falling into any majority class. Finally, for clusters containing hosts associated with a high proportion of scanners.
 
-Below we show the distribution of host behavior on Dec 5th.
+and our observation is that the classes are quite stable over 
+several weeks which can be seen in the graph \figref{constant}. 
+which is a graph between the number of clusters formed over a timeperiod of 3 months that confirms the constant behavior.
+We can still update the host behaviors every couple of months or as per the change in usage of applications.
 
-
-
-
-
-
-
+We further validated by looking at the distribution of 
 
 \section{Synthesized Data: description and clustering}
 
@@ -98,6 +73,12 @@ seemingly well by choosing a constant number of clusters at the stage of pattern
 detection. Figure \figref{constant} represents how the number of clusters formed for a months
 data are close to constant.
 
+\begin{figure}[t]
+	\centerline{\includegraphics{constant.png}}
+	\caption{ Plot of number of clusters formed over a time period.}%
+	\figlabel{constant}
+\end{figure}
+
 \item  By mapping cluster behaviors of a given day with a reference day we were also able
 to compare host behaviors. These comparisons can help network admin in capacity
 planning, threat analysis and other network monitoring activities. We built a tool to analyze these host behaviors. 
@@ -107,11 +88,7 @@ behaviors on two days as shown in figure \figref{compare_days}
 
 \end{itemize}
 
-\begin{figure}[t]
-	\centerline{\includegraphics{constant.png}}
-	\caption{ Plot of number of clusters formed over a time period.}%
-	\figlabel{constant}
-\end{figure} 
+ 
 
 \begin{figure}[t]
 	\centerline{\includegraphics[scale = 0.45]{tool_compare_days.png}}

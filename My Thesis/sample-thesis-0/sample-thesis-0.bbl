@@ -119,6 +119,13 @@
   clustering with multiple parameters}, in Information Science and Applications
   (ICISA), 2011 International Conference on, IEEE, 2011, pp.~1--5.
 
+\bibitem{White+:osdi02}
+{\sc B.~White, J.~Lepreau, L.~Stoller, R.~Ricci, S.~Guruprasad, M.~Newbold,
+  M.~Hibler, C.~Barb, and A.~Joglekar}, {\em An integrated experimental
+  environment for distributed systems and networks}, in Proc.\ of the Fifth
+  Symposium on Operating Systems Design and Implementation, Boston, MA, Dec.
+  2002, {USENIX} {Association}, pp.~255--270.
+
 \bibitem{wolf2014choicenet}
 {\sc T.~Wolf, J.~Griffioen, K.~L. Calvert, R.~Dutta, G.~N. Rouskas, I.~Baldin,
   and A.~Nagurney}, {\em Choicenet: toward an economy plane for the internet},

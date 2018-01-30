@@ -34,13 +34,39 @@ def controlled_setting():
  
 def generate_scanners():
     ip_addresses = []
+    destinations = []
+    src_ports = [] 
+    destn_ports = []
+    tcp = []
+    udp = []
+    avg_bytes = []
     next = 0
     while len(ip_addresses) <100000:
         rang = random.randint(50,100)       
         for i in range(rang):
             ip_addresses.append(next)
         next = next+1
-    print(ip_addresses)
+    while len(destinations) <100000:
+        rang = random.randint(3,15)       
+        for i in range(rang):
+            destinations.append(next)
+        next = next+1
+    while len(src_ports) <100000:
+        rang = random.randint(5,10)       
+        for i in range(rang):
+            src_ports.append(next)
+        next = next+1
+    while len(destn_ports) <100000:
+        rang = random.randint(1,5)       
+        for i in range(rang):
+            destn_ports.append(next)
+        next = next+1
+    while len(avg_bytes) <100000:
+        rang = random.randint(10,100)       
+        for i in range(rang):
+            destn_ports.append(rang)        
+        
+    return ip_addresses, destinations, src_ports, destn_ports, avg_bytes
             
     
 controlled_setting()   

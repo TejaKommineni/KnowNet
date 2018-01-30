@@ -37,7 +37,7 @@
 \contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{30}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {section}{\numberline {6.1}Dataset: description and clustering}{30}
-\contentsline {section}{\numberline {6.2}Cross Validation}{31}
-\contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{33}
-\contentsline {section}{\numberline {6.4}Evaluation}{34}
-\contentsline {chapter}{REFERENCES}{38}
+\contentsline {section}{\numberline {6.2}Cross Validation}{32}
+\contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{34}
+\contentsline {section}{\numberline {6.4}Evaluation}{36}
+\contentsline {chapter}{REFERENCES}{39}

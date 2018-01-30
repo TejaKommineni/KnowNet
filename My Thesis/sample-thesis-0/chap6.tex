@@ -2,21 +2,23 @@
 
 \chapter{Results}
 
-In this chapter we evaluate our system using an implementation of the NetFlow host behavior extractor written in python. Our implementation uses, Our experiments in this section are conducted on , 
+In this chapter we evaluate our system using an implementation of the NetFlow host behavior extractor written in python. Our experiments in this section are conducted on a ubuntu16 virtual machine with 80 GB memory and 20 cpus of computing power. 
 
 \section{Dataset: description and clustering}
-The traffic analyzed here is collected at the University of Utah's emulab routers \cite{}, This is a private repository that contains traces of ? incoming traffic into the emulab network and no payload. Traffic is collected on a link between ? at a speed of ?.
+The traffic analyzed here is collected at the University of Utah's emulab routers \cite{White+:osdi02}, This is a private repository that contains traces of bidirectional traffic into the emulab network and no payload. Traffic is collected on Full Duplex links at a speed of 1Gbps.
 
-First, the clustering algorithm is applied on aggregated host data collected from the NetFlow records that belongs to the last 6 months in 2017, hence yieding a set of behaviors(clusters). We have hand picked 7 days of this data for analysis. The chosen days are October 15, October 16, November 14, November 23, December 5, December 12, December 16\footnote{Days are picked without any prioir knowledge}. We made sure that there is a mix of both week days , weekends, normal and heavy traffic days. Each days traffic is treated independently as the same host that appeared on two different days could exhibit different behaviors.
+We passed the NetFlow records collected over the last 6 months of 2017 through our system to determine the set of behaviors(clusters) hosts exhibited over this time. We have hand picked 7 days of this data for analysis. The chosen days are October 15, October 16, November 14, November 23, December 5, December 12, December 16\footnote{Days are picked without any prior knowledge of any metadata related to NetFlow records}. We made sure that there is a mix of both week days , weekends, normal and heavy traffic days. Each days traffic is treated independently as the same host that appeared on two different days could exhibit different behaviors. For different evaluations in this section we used the data corresponding to the these days.
 
-As mentioned in the section \ref{cluster_labeling} we have choosen a reference day for labeling the clusters. We applied following techniques to label the clusters on the reference day. The first one is port-based analysis to identify applications such as web, mail, and DNS. second one is the anomaly detection methods. Finally, a set of heuristic rules to label manually the behavior of the hosts. After the above steps we found the following clusters. Clusters labeled as T consists of hosts which uses few ports on both sides to exchange interactive traffic. Clusters labeled as S consists of hosts which serve clients requests and conversely clusters labeled C consists of hosts which request servers for information. Let us list the differences in these behaviors in detail.
+As mentioned earlier in the section \ref{cluster_labeling} we have choosen a reference day for labeling the clusters. We applied following techniques to label the clusters on the reference day. The first one is port-based analysis to identify applications such as web, mail, and DNS. second one is the anomaly detection methods. Finally, a set of heuristic rules to label manually the behavior of the hosts. After the above steps we found the following clusters. Clusters labeled as T consists of hosts which uses few ports on both sides to exchange interactive traffic. Clusters labeled as S consists of hosts which serve clients requests and conversely clusters labeled C consists of hosts which request servers for information. Let us list the differences in these behaviors in detail.
 
 \textbf{Clusters T1-T2} are mostly one-to-one connections, the dominant traffic in these clusters is http/https, ssh and peer to peer traffic. P2P traffic is defined as traffic where hosts uses both TCP and UDP ports concurrently for communication, They also choose arbitary ports for communication. Further analysis, reveals that clusters are split based on packet size and flow size.
 While T1 has long living flows with large average packet sizes. T2 has large number of flows which are short lived and an average packet size less than T1.
 
-\textbf{Clusters C1-C2} are mostly clients which connect to different servers of which C2 is dominated by DNS traffic and C1 comprises of both Web and Mail traffic.
+\textbf{Clusters C1-C2} contains hosts which behave as clients  making connections with different servers, The cluster C2 is dominated by DNS traffic which is in accordance with the heavy DNS requests that the hosts residing in the emulab network make with the external servers (machines outside the Emulab Firewall). Cluster C1 on the other hand comprises of hosts that request for web pages and that have outbound mail traffic.
 
-\textbf{Clusters S1} are mostly clients which connect to different servers of which C2 is dominated by DNS traffic and C1 comprises of both Web and Mail traffic.
+\textbf{Clusters S1-S2} as mentioned above comprises of hosts that behave as servers which respond to client requests. These hosts generally communicate with different ports of destination machines from a fixed port. S1 cluster contains of majority of hosts which are within emulab network and are acting as servers accepting SSH requests. S2 cluster contains hosts that are both within and outside emulab network which are acting as servers for different sets of traffic such as SSH, Web and DNS which is further explained in the section \ref{cross_validation}. 
+
+\textbf{Cluster A1} is the cluster that is of interest for network security as it contains of hosts that exhibit anamolous behavior trying to scan different access points to enter into the system.
 
 The above description clearly points out that host based behavior extraction produces a richer and finer classification of host behaviors than a port based classifier. For example, Http traffic is split across different clusters T or S which represents how the same protocol can be used differently in real time scenarios. Same is the case with SSH traffic also. While most of these clusters contain hosts using different protocols. They are similar in the sense that each cluster exhibits different functional behavior such as Server, Client or one-to-one traffic.
 
@@ -29,31 +31,41 @@ The \figref{behaviorsdec12} is a comparison between the classification made by a
 \end{figure}
 
 
-\section{Cross Validation}
-We have compared our approach with other classification techniques to better understand the significance of our approach.
+\section{Cross Validation} \label{cross_validation}
+We compared the results obtained from our system with other classification techniques to better understand the significance of our approach.
 
 \textbf{\textit{Cross Validation with a port based classifier}}, We used a classic port based classifying technique to cross validate our results. Though, it isn't a perfect measure and fails in many cases it is good enough to classify a host to a particular class in most of the cases.
-In the scenarios when this technique cannot classify a host to particular class we label it as a 'Mix' traffic. The heuristic that we used for labeling as 'Mix' traffic is when the dominant class accounts for less than 50 percent of the traffic by that host. Applying this procedure we observed 20 different classes of traffic, out of which the most frequently observed are discussed here: HTTP, DNS, SSH, MAIL, TELNET, FTP, CHAT, P2P, SMTP, MIX.
-
-The cross-validation between the port based approach and  our procedure is reported in \tabref{validation}. 
+In the scenarios when this technique cannot classify a host to particular class we label it as a 'Mix' traffic. The heuristic that we used for labeling as 'Mix' traffic is when the dominant class accounts for less than 50 percent of the traffic by that host. Applying this procedure we observed 20 different classes of traffic, out of which the most frequently observed are discussed here: HTTP, DNS, SSH, MAIL, TELNET, FTP, CHAT, P2P, SMTP, MIX. The cross-validation between the port based approach and  our procedure on one of the choosen day December 12th is reported in \tabref{validation}. 
 
 \begin{table}[t]
 	\caption{Cross-valdation of the host behavior extraction with port based analysis.}%
-	\centerline{\includegraphics[scale = 0.6]{validation.pdf}}	
+	\centerline{\includegraphics[scale = 0.5]{validation.pdf}}	
 	\tablabel{validation}
 \end{table}
 
+The first column in the table refers to the different behaviors identified by our system. Rows indicate what classes of traffic does a certain cluster(behavior) comprise of if classified by a  port-based classifier expressed in percentage.
 From the highlited parts in the table we can safely conclude that 
-there we have an high match of host classification which reflects the competence of the proposed procedure. It is also clearly evident from here that the nature of clusters described earlier confirm with the results obtained with cross-validation.The cross-validation also suggests that all the hosts that fall into a particular class based on port based analysis are not necessarily in the same cluster. They are dispersed across the clusters which shows the necessity of a host based behavior extraction.
+we have an high match of host classification which reflects the competence of the proposed procedure. It is also clearly evident from here that the nature of clusters described earlier confirm with the results obtained with cross-validation.This also suggests that all the hosts that fall into a particular class based on port based analysis are not necessarily in the same cluster. They are dispersed across the clusters which shows the necessity of a host based behavior extraction.
 
-For example, clusters S1 clearly shows that the hosts are SSH servers and cluster S2 ?. The distinction of clients is evident from the fact that C2 cluster has majority of DNS traffic and C1 clusters have mail and web traffic going out of the firewall. T1 is mostly requests and responses between hosts spread across different applications. The T2 clusters Mix shows that the hosts in the cluster have high interactive traffic across applications without falling into any majority class. Finally, for clusters containing hosts associated with a high proportion of scanners.
+For example, cluster S1 clearly confirms the fact that the hosts in this cluster are dealing with SSH traffic and the same traffic is also present in T1 and T2 clusters. Similary, hosts in the cluster S2 contains of servers that provide responses for web, ssh and other requests. This cluster has similar distribution as cluster C1 but they act exactly opposite like servers and clients respectively. Also, few points of observation from the table are, T1 has mostly requests and responses between hosts spread across different applications. hosts which are grouped as T2 have most of it's hosts labeled as Mix, which on further investigation revealed that many of the hosts in this class don't pass the majority test to be distinguished into any particular class. Finally, Scanners distribution was minimal across all the clusters. The sparsity of this table also serves as a confident measure for our proposed approach.
 
-and our observation is that the classes are quite stable over 
-several weeks which can be seen in the graph \figref{constant}. 
-which is a graph between the number of clusters formed over a timeperiod of 3 months that confirms the constant behavior.
-We can still update the host behaviors every couple of months or as per the change in usage of applications.
+The following evaluations also validate our systems results.
+Our observation is that the behaviors exhibited by the hosts are quite stable over several months which can be seen in the  \figref{constant}. The graph is a representation of the behaviors exhibited by hosts over a six months of time period. Since we map each cluster to a behavior this is equals to the number of clusters that are formed over a time period. As, we are using K-means clustering, in our case this is a graph drawn between the  value of K on X-axis and the day on which we found this value on Y-axis. Except for few points it is a straight line indicating the constants behaviors that hosts exhibited in our system. Our recommendation is to update the host behaviors every couple of months or as per the change in usage of applications.
 
-We further validated by looking at the distribution of 
+\begin{figure}[t]
+	\centerline{\includegraphics{constant.png}}
+	\caption{ Plot of number of clusters formed over a time period.}%
+	\figlabel{constant}
+\end{figure}
+
+
+\begin{figure}[t]
+	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.7]{bytes_cdf.pdf}}
+	\caption{ Average Bytes feature CDF for clusters T1,T2,S1,S2}%
+	\figlabel{bytes_Cdf}
+\end{figure}
+
+\figref{bytes_cdf} is a CDF of the average bytes transferrd by hosts in T1,T2 and S1,S2 clusters. 
 
 \section{Synthesized Data: description and clustering}
 
@@ -73,11 +85,7 @@ seemingly well by choosing a constant number of clusters at the stage of pattern
 detection. Figure \figref{constant} represents how the number of clusters formed for a months
 data are close to constant.
 
-\begin{figure}[t]
-	\centerline{\includegraphics{constant.png}}
-	\caption{ Plot of number of clusters formed over a time period.}%
-	\figlabel{constant}
-\end{figure}
+
 
 \item  By mapping cluster behaviors of a given day with a reference day we were also able
 to compare host behaviors. These comparisons can help network admin in capacity

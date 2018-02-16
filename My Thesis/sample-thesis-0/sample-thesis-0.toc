@@ -38,6 +38,6 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {section}{\numberline {6.1}Dataset: description and clustering}{30}
 \contentsline {section}{\numberline {6.2}Cross Validation}{32}
-\contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{34}
-\contentsline {section}{\numberline {6.4}Evaluation}{36}
-\contentsline {chapter}{REFERENCES}{39}
+\contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{36}
+\contentsline {section}{\numberline {6.4}Evaluation}{37}
+\contentsline {chapter}{REFERENCES}{41}

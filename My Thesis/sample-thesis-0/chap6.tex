@@ -67,13 +67,26 @@ Our observation is that the behaviors exhibited by the hosts are quite stable ov
 
 \section{Synthesized Data: description and clustering}
 
-In the evaluations described in the previous sections of this chapter we used the NetFlow data that doesn't have any ground truth in other terms the hosts in the NetFlow records are not mapped to any particular category which makes it a bit tough to measure the correctness of our system. That is why we used port based classification in section 6.2 to validate our system though it is not correct all the times. In this section we have considered a data set that is a mix of real world traffic with synthesized data to evaluate our system. This dataset is a capture of data synthesized by the organiztion mixed with normal and background traffic. This dataset consists of four captures of different samples. Each scenario(capture) is executed with a goal to evaluate disparate functionalities. Each scenario was captured in a pcap file which was further processed to obtain information about NetFlows. \tabref{synth_desc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlows and the size of the file itself. 
+In the evaluations described in the previous sections of this chapter we used the NetFlow data that doesn't have any ground truth in other terms the hosts in the NetFlow records are not mapped to any particular category which makes it a bit tough to measure the correctness of our system. That is why we used port based classification in section 6.2 to validate our system though it is not correct all the times. In this section we have considered a data set that is a mix of real world traffic with synthesized data to evaluate our system. This dataset is a capture of data synthesized by the organiztion mixed with normal and background traffic. This dataset consists of four captures of different samples. Each scenario(capture) is executed with a goal to evaluate disparate functionalities. Each scenario was captured in a pcap file which was further processed to obtain information about NetFlows. \tabref{synthdesc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlows and the size of the file itself. 
+
+\begin{table}[b]
+	\caption{Amount of data on each scenario.}%
+	\centerline{\includegraphics[scale = 0.5]{synth_desc.pdf}}	
+	\tablabel{synthdesc}
+\end{table}
+
+The distinctive character of this data set is that each scenario is manually examined and labeled. After labeling the data set looks similar to the one which we capture at the emulab router excpet for the last column where the flow is labeled which can be seen in the \figref{ss_labeled}.
 
 \begin{figure}[b]
-	\centerline{\includegraphics[trim=3cm 3cm 3cm 3cm, scale = 0.7]{synth_desc.pdf}}
-	\caption{Amount of data on each scenario}%
-	\figlabel{synth_desc}
+	\centerline{\includegraphics[trim=4cm 3cm 3cm 3cm, scale = 0.5]{ss_labeled.pdf}}
+	\caption{Manually labeled synthetic data.}%
+	\figlabel{ss_labeled}
 \end{figure}
+
+As mentioned earlier in this section these four different scenarios contain real network traffic and synthesized data. In the first scenario data is simulated to reflect UDP and ICMP DDOS attacks, In the second one traffic patterns exhibited by Scanning web proxies is simulated, The third and fourth scenarios have user generated traffic that mimics the behavior of chinese hosts and multiple synchronized networks respectively. Using these different captures(scenarios) we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple users on multiple networks communicating simultaneously). The results are as follows:
+
+\subsection{Scenario 1:}
+The scenario 1 is of duration 4.21 hours with 53 GB of data. This dataset contains four different classes of traffic as per the manual inspection and labeling.
 
 \begin{itemize}
 	

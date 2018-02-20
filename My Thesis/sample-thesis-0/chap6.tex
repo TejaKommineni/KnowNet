@@ -86,8 +86,162 @@ The distinctive character of this data set is that each scenario is manually exa
 As mentioned earlier in this section these four different scenarios contain real network traffic and synthesized data. In the first scenario data is simulated to reflect UDP and ICMP DDOS attacks, In the second one traffic patterns exhibited by Scanning web proxies is simulated, The third and fourth scenarios have user generated traffic that mimics the behavior of chinese hosts and multiple synchronized networks respectively. Using these different captures(scenarios) we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple users on multiple networks communicating simultaneously). The results are as follows:
 
 \subsection{Scenario 1:}
-The scenario 1 is of duration 4.21 hours with 53 GB of data. This dataset contains four different classes of traffic as per the manual inspection and labeling.
+The scenario 1 is of duration 11.63 hours with 37.6 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and scanners as labeled by the manual inspection. When we passed this data through our sytsem we found formation of two major clusters and the results are as shown in  \tabref{scenario1}. This is a confusion matrix and we can learn the following information from this matrix:
 
+\begin{table}[t]
+	\caption{Scenario 1.}%
+	\centerline{\includegraphics[scale = 0.7]{scenario1.pdf}}	
+	\tablabel{scenario1}
+\end{table}
+
+\begin{itemize}
+	\item There are two possible predicted behaviors: 'Scanning Web Flows' and 'Normal Flows'. 
+	\item Our system made a total of 129,833 predictions.
+	\item Out of those our system predicted 46,490 flows are from hosts which are scanning and 83,343 flows are from hosts which are exhibiting Normal behavior.
+	\item In reality 84,239 flows are from hosts that show Normal behavior and 45,594 flows are from hosts that are scanners.	
+\end{itemize}
+
+Now, let us calculate some numbers that describe the performance of our system.
+
+\begin{itemize}
+	\item \textbf{Accuracy:} Overall, how often is our system identifying correctly?
+	\begin{itemize}
+	
+	\item Number of flows it as predicted as scanners and they  actually are flows belonging to scanners along with Number of flows it as predicted as Normal and they  actually are flows belonging to Normal hosts divided by the total predictions made by our system.
+	
+	\item (42503+80252)/129833 = 0.9454
+	
+	\end{itemize}
+
+	\item \textbf{Misclassification Rate:} Overall, how often is our system wrong?
+	\begin{itemize}
+		
+		\item Number of flows it as predicted as scanners and they are not flows belonging to scanners along with Number of flows it as predicted as Normal and they are not flows belonging to Normal hosts divided by the total predictions made by our system.
+		
+		\item (3987+3091)/129833 = 0.0545
+	\end{itemize}
+	
+	\item \textbf{Precision:} For a certain behavior, how often it is identifying correctly?
+	\begin{itemize}
+		
+		\item Number of flows which are correctly predicted as scanners divided by total number of flows predicted as scanners, Number of flows which are correctly predicted as Normal divided by total number of flows predicted as Normal. 
+		
+		\item (42503)/46490 = 91.4\% precise in finding scanners.
+		
+		\item (80252)/83343 = 96.2\% precise in finding normal hosts.
+			
+	\end{itemize}
+
+\end{itemize}
+
+
+From this we learn that our system can identify unique behaviors wiht high accuracy and precision.
+
+\subsection{Scenario 2:}
+The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and chinese hosts as labeled by the manual inspection. When we passed this data through our system we found formation of two major clusters and the results are as shown in  \tabref{scenario2}. This information that we can learn from the confusion matrix is:
+
+\begin{table}[t]
+	\caption{Scenario 2.}%
+	\centerline{\includegraphics[scale = 0.7]{scenario2.pdf}}	
+	\tablabel{scenario2}
+\end{table}
+
+\begin{itemize}
+	\item There are two possible predicted behaviors: 'Chinese Host Flows' and 'Normal Flows'. 
+	\item Our system made a total of 107,978 predictions.
+	\item Out of those our system predicted 28,368 flows are from hosts which are hosted in china and 79,610 flows are from hosts which are exhibiting Normal behavior.
+	\item In reality 82,625 flows are from hosts that show Normal behavior and 25,353 flows are from hosts that are hosted in chinese.	
+\end{itemize}
+
+For this scenario the performance numbers are as follows:
+
+\begin{itemize}
+	\item \textbf{Accuracy:} Overall, how often is our system identifying correctly?
+	\begin{itemize}
+		
+		\item Number of flows it as predicted as from hosts hosted in chinese and they  actually are flows belonging to chinese hosts summed up with Number of flows it as predicted as Normal and they  actually are flows belonging to Normal hosts divided by the total predictions made by our system.
+		
+		\item (22456+76713)/107978 = 0.9184
+		
+	\end{itemize}
+	
+	\item \textbf{Misclassification Rate:} Overall, how often is our system wrong?
+	\begin{itemize}
+		
+		\item Number of flows it as predicted as chinese hosts and they are not flows belonging to chinese hosts along with Number of flows it as predicted as Normal and they are not flows belonging to Normal hosts divided by the total predictions made by our system.
+		
+		\item (5912+2897)/107978 = 0.081
+	\end{itemize}
+	
+	\item \textbf{Precision:} For a certain behavior, how often it is identifying correctly?
+	\begin{itemize}
+		
+		\item Number of flows which are correctly predicted as chinese hosts divided by total number of flows predicted as chinese hosts, Number of flows which are correctly predicted as Normal divided by total number of flows predicted as Normal. 
+		
+		\item (22456)/28368 = 79.1\% precise in finding chinese hosts.
+		
+		\item (76713)/79610 = 96.3\% precise in finding normal hosts.
+		
+	\end{itemize}
+	
+\end{itemize}
+
+We have performed this because it is quite a common attack in our network to see chinese hosts.
+
+
+
+\subsection{Scenario 3:}
+The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contains hosts exhibiting three unique behaviors namely normal ,background traffic and flows from hosts trying to do a DDOS as labeled by the manual inspection. When we passed this data through our system we found formation of three major clusters and the results are as shown in  \tabref{scenario3}. This information that we can learn from the confusion matrix is:
+
+\begin{table}[t]
+	\caption{Scenario 3.}%
+	\centerline{\includegraphics[scale = 0.6]{scenario3.pdf}}	
+	\tablabel{scenario3}
+\end{table}
+
+\begin{itemize}
+	\item There are two possible predicted behaviors: 'Background Flows' ,'Normal Flows', 'UDP \& ICMP DDOS Flows'. 
+	\item Our system made a total of 1,111,836 predictions.
+	\item Out of those our system predicted 689,249 flows are from hosts which are exhibiting Normal behavior , 73,650 flows are from hosts which are trying to perform DDOS attack and 348,937 flows as Background flows.
+	\item In reality the flows from normal hosts, background hosts and DDOS attackers are  711459, 332104 and 68273 respectively.
+\end{itemize}
+
+For this scenario the performance numbers are as follows:
+
+\begin{itemize}
+	\item \textbf{Accuracy:} Overall, how often is our system identifying correctly?
+	\begin{itemize}
+		
+		\item (681167+66377+320011)/1111836 = 0.9601
+		
+	\end{itemize}
+	
+	\item \textbf{Misclassification Rate:} Overall, how often is our system wrong?
+	\begin{itemize}
+		
+		\item Number of flows it as predicted as chinese hosts and they are not flows belonging to chinese hosts along with Number of flows it as predicted as Normal and they are not flows belonging to Normal hosts divided by the total predictions made by our system.
+		
+		\item (5912+2897)/107978 = 0.033
+	\end{itemize}
+	
+	\item \textbf{Precision:} For a certain behavior, how often it is identifying correctly?
+	\begin{itemize}
+		
+		\item Number of flows which are correctly predicted as chinese hosts divided by total number of flows predicted as chinese hosts, Number of flows which are correctly predicted as Normal divided by total number of flows predicted as Normal. 
+		
+		\item (22456)/28368 = 79.1\% precise in finding chinese hosts.
+		
+		\item (76713)/79610 = 96.3\% precise in finding normal hosts.
+		
+	\end{itemize}
+	
+\end{itemize}
+
+We have performed this because it is quite a common attack in our network to see chinese hosts.
+
+
+
+\subsection{Scenario 4:}
 \begin{itemize}
 	
 	

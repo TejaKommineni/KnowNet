@@ -1,6 +1,6 @@
 \contentsline {chapter}{\uppercase {Abstract}}{iii}
-\contentsline {chapter}{LIST OF FIGURES}{v}
-\contentsline {chapter}{LIST OF TABLES}{vi}
+\contentsline {chapter}{LIST OF FIGURES}{vi}
+\contentsline {chapter}{LIST OF TABLES}{vii}
 \unhbox \voidb@x \\[-1.2ex] \kern -1.5em\contentsline {}{\textbf {CHAPTERS}}{}
 \contentsline {chapter}{\numberline {1.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Introduction}\global \uuthesis@needtocspacetrue }{1}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
@@ -40,5 +40,8 @@
 \contentsline {section}{\numberline {6.2}Cross Validation}{32}
 \contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{36}
 \contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{37}
-\contentsline {section}{\numberline {6.4}Evaluation}{39}
-\contentsline {chapter}{REFERENCES}{42}
+\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{39}
+\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{41}
+\contentsline {subsection}{\numberline {6.3.4}Scenario 4:}{43}
+\contentsline {section}{\numberline {6.4}Evaluation}{44}
+\contentsline {chapter}{REFERENCES}{47}

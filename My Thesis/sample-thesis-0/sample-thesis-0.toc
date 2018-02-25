@@ -29,17 +29,17 @@
 \contentsline {section}{\numberline {3.2}Pattern Detector}{18}
 \contentsline {section}{\numberline {3.3}Applications}{24}
 \contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{25}
-\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{26}
+\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{28}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {5.1}Data Mining and Machine Learning Techniques for Intrusion Detection}{26}
-\contentsline {section}{\numberline {5.2}Machine Learning for Traffic Classification}{27}
-\contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{29}
-\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{30}
+\contentsline {section}{\numberline {5.1}Data Mining and Machine Learning Techniques for Intrusion Detection}{28}
+\contentsline {section}{\numberline {5.2}Machine Learning for Traffic Classification}{29}
+\contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{31}
+\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{32}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {6.1}Dataset: description and clustering}{30}
-\contentsline {section}{\numberline {6.2}Cross Validation}{32}
-\contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{36}
-\contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{38}
-\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{40}
-\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{41}
-\contentsline {chapter}{REFERENCES}{44}
+\contentsline {section}{\numberline {6.1}Dataset: description and clustering}{32}
+\contentsline {section}{\numberline {6.2}Cross Validation}{34}
+\contentsline {section}{\numberline {6.3}Synthesized Data: description and clustering}{38}
+\contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{40}
+\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{42}
+\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{43}
+\contentsline {chapter}{REFERENCES}{46}

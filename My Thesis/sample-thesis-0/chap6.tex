@@ -65,8 +65,11 @@ The row headers in the table correspond to the lables of the clusters generated 
 \end{itemize}
   For example, cluster S1 clearly confirms the fact that the hosts in this cluster are dealing with SSH traffic and the same traffic is also present in T1 and T2 clusters. Similary, hosts in the cluster S2 contains of servers that provide responses for web, ssh and other requests. This cluster has similar distribution as cluster C1 but they act exactly opposite like servers and clients respectively. Also, few points of observation from the table are, T1 has mostly requests and responses between hosts spread across different applications. hosts which are grouped as T2 have most of it's hosts labeled as Mix, which on further investigation revealed that many of the hosts in this class don't pass the majority test to be distinguished into any particular class. Finally, Scanners distribution was minimal across all the clusters. The sparsity of this table also serves as a confident measure for our proposed approach.
 
-\section{Synthesized Data: description and clustering}
+\section{Labeled Data: description and clustering}
 
+\textit{What is this section about?} In this section we are evaluating our system to determine its accuracy and precision on identifying host behaviors.
+\textit{How is it different from previous evaluations?} While the previous evaluations in this chapter used unlabeled data to validate our system. Here, we are using labeled data to do this evaluation.
+\textit{So, where did you get the labeled data?} The labeled data that we used in this section  
 In the evaluations described in the previous sections of this chapter we used the NetFlow data that doesn't have any ground truth in other terms the hosts in the NetFlow records are not mapped to any particular category of traffic which makes it tough to measure the correctness of our system. This is why we employed port based classification in section 6.2 to validate our system though it is not a correct measure all the times. In this section we have considered a data set that is a mix of real world traffic with synthesized traffic to evaluate our system. This data set is provided by Center for Applied Internet Data Analysis (CAIDA). CAIDA is a research group based at the San Diego Supercomputer Center (SDSC) on the UC San Diego campus who conduct network research and build research infrastructure to support large-scale data collection, curation, and data distribution to the scientific research community. This dataset consists of four captures of different samples. Each scenario(capture) is executed with a goal to evaluate disparate functionalities. Each scenario was captured in a pcap file which was further processed to obtain information about NetFlows. \tabref{synthdesc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlows and the size of the file itself. 
 %explain how caida synthesized data%
 \begin{table}[t]
@@ -224,3 +227,12 @@ For this scenario the performance numbers are as follows:
 
 	
 \end{itemize}
+
+The following evaluations also validate our systems results.
+Our observation is that the behaviors exhibited by the hosts are quite stable over several months which can be seen in the  \figref{constant}. The graph is a representation of the behaviors exhibited by hosts over a six months of time period. Since we map each cluster to a behavior this is equals to the number of clusters that are formed over a time period. As, we are using K-means clustering, in our case this is a graph drawn between the  value of K on X-axis and the day on which we found this value on Y-axis. Except for few points it is a straight line indicating the constants behaviors that hosts exhibited in our system. Our recommendation is to update the host behaviors every couple of months or as per the change in usage of applications.
+
+\begin{figure}[t]
+	\centerline{\includegraphics{constant.png}}
+	\caption{ Plot of number of clusters formed over a time period.}%
+	\figlabel{constant}
+\end{figure}

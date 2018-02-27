@@ -68,17 +68,32 @@ The row headers in the table correspond to the lables of the clusters generated 
 \section{Labeled Data: description and clustering}
 
 \textit{What is this section about?} In this section we are evaluating our system to determine its accuracy and precision on identifying host behaviors.
+
 \textit{How is it different from previous evaluations?} While the previous evaluations in this chapter used unlabeled data to validate our system. Here, we are using labeled data to do this evaluation.
-\textit{So, where did you get the labeled data?} The labeled data that we used in this section  
-In the evaluations described in the previous sections of this chapter we used the NetFlow data that doesn't have any ground truth in other terms the hosts in the NetFlow records are not mapped to any particular category of traffic which makes it tough to measure the correctness of our system. This is why we employed port based classification in section 6.2 to validate our system though it is not a correct measure all the times. In this section we have considered a data set that is a mix of real world traffic with synthesized traffic to evaluate our system. This data set is provided by Center for Applied Internet Data Analysis (CAIDA). CAIDA is a research group based at the San Diego Supercomputer Center (SDSC) on the UC San Diego campus who conduct network research and build research infrastructure to support large-scale data collection, curation, and data distribution to the scientific research community. This dataset consists of four captures of different samples. Each scenario(capture) is executed with a goal to evaluate disparate functionalities. Each scenario was captured in a pcap file which was further processed to obtain information about NetFlows. \tabref{synthdesc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlows and the size of the file itself. 
-%explain how caida synthesized data%
+
+\textit{So, where did you get the labeled data?} The labeled data that we used in this section is provided by Center for Applied Internet Data Analysis (CAIDA).
+
+\textit{What is CAIDA?} CAIDA is a research group based at the San Diego Supercomputer Center (SDSC) on the UC San Diego campus who conduct network research and build research infrastructure to support large-scale data collection, curation, and data distribution to the scientific research community.
+
+\textit{How did CAIDA get its labeled data and explain the features of this data set? }
+CAIDAs dataset consists of thirteen different scenarios. Each scenario is a capture of network data written into a pcap file. Each capture consists of both real network traffic and the synthetic traffic they have generated to emulate that scenario. For our evaluation purpose we are considering four of these scenarios.
+
+\begin{itemize}
+	\item In the first scenario they have generated traffic to emulate the situation of scanners in the network and hence their capture consists of two classes of traffic namely,  Normal and Scanning web proxies.
+	\item In the second scenario they have generated traffic to emulate the situation of chinese attackers in the network and hence their capture consists of two classes of traffic namely,  Normal and Chineses hosts.
+	\item The third scenario consists of synthesized traffic to emulate hosts exhibiting multiple behaviors in the network namely, Normal, Background and UDP\& ICMP DDOS attacks.
+	\item Fourth scenario consists of synthesized traffic to emulate hosts exhibiting multiple behaviors in the network namely, Normal, Background and UDP\& ICMP DDOS attacks.
+
+\end{itemize}
+
+ These captured pcap files are further processed to obtain information about NetFlows. \tabref{synthdesc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlows and the size of the file itself. The distinctive character of this data set is that the data captured in each scenario is manually examined and labeled. The labeled dataset looks similar to the one which we capture at the emulab router excpet for the last column where the flow is labeled which can be seen in the \figref{ss_labeled}.
+
+
 \begin{table}[t]
 	\caption{Amount of data on each scenario.}%
 	\centerline{\includegraphics[scale = 0.5]{synth_desc.pdf}}	
 	\tablabel{synthdesc}
 \end{table}
-
-The distinctive character of this data set is that each scenario is manually examined and labeled. After labeling the data set looks similar to the one which we capture at the emulab router excpet for the last column where the flow is labeled which can be seen in the \figref{ss_labeled}.
 
 \begin{figure}[b]
 	\centerline{\includegraphics[trim=4cm 3cm 3cm 3cm, scale = 0.5]{ss_labeled.pdf}}
@@ -86,7 +101,10 @@ The distinctive character of this data set is that each scenario is manually exa
 	\figlabel{ss_labeled}
 \end{figure}
 
-As mentioned earlier in this section these four different scenarios contain real network traffic and synthesized data. In the first scenario data is simulated to reflect Scanning web proxies, In the second one traffic patterns exhibited by chinese hosts is simulated, The third and fourth scenarios have a mix of user generated traffic that mimics the behavior of UDP and ICMP DDOS attacks and multiple synchronized networks respectively. Using these different captures(scenarios) we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple users on multiple networks communicating simultaneously). The results are as follows:
+	
+
+Using the different captures in \tabref{synthdesc}  we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple users on multiple networks communicating simultaneously). The results are as follows:
+
 
 \subsection{Scenario 1:}
 The scenario 1 is of duration 11.63 hours with 37.6 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and scanners as labeled by the manual inspection. Through this experiment we would like to check our systems basic functionality of identifying different behaviors. When we passed this data through our sytsem we found formation of two major clusters and the results are as shown in  \tabref{scenario1}. This is a confusion matrix and we can learn the following information from this matrix:

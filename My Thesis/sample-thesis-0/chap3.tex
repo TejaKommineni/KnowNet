@@ -7,7 +7,7 @@ using them in conjunction with existing tools to make network management easier 
 different components fit into the architecture.
 
 \section{Components}
-Our design is comprised of four essential components: Netflow Collection, Feature Engineering, Pattern Detector, and
+Our design is comprised of the following essential components: Netflow Collection, Feature Engineering, Pattern Detector, and
 applications as shown in \figref{arch}.
 \begin{figure}[t]
 	\centerline{\includegraphics[trim=4cm 4cm 4cm 4cm, scale = 0.6]{architecture.pdf}}
@@ -16,11 +16,11 @@ applications as shown in \figref{arch}.
 \end{figure}
 
 \subsection{Netflow Collection}
-While the term NetFlow has become a de-facto industry standard, many other network hardware manufacturers support alternative flow technologies namely Jflow, s-flow, NetStream, etc.. The University routers from which we have collected the data for this experiment have been equipped with NetFlow on it which led to using NetFlow as our Flow technology. 
-\subsubsection{What is NetFlow}
+While the term NetFlow has become a de-facto industry standard, many other network hardware manufacturers support alternative flow technologies namely Jflow, s-flow, NetStream, etc.. The University routers from which we have collected the data for this experiment have been equipped with NetFlow on it which led to using NetFlow as our flow technology. 
+\subsubsection{What is NetFlow?}
 NetFlow is a proprietary protocol for collecting IP flow packets information on networks. There are different variants to this protocol but across all these versions a flow is defined uniquely by its source and destination IP addresses, source and destination ports, transportation protocol. Whenever one of these values changes a new flow is created. For each flow the number of packets, bytes and other network related information are tallied and stored in the routers cache till it expires, then this information is exported to a collector. 
 
-The captured flows are exported to NetFlow collectors at frequent intervals. The flows that are to be exported are determined based on the following rules: 1) when it is inactive for a certain time without receiving any new packets. 2) If the flow is active than max threshold time which is configurable. 3) If a TCP flag (FIN / RST) indicates the flow is terminated. NetFlow provides a powerful tool to keep track of what kind of traffic is going on the network, and are widely used for network monitoring. Most vendors support different flavors of similar flow monitoring approaches and a common standardization is done within the IETF IPFIX working group.
+The captured flows are exported to NetFlow collectors at frequent intervals. The flows that are to be exported are determined based on the following rules: 1) When a flow is inactive for a certain time without receiving any new packets. 2) If the flow is active than max threshold time which is configurable. 3) If a TCP flag (FIN / RST) indicates the flow is terminated. NetFlow provides a powerful tool to keep track of what kind of traffic is going on the network, and are widely used for network monitoring. Most vendors support different flavors of similar flow monitoring approaches and a common standardization is done within the IETF IPFIX working group.
 
 There are different variants of NetFlow with each advanced version giving additional information about the flow. The fields that we used in our experiment and that are supported across the versions are in \figref{netflow}.
 
@@ -45,7 +45,7 @@ Below we describe different steps involved in the Feature Engineering with sampl
  
 \subsubsection{Missing Data} 
 
-\tabref{raw_data} is a sample of network data collected using netflow. In total there are 40 columns for each record with each column capturing different flow information. From the table we can see that there are few missing values. Missing data is a common issue that every data science experiment has to deal with and there could be different reasons why netflow records could be missing some values such as, few filters could be turned on the router that doesn't let the netflow collector collect all the information, overloading of netflow collector and others. We handled Missing data using the following techniques 
+\tabref{raw_data} is a sample of network data collected using netflow. In total there are 40 columns (only 9 columns are shown in the table) for each record with each column capturing different flow information. From the table we can see that there are few missing values. Missing data is a common issue that every data science experiment has to deal with and there could be different reasons why netflow records could be missing some values such as, few filters could be turned on the router that doesn't let the netflow collector collect all the information, overloading of netflow collector and others. We handled Missing data using the following techniques 
 
 1) Replace missing values with the mean. For the features such as duration, total packets and bytes exchanged we assume that missing values are distributed similarly to the values that are present for each source IP. The rational approach here would be to substitute values using mean as it maintains the existing distribution.
 
@@ -53,7 +53,7 @@ Below we describe different steps involved in the Feature Engineering with sampl
 
 3) The question that arises when replacing missing values is what percentage of values can a feature miss atmost. For example, filling in half the values of a feature in this step with a statistic measure is not reasonable. Features of this kind are considered as noise and could affect the effectiveness of the data mining algorithm. The better option here would be to discard the coulmn that has too may missing calues. In our case there were handful of columns that fell under this category and are discarded. flags shown in the \tabref{raw_data} is one among them. After handling missing values our data looks as in \tabref{missing_data}.
 
-\begin{table}[b]
+\begin{table}[t]
 	\caption{NetFlow raw data after handling missing values}%
 	\centerline{\includegraphics[scale = 0.6]{missing_data.png}}
 	
@@ -125,12 +125,12 @@ Pattern Detector consists of the core logic of our system. After cleaning the da
 
 As mentioned in the background section we choose to address our problem using unsupervised learning approaches. The most common unsupervised learning method is cluster analysis, which is used for exploratory data analysis to find hidden patterns or grouping in data. 
 
-\subsubsection*{Why K-Means ??}
+\subsubsection{Why K-Means ??}
  In the section \ref{unsupervised} we have discussed about different type of clustering techniques in detail. Here we provide a reasoning for choosing K-Means.
  
 Connectivity models like Hierarchical clustering don't have a provision for relocating objects that may have been incorrectly grouped at an early stage. Also, use of different distance metrics for measuring distances between clusters may generate different results. Performing multiple experiments and comparing
 the results is recommended to support the veracity of
-the original results. Lastly, Time complexity of at least O($n^2logn$) is required, where n is the number of data points thus lacking scalability for handling big datasets.
+the original results. Lastly, time complexity of at least O($n^2logn$) is required, where n is the number of data points thus lacking scalability for handling big datasets.
 
 Distribution Models assume a distribution for data but for many real data sets, there may be no concisely defined mathematical model (e.g. assuming Gaussian distributions is a rather strong assumption on the data). Also, though distribution models have an excellent  theoretical foundation but they suffer from one key problem known as overfitting. 
 
@@ -139,7 +139,7 @@ We have experimented our data set with the density model DBSCAN and we have foun
 Experimenting with centroid models especially K-Means gave us an advantage to play with the variable K and view into how host behaviors are being grouped with different values of K. It is scalable for heavier datasets and doesn't suffer from the overfitting problem. Also, there isn't any inherent assumption on which distribution the dataset should follow. Thus, making it a clear choice for building our system.
 
 
-\subsubsection*{How to choose K ??}
+\subsubsection{How to choose K ??}
  In many situations, parameters and variables chosen by the algorithm or by users affects the performance of the algorithm differently and results in different outputs. Similarly, an essential problem of the K-means clustering method is to define an appropriate number of clusters K. In the literature there are different approaches proposed to determine an accurate value of K.
  These methods include direct methods and statistical testing methods. Direct methods consists of optimizing a criterion, such as the within cluster sums of squares or the average silhouette. The corresponding methods are named elbow and silhouette methods, respectively. Statistical testing methods consists of comparing evidence against null hypothesis. An example is the gap statistic. We have used the direct methods as they optimize a criteria the elbow method to determine K and then cross-verified the values with the Silhouette Index obtained for this same data set.
  
@@ -194,7 +194,7 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  	\figlabel{silhouette}
  \end{figure}
  
-\subsubsection*{Cluster Labeling}  \label{cluster_labeling}
+\subsubsection{Cluster Labeling}  \label{cluster_labeling}
 
 We chose a reference day for labeling the clusters. Since the number of clusters are only seven we had manually inspected each cluster and labeled them based on the contents of the cluster. \tabref{cluster_centers} shows clusters formed and the cluster centers. The first row describes that the cluster 1 has hosts which on an average sent 10 outgoing flows by using 9 different source ports targeting a single destination on the same port and all those flows were UDP flows. 
 

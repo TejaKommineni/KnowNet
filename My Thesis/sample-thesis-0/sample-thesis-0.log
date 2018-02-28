@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  27 FEB 2018 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  27 FEB 2018 17:58
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -660,13 +660,13 @@ Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 )
 Abstract.
-[3] (sample-thesis-0.toc)
+[3] (sample-thesis-0.toc [4])
 \tf@toc=\write4
 \openout4 = `sample-thesis-0.toc'.
 
 
 Contents.
-[4] [5]
+[5]
 List of Figures.
 (sample-thesis-0.lof)
 \tf@lof=\write5
@@ -740,11 +740,6 @@ CHAPTER 2.
 
 
 ]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 33.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 33.
-
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
@@ -776,6 +771,10 @@ File: architecture.pdf Graphic file (type pdf)
  <use architecture.pdf>
 Package pdftex.def Info: architecture.pdf used on input line 13.
 (pdftex.def)             Requested size: 340.4114pt x 232.00557pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 18.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 18.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -826,7 +825,7 @@ File: categorical.png Graphic file (type png)
 Package pdftex.def Info: categorical.png used on input line 71.
 (pdftex.def)             Requested size: 339.06937pt x 221.02744pt.
 
-Underfull \vbox (badness 1776) has occurred while \output is active []
+Underfull \vbox (badness 7168) has occurred while \output is active []
 
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
@@ -1196,7 +1195,7 @@ Overfull \vbox (7.643pt too high) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  13991 strings out of 493323
  272735 string characters out of 3138204
- 309015 words of memory out of 3000000
+ 308919 words of memory out of 3000000
  17106 multiletter control sequences out of 15000+200000
  57585 words of font info for 160 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1213,7 +1212,7 @@ latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplbi
 8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/P
 rogram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (56 pages, 1928920 bytes).
+Output written on sample-thesis-0.pdf (56 pages, 1929010 bytes).
 PDF statistics:
  371 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

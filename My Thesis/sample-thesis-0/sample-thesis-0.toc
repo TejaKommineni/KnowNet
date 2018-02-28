@@ -6,14 +6,15 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {section}{\numberline {1.1}Contributions}{4}
 \contentsline {chapter}{\numberline {2.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {BACKGROUND}\global \uuthesis@needtocspacetrue }{5}
-\contentsline {subsection}{\numberline {2.0.1}Unsupervised Learning}{6}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {2.1}Unsupervised Learning}{6}
 \contentsline {chapter}{\numberline {3.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Design Overview}\global \uuthesis@needtocspacetrue }{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {section}{\numberline {3.1}Components}{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsection}{\numberline {3.1.1}Netflow Collection}{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {3.1.1.1}What is NetFlow}{9}
+\contentsline {subsubsection}{\numberline {3.1.1.1}What is NetFlow?}{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsection}{\numberline {3.1.2}Feature Engineering}{10}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
@@ -27,6 +28,9 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {3.1.2.5}Feature Selection}{15}
 \contentsline {section}{\numberline {3.2}Pattern Detector}{18}
+\contentsline {subsubsection}{\numberline {3.2.0.1}Why K-Means ??}{18}
+\contentsline {subsubsection}{\numberline {3.2.0.2}How to choose K ??}{19}
+\contentsline {subsubsection}{\numberline {3.2.0.3}Cluster Labeling}{21}
 \contentsline {section}{\numberline {3.3}Applications}{24}
 \contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{25}
 \contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{28}

@@ -194,41 +194,16 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  	\figlabel{silhouette}
  \end{figure}
  
-\subsubsection{Cluster Labeling}  \label{cluster_labeling}
+\subsubsection{Cluster Labeling and Comparison}  \label{cluster_labeling}
 
-We chose a reference day for labeling the clusters. Since the number of clusters are only seven we had manually inspected each cluster and labeled them based on the contents of the cluster. \tabref{cluster_centers} shows clusters formed and the cluster centers. The first row describes that the cluster 1 has hosts which on an average sent 10 outgoing flows by using 9 different source ports targeting a single destination on the same port and all those flows were UDP flows. 
-
-We have mapped each of these clusters to human understandable classes which is shown in \tabref{cluster_label}. The clusters represent the host behaviors as follows:
+The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. A detailed explanation of our observations is provided in the evaluation section. On a higher level, we observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior. We labeled these behvaiors in an human understandable format and observed how these behaviors are changing over time using the following procedure outlined.
 
 \begin{itemize}
-	\item Cluster 1 represents hosts which are sending DNS queries to our servers and they are classified as Low as they have an average of 10 flows. 
+	\item We chose a reference day for labeling the clusters and assigned labels by manually inspecting contents of the cluster.
 	
-	\item Cluster 2 hosts exchange normal tcp traffic. These hosts could various things ranging from exchanging messages to files.
-	
-	\item Cluster 4 represents the hosts similar to the Cluster 1 hosts which are sending DNS queries to our servers and they are classified as high as they have an average of 200 flows.
-	
-	\item Cluster 3 and Cluster 5 represent to the Heavy and Low DNS Query Responses. The hosts in these clusters correspond to Heavy and Low DNS queries respectively.
-	
-	\item Cluster 7 represents only UDP flows.
-	
-	\item Cluster 6 represents anomalous hosts trying to scan through the network  by sending heavy packets or trying to gain unauthorized access through open ports. 
-\end{itemize}
+	\item Now, we use this reference day labeling and identify the behaviors on any other day.
+\end{itemize} 
 
-\begin{table}[b]
-	\caption{Cluster Centers}%
-	\centerline{\includegraphics[scale = 0.6]{cluster_centers.png}}
-	
-	\tablabel{cluster_centers}
-\end{table}
-
-\begin{table}[b]
-		\caption{Cluster Labeling}%
-	\centerline{\includegraphics[scale = 0.6]{cluster_label.png}}
-
-	\tablabel{cluster_label}
-\end{table}
-
-\subsubsection*{Cluster Comparison}
 As mentioned the overarching premise of our work is to analyze the behavior of hosts looking at the aggregated data. In order to analyze the behavior of hosts over a time period we should be able to compare hosts behavior across days. We dealt with this by initially comparing the hosts behavior for any two days and then extended it to any given time period.
 
 In our case each cluster is exhibiting a unique behavior and hence comparing the hosts behavior turns out to be a problem of comparing clusters formed on two different days. Cluster comparison is not a well studied area. And, hence we translated this problem into an Assignment problem \cite{kuhn1955hungarian}. Assignment problem is a special type of linear programming problem which deals with the allocation of the various resources to the various activities on one to one basis. It does it in such a way that the cost or time involved in the process is minimum and profit or sale is maximum. 

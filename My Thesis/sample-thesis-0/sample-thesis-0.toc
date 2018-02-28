@@ -30,20 +30,20 @@
 \contentsline {section}{\numberline {3.2}Pattern Detector}{18}
 \contentsline {subsubsection}{\numberline {3.2.0.1}Why K-Means ??}{18}
 \contentsline {subsubsection}{\numberline {3.2.0.2}How to choose K ??}{19}
-\contentsline {subsubsection}{\numberline {3.2.0.3}Cluster Labeling}{21}
-\contentsline {section}{\numberline {3.3}Applications}{24}
-\contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{25}
-\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{28}
+\contentsline {subsubsection}{\numberline {3.2.0.3}Cluster Labeling and Comparison}{21}
+\contentsline {section}{\numberline {3.3}Applications}{23}
+\contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{24}
+\contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{27}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {5.1}Data Mining and Machine Learning Techniques for Intrusion Detection}{28}
-\contentsline {section}{\numberline {5.2}Machine Learning for Traffic Classification}{29}
-\contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{31}
-\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{32}
+\contentsline {section}{\numberline {5.1}Data Mining and Machine Learning Techniques for Intrusion Detection}{27}
+\contentsline {section}{\numberline {5.2}Machine Learning for Traffic Classification}{28}
+\contentsline {section}{\numberline {5.3}Usage of flow records for IDS/Classification}{30}
+\contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{31}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {6.1}Dataset: description and clustering}{32}
-\contentsline {section}{\numberline {6.2}Cross Validation}{35}
-\contentsline {section}{\numberline {6.3}Labeled Data: description and clustering}{37}
-\contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{39}
-\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{41}
-\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{43}
-\contentsline {chapter}{REFERENCES}{46}
+\contentsline {section}{\numberline {6.1}Dataset: description and clustering}{31}
+\contentsline {section}{\numberline {6.2}Cross Validation}{34}
+\contentsline {section}{\numberline {6.3}Labeled Data: description and clustering}{36}
+\contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{38}
+\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{40}
+\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{42}
+\contentsline {chapter}{REFERENCES}{45}

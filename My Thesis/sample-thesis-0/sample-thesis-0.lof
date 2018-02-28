@@ -5,9 +5,9 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized data}}{16}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Elbow Method}}{20}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Silhouette Method}}{22}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{27}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Average Bytes feature CDF for clusters T1,T2,S1,S2}}{34}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}}{35}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled synthetic data.}}{39}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Plot of number of clusters formed over a time period.}}{45}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{26}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Average Bytes feature CDF for clusters T1,T2,S1,S2}}{33}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}}{34}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled synthetic data.}}{38}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Plot of number of clusters formed over a time period.}}{44}

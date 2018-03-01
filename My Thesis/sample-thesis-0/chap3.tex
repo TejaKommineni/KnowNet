@@ -196,15 +196,9 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  
 \subsubsection{Cluster Labeling and Comparison}  \label{cluster_labeling}
 
-The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. A detailed explanation of our observations is provided in the evaluation section. On a higher level, we observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior. We labeled these behvaiors in an human understandable format and observed how these behaviors are changing over time using the following procedure outlined.
+The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. We observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior.
+Recall the overarching premise of our work is to analyze the behavior of hosts looking at the aggregated host data. In order to analyze the behavior of hosts over a time period we should be able to compare hosts behavior across days. We dealt with this by initially comparing the hosts behavior for any two days and then extended it to any given time period. To achieve this we chose a reference day and the labeled the clusters on that day into an human understandable format.
 
-\begin{itemize}
-	\item We chose a reference day for labeling the clusters and assigned labels by manually inspecting contents of the cluster.
-	
-	\item Now, we use this reference day labeling and identify the behaviors on any other day.
-\end{itemize} 
-
-As mentioned the overarching premise of our work is to analyze the behavior of hosts looking at the aggregated data. In order to analyze the behavior of hosts over a time period we should be able to compare hosts behavior across days. We dealt with this by initially comparing the hosts behavior for any two days and then extended it to any given time period.
 
 In our case each cluster is exhibiting a unique behavior and hence comparing the hosts behavior turns out to be a problem of comparing clusters formed on two different days. Cluster comparison is not a well studied area. And, hence we translated this problem into an Assignment problem \cite{kuhn1955hungarian}. Assignment problem is a special type of linear programming problem which deals with the allocation of the various resources to the various activities on one to one basis. It does it in such a way that the cost or time involved in the process is minimum and profit or sale is maximum. 
 

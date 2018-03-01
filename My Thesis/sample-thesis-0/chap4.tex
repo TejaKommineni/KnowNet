@@ -18,17 +18,15 @@ primary source for our experiments. But this data is not in a usable format for 
 	\figlabel{cluster_comp}
 \end{figure}
 
- Now for every other day we compare the clusters formed on that given day with the reference day. Cluster comparison is an active research area and there are very few techniques to do this and hence we solved it by converting our cluster comparison problem in to an assignment problem. An assignment problem generally deals with assigning machines to tasks, workers to jobs etc.. The goal is to determine the optimum assignment that, for example, minimizes the total cost. The assignment problem is a fundamental problem in the area of combinatorial optimization. It has many polynomial time implementations and one of them is Hungarian Algorithm \cite{}. So, in our case the assignment problem is assigning the clusters on a given day to the clusters on the reference day. We use hungarian algorithm to solve this cluster assignment. As per this algorithm a cluster on a given day gets mapped to the cluster on a reference day based on the amount of effort it takes to move all the data points from this cluster to any of the reference day clusters center. Overall the goal is to makes the assignments in such a way that the total effort is least. The least effort assignment for dec 12th is shown in the \figref{assign_prob}. The goal is 
+ Now for every other day we compare the clusters formed on that given day with the reference day. Cluster comparison is an active research area and there are very few techniques to do this and hence we solved it by converting our cluster comparison problem in to an assignment problem. An assignment problem generally deals with assigning machines to tasks, workers to jobs etc.. The goal is to determine the optimum assignment that, for example, minimizes the total cost. The assignment problem is a fundamental problem in the area of combinatorial optimization. It has many polynomial time implementations and one of them is Hungarian Algorithm \cite{}. So, in our case the assignment problem is assigning the clusters on a given day to the clusters on the reference day. We use hungarian algorithm to solve this cluster assignment. As per this algorithm a cluster on a given day gets mapped to the cluster on a reference day based on the amount of effort it takes to move all the data points from this cluster to any of the reference day clusters center. Overall the goal is to make the assignments in such a way that the total effort is least. The least effort assignment for dec 12th is shown in the \figref{assign_prob}.
  
- On any given day we pass the NetFlow data through patteren detector which will give us clusters on that day, now we map these clusters to the clusters formed on the reference day and subsequently the labels of the reference day clusters gets assigned to the clusters on the given day. 
- 
-\textit{Hungarian Algorithm}, 
- 
+
  \begin{figure}[t]
  	\centerline{\includegraphics[scale = 0.5]{assign_prob.pdf}}
  	\caption{Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }%
  	\figlabel{assign_prob}
  \end{figure}
 
+A point to be noted here is that we might need to change the reference day with time. This could be because of change in the usage of applications over time. Our recommendation is to choose a reference day that suggests the changed behavior and keep visiting this periodically.
 % WE can write about why we ended up with log normalization%
 % Few numbers like number of code lines, programming languages used, machines on which or code is run machines on which the data is collected, data size every day, into evaluation --> execution time for each step after the nfdump we again have manual scripts to move data to other machines and from there we captre it in csv file. here these scripts are also used to feed the data into solarwinds like applications which does port based classification and we have used this technique for evaluations also.  %

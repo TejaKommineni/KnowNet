@@ -188,6 +188,8 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  
   The intuition behind this approach is for a point as a(i) is a measure of how dissimilar i is to its own cluster, a small value means it is well matched. Furthermore, a large b(i) implies that i is badly matched to its neighboring cluster. Thus an s(i) close to one means that the data is appropriately clustered. if s(i) is close to negative one, then by the same logic we see that i would be more appropriate if it was clustered in its neighboring cluster. The average s(i) over all data of a cluster is a measure of how tightly grouped all the data in the cluster are. Thus the average s(i) over all data of the entire dataset is a measure of how appropriately the data have been clustered. \figref{silhouette} shows the the plot obtained using silhouette technique. 
  
+   An important point that has to be noted here is that, though we have a method to evaluate K, we don't invoke this method daily to determine the K value. We chose a reference day and determine the K value for that day and that K value is used for the remaining days till the network admin chooses to change this reference day. A reference day is selected generally to reflect all the behaviors that are seen in our network in day-to-day basis. The choice of changing this reference day also vests with the network admin as he knows how the usage of network has been changed and whenever a reference day is changed we need to calcualte the K value again.
+   
  \begin{figure}[t]
  	\centerline{\includegraphics[scale = 0.6]{silhouette.png}}
  	\caption{Silhouette Method}%
@@ -196,19 +198,28 @@ Experimenting with centroid models especially K-Means gave us an advantage to pl
  
 \subsubsection{Cluster Labeling and Comparison}  \label{cluster_labeling}
 
-The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. We observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior.
-Recall the overarching premise of our work is to analyze the behavior of hosts looking at the aggregated host data. In order to analyze the behavior of hosts over a time period we should be able to compare hosts behavior across days. We dealt with this by initially comparing the hosts behavior for any two days and then extended it to any given time period. To achieve this we chose a reference day and the labeled the clusters on that day into an human understandable format.
+The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. We observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior. These clusters were labeled accordingly.
+Recall the overarching premise of our work is to analyze the behavior of hosts looking at the aggregated host data. In order to analyze the behavior of hosts over a time period we should be able to compare hosts behavior across days. We dealt with this by initially comparing the hosts behavior for any two days and then extended it to any given time period. To achieve this we chose a reference day and label the clusters on that day through manual inspection. On any other day we label the clusters by comparing it with this reference day. Cluster comparison is an active research area but in our case it is slightly easier to solve because the number of clusters that are formed on each day are constant (i.e, as we choose the same k value as on reference day.) and each cluster maps to a unique behavior. So, all that we need to do is to find a one-to-one mapping with the reference day clusters. 
+Now this turns out to be an assignment problem which is well studied \cite{kuhn1955hungarian}. Assignment problem is a special type of linear programming problem which deals with the allocation of the various resources to the various activities on one to one basis. It does it in such a way that the cost or time involved in the process is minimum and profit or sale is maximum. 
 
-
-In our case each cluster is exhibiting a unique behavior and hence comparing the hosts behavior turns out to be a problem of comparing clusters formed on two different days. Cluster comparison is not a well studied area. And, hence we translated this problem into an Assignment problem \cite{kuhn1955hungarian}. Assignment problem is a special type of linear programming problem which deals with the allocation of the various resources to the various activities on one to one basis. It does it in such a way that the cost or time involved in the process is minimum and profit or sale is maximum. 
-
-In our case both the resources and activities are nothing but clusters formed on two different days. Assignment Problem is a well studied problem and has polynomial time solutions. One such algorithm is the Hungarian algorithm. 
+In our case both the resources and activities are nothing but clusters formed on two different days and this has to be done in such a way that the total effort is least. Assignment Problem is a well studied problem and has polynomial time solutions. One such algorithm is the Hungarian algorithm\cite{}.
 
 \section{Applications}
-Our system can be used to build different applciations that help in Network Management. Few of them are as follows:
-\textit{Recommendation Systems}, We can capture the different behaviors exhibited by network users over time and use this to predict a behavior on a certain day of a week or month using the historical data. This helps network admin to prepare well ahead and plan the bandwidth or other network resources accordingly.
-\textit{Dynamic FireWall Rules Generator}, Looking at the historic user behavior we can generate dynamic rules for security of the network. Few of them could be, to block certain ips that fall under Anomaly cluster or looking at the cluster centers and distribution of anomaly cluster we can change the authentication rules on number of unsuccessful attempts using different ports and so on..
-\textit{Anomaly detectors}, We can observe the change in cluster sizes and centers and there by notify the network admin if there is shift in behavior that network admin has to be notified. 
+Our system can be used to build different applciations that help in network management as listed below.
+\begin{itemize}
+	
+	\item \textit{Anomaly Detectors}, applications that expose the hosts that are behaving as outliers and don't conform to an expected pattern. We can use our system to build such applications. For example, we found a cluster of hosts that are exhibiting anamolous behavior during our exploration of  emulab data. We can observe the change of this cluster size and center over days and there by notify the network admin if there is a shift in anamoly behavior that network admin has to be aware of. Here we can take the help of  work done by \cite{} to determine when should a network admin be notified. 
+	
+	\item \textit{Dynamic Security Rules Generator}, Looking at the historic user behavior we can generate dynamic rules for security of the network. Few of them could be, to block certain ips that are exhibiting inconsistent behavior etc. Authentication rules can also adapt dynamically by observing the changes of different clusters and their cluster centers. Such as, number of unsuccessful attempts a client can make to a server can also be limited based on the different ports client is using.
+	
+	\item \textit{Recommendation Systems}, We can capture the different behaviors exhibited by network users over time and use this to predict a behavior on a certain day of a week or month using the historical data. This helps network admin to prepare well ahead and plan the bandwidth or other network resources accordingly.
+	
+	In this direction of building applications through the results obtained from our system we have created a web tool that analyzes data in different dimensions and is explained in detail in evaluation chapter.
+
+\end{itemize}
+
+
+ 
 
 %In that direction of building a recommendation system we came up with an user interface that helps to analyze historic data , this should go into evaluation section.%
 

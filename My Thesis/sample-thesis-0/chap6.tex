@@ -190,10 +190,11 @@ The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset conta
 \subsection{Scenario 3:}
 Scenario 3 and Scenario 4 evaluations are yet to be included.
 
-The following evaluations also validate our systems results.
-Our observation is that the behaviors exhibited by the hosts are quite stable over several months which can be seen in the  \figref{constant}. The graph is a representation of the behaviors exhibited by hosts over a six months of time period. Since we map each cluster to a behavior this is equals to the number of clusters that are formed over a time period. As, we are using K-means clustering, in our case this is a graph drawn between the  value of K on X-axis and the day on which we found this value on Y-axis. Except for few points it is a straight line indicating the constants behaviors that hosts exhibited in our system. Our recommendation is to update the host behaviors every couple of months or as per the change in usage of applications.
+\subsection{Hosts Behavior with time:}
 
-\begin{figure}[t]
+To determine the change in hosts behaviors over time we passed six months worth of data through our system similar to the experimental set up mentioned at the start of evaluation section. But this time we also invoked the method to calculate K value on every day. The K value determines the different behaviors the hosts are exhibitng on that day as mentioned in section \ref{cluster_labeling}. So, we have K unique behaviors on every day. We wanted to verify how this K value is changing with time. i.e, how are the behaviors changing with time. Hence, we plotted the K values for the last six months and it looks as follows \figref{constant}. The value of K on X-axis and the day on which we found this value on Y-axis. Except for few points it is a straight line indicating the constant behaviors that hosts are exhibiting in our system. This needn't be the case with all the networks. In an environment with multiple networks the K value could be differnt and we might see it changing frequently. It depends on the environment in which our system is going to be used.
+
+\begin{figure}[b]
 	\centerline{\includegraphics{constant.png}}
 	\caption{ Plot of number of clusters formed over a time period.}%
 	\figlabel{constant}

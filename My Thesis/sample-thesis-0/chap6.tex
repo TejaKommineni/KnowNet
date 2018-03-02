@@ -133,37 +133,16 @@ On similar lines the confusion matrix can be extended to any number of classes a
 \subsection{Scenario 1:}
 The scenario 1 is of duration 11.63 hours with 37.6 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and scanners. Through this experiment we would like to check our systems basic functionality of identifying different behaviors. When we passed this data through our sytsem we found formation of two major clusters each dominated by a label and hence we retained the labels for these clusters as mentioned above. The results are as shown in  \tabref{scenario1}. 
 
-\begin{table}[b]
-	\caption{Scenario 1.}%
-	\centerline{\includegraphics[scale = 0.5]{scenario1.pdf}}	
-	\tablabel{scenario1}
-\end{table}
+
 
 \begin{itemize}
-	\item \textbf{Accuracy:} Overall, how often is our system identifying correctly?
-	\begin{itemize}
+	\item \textbf{Accuracy:} (42503+80252)/129833 = 94.54\%
 	
-	\item Number of flows it as predicted as scanners and they  actually are flows belonging to scanners summed up with Number of flows it as predicted as Normal and they  actually are flows belonging to Normal hosts divided by the total predictions made by our system.
-	
-	\item (42503+80252)/129833 = 0.9454
-	
-	\end{itemize}
-
-	\item \textbf{Misclassification Rate:} Overall, how often is our system wrong?
+	\item \textbf{Misclassification Rate:} (3987+3091)/129833 = 5.45\%
+	\item \textbf{Precision:} 
 	\begin{itemize}
 		
-		\item Sum of number of flows our system has predicted wrong across all the behaviors divided by total predictions made by our system. In this case, number of flows it has predicted as scanners when they are actually flows belonging to Normal hosts summed up with number of flows it has predicted as Normal when they actually belong to Scanning hosts divided by the total predictions made by our system.
-		
-		\item (3987+3091)/129833 = 0.0545
-	\end{itemize}
-	
-	\item \textbf{Precision:} For a certain behavior, how often it is identifying correctly?
-	\begin{itemize}
-		
-		\item 
-		 The number of flows for a certain behavior that are identified correctly divided by total number of flows predicted for that behavior.
-		 Number of flows which are correctly predicted as scanners divided by total number of flows predicted as scanners, Number of flows which are correctly predicted as Normal divided by total number of flows predicted as Normal. 
-		
+				
 		\item (42503)/46490 = 91.4\% precise in finding scanners.
 		
 		\item (80252)/83343 = 96.2\% precise in finding normal hosts.
@@ -171,12 +150,16 @@ The scenario 1 is of duration 11.63 hours with 37.6 GB of data. This dataset con
 	\end{itemize}
 
 \end{itemize}
-
+\begin{table}[t]
+	\caption{Scenario 1.}%
+	\centerline{\includegraphics[scale = 0.5]{scenario1.pdf}}	
+	\tablabel{scenario1}
+\end{table}
 
 From this we learn that our system can identify unique behaviors with high accuracy and precision.
 
 \subsection{Scenario 2:}
-The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and chinese hosts as labeled by the manual inspection. This experiment is aimed to determine the basic functionality of our system as scenario 1 and to determine the rate of detection of chinese hosts which are prevalent in network attacks in our real data set collected at Emulab routers. When we passed this data through our system we found formation of two major clusters and the results are as shown in  \tabref{scenario2}. This information that we can learn from the confusion matrix is:
+The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and chinese hosts. This experiment is aimed to determine the basic functionality of our system as scenario 1 and to determine the rate of detection of chinese hosts which are prevalent in our real data set collected at Emulab routers. When we passed this data through our system we found formation of two major clusters each dominated by a label and hence we retained the labels for these clusters and the results are as shown in \tabref{scenario2}.
 
 \begin{table}[b]
 	\caption{Scenario 2.}%
@@ -185,36 +168,13 @@ The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset conta
 \end{table}
 
 \begin{itemize}
-	\item There are two possible predicted behaviors: 'Chinese Host Flows' and 'Normal Flows'. 
-	\item Our system made a total of 107,978 predictions.
-	\item Out of those our system predicted 28,368 flows are from hosts which are hosted in china and 79,610 flows are from hosts which are exhibiting Normal behavior.
-	\item In reality 82,625 flows are from hosts that show Normal behavior and 25,353 flows are from hosts that are hosted in chinese.	
-\end{itemize}
-
-For this scenario the performance numbers are as follows:
-
-\begin{itemize}
-	\item \textbf{Accuracy:} Overall, how often is our system identifying correctly?
-	\begin{itemize}
-		
-		\item Number of flows it as predicted as from hosts hosted in chinese and they  actually are flows belonging to chinese hosts summed up with Number of flows it as predicted as Normal and they  actually are flows belonging to Normal hosts divided by the total predictions made by our system.
-		
-		\item (22456+76713)/107978 = 0.89184
-		
-	\end{itemize}
+	\item \textbf{Accuracy:}  (22456+76713)/107978 = 89.18\%
 	
-	\item \textbf{Misclassification Rate:} Overall, how often is our system wrong?
-	\begin{itemize}
-		
-		\item Number of flows it as predicted as chinese hosts and they are not flows belonging to chinese hosts along with Number of flows it as predicted as Normal and they are not flows belonging to Normal hosts divided by the total predictions made by our system.
-		
-		\item (5912+2897)/107978 = 0.117
-	\end{itemize}
+	\item \textbf{Misclassification Rate:} (5912+2897)/107978 = 11.7\%
 	
-	\item \textbf{Precision:} For a certain behavior, how often it is identifying correctly?
-	\begin{itemize}
-		
-		\item Number of flows which are correctly predicted as chinese hosts divided by total number of flows predicted as chinese hosts, Number of flows which are correctly predicted as Normal divided by total number of flows predicted as Normal. 
+	\item \textbf{Precision:} 
+	\begin{itemize}	
+	
 		
 		\item (22456)/28368 = 76.1\% precise in finding chinese hosts.
 		
@@ -228,38 +188,7 @@ For this scenario the performance numbers are as follows:
 
 
 \subsection{Scenario 3:}
-The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contains hosts exhibiting three unique behaviors namely normal ,background traffic and flows from hosts trying to do a DDOS as labeled by the manual inspection. When we passed this data through our system we found formation of three major clusters and the results are as shown in  \tabref{scenario3}. This information that we can learn from the confusion matrix is:
-
-\begin{table}[b]
-	\caption{Scenario 3.}%
-	\centerline{\includegraphics[scale = 0.55]{scenario3.pdf}}	
-	\tablabel{scenario3}
-\end{table}
-
-\begin{itemize}
-	\item There are two possible predicted behaviors: 'Background Flows' ,'Normal Flows', 'UDP \& ICMP DDOS Flows'. 
-	\item Our system made a total of 1,111,836 predictions.
-	\item Out of those our system predicted 689,249 flows are from hosts which are exhibiting Normal behavior , 73,650 flows are from hosts which are trying to perform DDOS attack and 348,937 flows as Background flows.
-	\item In reality the flows from normal hosts, background hosts and DDOS attackers are  711459, 332104 and 68273 respectively.
-\end{itemize}
-
-For this scenario the performance numbers are as follows:
-
-\begin{itemize}
-	\item \textbf{Accuracy:} Overall, how often is our system identifying correctly?
-	\begin{itemize}
-		
-		\item (681167+66377+320011)/1111836 = 0.9601
-		
-	\end{itemize}
-	
-	\item \textbf{Misclassification Rate:} Overall, how often is our system wrong?
-	
-	
-	\item \textbf{Precision:} For a certain behavior, how often it is identifying correctly?
-
-	
-\end{itemize}
+Scenario 3 and Scenario 4 evaluations are yet to be included.
 
 The following evaluations also validate our systems results.
 Our observation is that the behaviors exhibited by the hosts are quite stable over several months which can be seen in the  \figref{constant}. The graph is a representation of the behaviors exhibited by hosts over a six months of time period. Since we map each cluster to a behavior this is equals to the number of clusters that are formed over a time period. As, we are using K-means clustering, in our case this is a graph drawn between the  value of K on X-axis and the day on which we found this value on Y-axis. Except for few points it is a straight line indicating the constants behaviors that hosts exhibited in our system. Our recommendation is to update the host behaviors every couple of months or as per the change in usage of applications.

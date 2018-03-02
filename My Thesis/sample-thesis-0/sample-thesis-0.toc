@@ -44,6 +44,6 @@
 \contentsline {section}{\numberline {6.2}Cross Validation}{34}
 \contentsline {section}{\numberline {6.3}Labeled Data: description and clustering}{36}
 \contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{40}
-\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{42}
-\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{44}
-\contentsline {chapter}{REFERENCES}{47}
+\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{40}
+\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{42}
+\contentsline {chapter}{REFERENCES}{44}

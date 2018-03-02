@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  1 MAR 2018 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  1 MAR 2018 18:36
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -1069,6 +1069,9 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
 [35 <./validation.pdf>]
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
@@ -1079,7 +1082,7 @@ version <1.7>, but at most version <1.5> allowed
 <synth_desc.pdf, id=230, 963.6pt x 542.025pt>
 File: synth_desc.pdf Graphic file (type pdf)
  <use synth_desc.pdf>
-Package pdftex.def Info: synth_desc.pdf used on input line 94.
+Package pdftex.def Info: synth_desc.pdf used on input line 87.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
 
@@ -1088,50 +1091,55 @@ version <1.7>, but at most version <1.5> allowed
 <ss_labeled.pdf, id=231, 963.6pt x 542.025pt>
 File: ss_labeled.pdf Graphic file (type pdf)
  <use ss_labeled.pdf>
-Package pdftex.def Info: ss_labeled.pdf used on input line 99.
+Package pdftex.def Info: ss_labeled.pdf used on input line 92.
 (pdftex.def)             Requested size: 382.21443pt x 185.65378pt.
 
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[37]
+[37 <./ss_labeled.pdf>]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[38 <./synth_desc.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./confusion.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<confusion.pdf, id=254, 963.6pt x 542.025pt>
+File: confusion.pdf Graphic file (type pdf)
+ <use confusion.pdf>
+Package pdftex.def Info: confusion.pdf used on input line 126.
+(pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
+
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[39 <./confusion.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./scenario1.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<scenario1.pdf, id=235, 963.6pt x 542.025pt>
+<scenario1.pdf, id=270, 963.6pt x 542.025pt>
 File: scenario1.pdf Graphic file (type pdf)
  <use scenario1.pdf>
-Package pdftex.def Info: scenario1.pdf used on input line 114.
+Package pdftex.def Info: scenario1.pdf used on input line 138.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[38 <./synth_desc.pdf> <./ss_labeled.pdf
-
-pdfTeX warning: pdflatex.exe (file ./ss_labeled.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->]
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[39 <./scenario1.pdf>]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [40]
+ [40 <./scenario1.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [41]
 
 pdfTeX warning: pdflatex.exe (file ./scenario2.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<scenario2.pdf, id=272, 963.6pt x 542.025pt>
+<scenario2.pdf, id=290, 963.6pt x 542.025pt>
 File: scenario2.pdf Graphic file (type pdf)
  <use scenario2.pdf>
-Package pdftex.def Info: scenario2.pdf used on input line 168.
+Package pdftex.def Info: scenario2.pdf used on input line 192.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
-Overfull \hbox (6.14893pt too wide) in paragraph at lines 173--174
+Overfull \hbox (6.14893pt too wide) in paragraph at lines 197--198
 []\OT1/ppl/m/n/10.95 There are two pos-si-ble pre-dicted be-hav-iors: 'Chi-nese
  Host Flows' and 'Nor-mal Flows'. 
  []
@@ -1139,49 +1147,52 @@ Overfull \hbox (6.14893pt too wide) in paragraph at lines 173--174
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [41 <./scenario2.pdf>]
+ [42 <./scenario2.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [43]
 
 pdfTeX warning: pdflatex.exe (file ./scenario3.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<scenario3.pdf, id=289, 963.6pt x 542.025pt>
+<scenario3.pdf, id=309, 963.6pt x 542.025pt>
 File: scenario3.pdf Graphic file (type pdf)
  <use scenario3.pdf>
-Package pdftex.def Info: scenario3.pdf used on input line 220.
+Package pdftex.def Info: scenario3.pdf used on input line 244.
 (pdftex.def)             Requested size: 529.98164pt x 298.11467pt.
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [42]
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [43 <./scenario3.pdf>] <constant.png, id=308, 394.47375pt x 233.87375pt>
+ [44 <./scenario3.pdf>] <constant.png, id=325, 394.47375pt x 233.87375pt>
 File: constant.png Graphic file (type png)
 
 <use constant.png>
-Package pdftex.def Info: constant.png used on input line 253.
+Package pdftex.def Info: constant.png used on input line 277.
 (pdftex.def)             Requested size: 394.47278pt x 233.87315pt.
 )
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [44 <./constant.png>] (sample-thesis-0.bbl [45
+ [45]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [46 <./constant.png>] (sample-thesis-0.bbl [47
 
 ]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [46])
+ [48])
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [47]
+ [49]
 (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux
 ) (chap6.aux)) ) 
 Here is how much of TeX's memory you used:
- 13973 strings out of 493323
- 272432 string characters out of 3138204
- 309849 words of memory out of 3000000
- 17090 multiletter control sequences out of 15000+200000
- 57585 words of font info for 160 fonts, out of 3000000 for 9000
+ 13983 strings out of 493323
+ 272556 string characters out of 3138204
+ 309876 words of memory out of 3000000
+ 17097 multiletter control sequences out of 15000+200000
+ 58126 words of font info for 162 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,65p,2153b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,9n,65p,2153b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9_1/fonts/enc/dvips/base/8r.enc}<C:/
 Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Progr
 am Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
@@ -1194,9 +1205,9 @@ latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplbi
 8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/P
 rogram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (55 pages, 1876466 bytes).
+Output written on sample-thesis-0.pdf (57 pages, 1932403 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
+ 385 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

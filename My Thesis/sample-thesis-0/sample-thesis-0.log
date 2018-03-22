@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  2 MAR 2018 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  22 MAR 2018 13:08
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -513,7 +513,7 @@ This is uuthesis-2016-h.sty version 1.08 <2 May 2016>
 (dissertationapproval.sty)
 \uuthesis@chaptersectionspace=\dimen172
 ) (mythesis.sty) (sample-thesis-0.aux (chap1.aux)
-(chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux))
+(chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux) (chap7.aux))
 \openout1 = `sample-thesis-0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 197.
@@ -1183,41 +1183,81 @@ Overfull \vbox (7.643pt too high) has occurred while \output is active []
  [44 <./constant.png>]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [45 <./tool_compare_days.png> <./tool_compare_week.png>] (sample-thesis-0.bbl 
-[46
+ [45 <./tool_compare_days.png> <./tool_compare_week.png>]
+\openout2 = `chap7.aux'.
+
+ (chap7.tex
+DEBUG: @chapter: arg 1 = [Conclusion]
+DEBUG: @chapter: arg 2 = [{\hyphenpenalty =10000\exhyphenpenalty =10000\relax C
+onclusion}]
+CHAPTER 7.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46
+
+
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [47])
+ [47]
+Overfull \hbox (1.07881pt too wide) in paragraph at lines 47--48
+[]\OT1/ppl/m/n/10.95 Investigate and build ap-pli-ca-tions us-ing the re-sults 
+of our sys-tem. Our sys-tem groups
+ []
+
+
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [48]
-(sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux
-) (chap6.aux)) ) 
+ [48])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [49]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[50] (sample-thesis-0.bbl [51
+
+]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[52])
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[53] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
+(chap5.aux) (chap6.aux) (chap7.aux)) ) 
 Here is how much of TeX's memory you used:
- 13994 strings out of 493323
- 272786 string characters out of 3138204
- 309930 words of memory out of 3000000
- 17107 multiletter control sequences out of 15000+200000
+ 14005 strings out of 493323
+ 272903 string characters out of 3138204
+ 310281 words of memory out of 3000000
+ 17111 multiletter control sequences out of 15000+200000
  58126 words of font info for 162 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,65p,2153b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9_1/fonts/enc/dvips/base/8r.enc}<C:/
-Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Progr
-am Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
-es/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/Mi
-KTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2
-.9_1/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9_1/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/ty
-pe1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/pa
-latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplbi
-8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/P
-rogram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
-/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (56 pages, 2065174 bytes).
+{C:/Program Files/MiKTeX 2.9_1/fonts/enc/
+dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm
+/cmbsy10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
+ Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+/MiKTeX 2.9_1/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX 2.
+9_1/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/ty
+pe1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/pal
+atino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a
+.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on sample-thesis-0.pdf (61 pages, 2076044 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
+ 388 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

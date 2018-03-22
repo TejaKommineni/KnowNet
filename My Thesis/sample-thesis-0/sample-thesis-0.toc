@@ -48,4 +48,9 @@
 \contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{43}
 \contentsline {subsection}{\numberline {6.3.4}Hosts Behavior with time:}{43}
 \contentsline {subsection}{\numberline {6.3.5}Applications:}{43}
-\contentsline {chapter}{REFERENCES}{46}
+\contentsline {chapter}{\numberline {7.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Conclusion}\global \uuthesis@needtocspacetrue }{46}
+\ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
+\contentsline {section}{\numberline {7.1}Future Directions}{48}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{49}
+\contentsline {section}{\numberline {7.3}Parting Thoughts}{49}
+\contentsline {chapter}{REFERENCES}{51}

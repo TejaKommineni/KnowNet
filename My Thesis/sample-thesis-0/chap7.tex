@@ -46,16 +46,11 @@ RDMA.
 \begin{enumerate}
 	\item Investigate and build applications using the results of our system. Our system groups hosts exhibiting similar behaviors and defines each group by certain characteristics such as the cluster sizes, cluster centers etc.. Using this information about each group we can build various applications such as anamoly detectors, dynamic firewall rule generators or bandwidth predictors which can become further handy to network administrators in their day-to-day activiites.
 	
-	\item In our work we define host as any unique IP address that has in-bound or out-bound traffic. But, network users needn't always have a unique IP address. Each user can be communicating in a network with multiple IP addresses. This could happen because of a malicious user trying to hide his identitity by using different IP addresses or because of dynamic allotment by ISP provider. In 
-	\item Analyze throughput anomaly for small records in depth; while DRAM traffic resulting from PCIe errors correlates with the performance dip observed in Zero Copy, 
-	they do not explain why this happens for exactly when we transmit 2048~B (16 records). There needs to be a more detailed analysis around this dimension.
-	\item Build an actual migration protocol for RAMCloud; the set of guidelines provided in the thesis only serves as a reference point; there would be significant challenges 
-	in the actual implementation of a migration protocol for a complex system such as RAMCloud where we may also need to generalize the protocol for older network hardware for backward 
-	compatibility.
-	\item Evaluation of a wider variety of NICs; we based all of our experiments on Mellanox Infiniband ConnectX-3\textregistered NICs. At the time of writing, Mellanox has already 
-	released plans of releasing NICs that offer 4$\times$ maximum throughput and latencies of a few hundred nanoseconds. The scatter gather length of thirty two was an important constant in 
-	all our observations; it would be interesting to note how the behavior of the system will change with a scatter gather list of a different length. We also need to draw parallel 
-	conclusions for other advanced NICs that may not explicitly support S/G DMA like the Mellanox hardware.
+	\item In our work we define host as any unique IP address that has in-bound or out-bound traffic. But, network users needn't always have a unique IP address. Each user can be communicating in a network with multiple IP addresses. This could happen because of a malicious user trying to hide his identitity by using different IP addresses or because of dynamic allotment by ISP provider. In that direction it would be useful to group hosts at a user level instead of using IP address as a basis. Even in this approach most of our techniques should work well. 
+	
+	\item When analyzed with labeled data our sytsem had higher accuracy in scenario1 and scenario3 but when it comes to detecting chinese hosts or multi network scenarios our rate of detection is a bit low. We could further improve the accuracy by tuning our system. Few pointers to explore here are to evaluate different normalizing techniques.
+	
+	\item Build an actual migration protocol for RAMCloud. changing behaviors and streaming algos.	 concurrent programming to speed up.
 \end{enumerate}
 
 \section{Lessons Learned}
@@ -65,15 +60,10 @@ scoreboarding in a multithreaded environment to arrive at the right measurements
 It was also challenging to profile the code for additional metrics reflecting system resource consumption 
 without disrupting the actual transmissions. 
 
-I learned a lot while developing many portions of this benchmark. My most important takeaway from this work 
-is the virtue of having truly repeatable experiments. Having hardware environments that are set up to encourage 
-repeatable research and the seemingly disproportionate amount of time spent on developing the tooling of the 
-framework certainly helped in this regard, especially for comparing results after code modifications and root-cause analysis.
-I got first-hand experience in concurrent programming, use of InfiniBand verbs, RDMA, and accurate cycle counting 
+I learned a lot while developing many portions of this system. My most important takeaway from this work is to handle huge amount of data, analyze and present the results of different data mining techniques in an understandable format to the user. Conducting of experiments with varying set ups is one part of the research where as digging deep into the results of these experiments to understand if they represent any innate structure of network behavior is another pivotal step in the research. 
+I got first-hand experience in using various data science packages,  concurrent programming, use of InfiniBand verbs, RDMA, and accurate cycle counting 
 for profiling wall time. I have significantly improved my scripting and documentation skills over the course of this work. 
-I have also learned valuable lessons on teamwork and collaboration and received a lot of help from my 
-advisor and peers over the course of the work. I believe the guidelines that we drew from this work will 
-help researchers of the future develop better performing in-memory databases for large transfers. 
+I have also learned valuable lessons on teamwork and collaboration and received a lot of help from my advisor and peers over the course of the work. I believe the guidelines that we drew from this work will help researchers of the future develop better performing in-memory databases for large transfers. 
 
 \section{Parting Thoughts}
 Today's database designer has to navigate a complex, multidimensional space of trade-offs and network transmission 

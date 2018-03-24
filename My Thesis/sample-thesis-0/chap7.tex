@@ -11,35 +11,7 @@ While evaluating the university network data, we found hosts exhibiting seven un
 
 We also presented a web based assisting tool that helps in visualizing these behaviors over time periods and look into historic behaviors that this network exhibited.
 
-While evaluating the various RDMA primitives, we found that one-sided RDMA verbs, though they offload destination CPU, 
-require additional acknowledgment mechanisms. We also found that client-initiateds cannot use the scatter gather DMA engine effectively. We arrived at the conclusion that primitives 
-are the most suited for returning scattered set of records.
 
-We analyzed the transmission throughput of Zero Copy and Copy Out for 128~B records and found that bigger records can saturate the NIC.Zero Copy is significantly faster for bigger chunks. Zero Copy is also limited by the length of S/G list for small 128~B records.
-We also found that Copy Out can perform better if you have more records. We arrived at the following conclusion that 
-unless your records are small and scattered, always use Zero Copy; for small and scattered records, you might need to tune your layout to get Zero Copy advantage.
-
-Zero Copy with two-sided RDMA promises CPU savings by offloading CPU from the critical data transfer path of the sender. We found that CPU overheads in transmissions are largely due to the additional copies involved in Copy Out and Zero Copy benefits from avoiding the extra copy.
-
-CPU efficiency of transmission is better measured in cycles spent per transmitted byte. We see that even transmitting two records at a time makes Zero Copy more CPU efficient in transmission and the gains get bigger for bigger transmissions.
-
-Memory bandwidth is a crucial resource in an in-memory database server bound by DRAM capacity and latency. We found that for transfer of large records, the pressure on the memory controller is approximately 2X the transmission throughput and while transmitting at the line rate of our NIC, the server consumed half of all available memory bandwidth. If memory bandwidth is not an expendable resource, we ascertain that the designer should 
-always use Zero Copy.
-
-Intel\textregistered's recent micro-architectures have support for DDIO that treats LLC as the source and destination for I/O transfers. This has a significant impact on 
-the memory pressure exerted to the system, especially for Copy Out. DDIO paints a slightly different picture favoring Copy Out since the cost of prefetching the data is 
-paid up front; we do not incur additional misses from DDIO. This is less relevant in the bigger scheme of things and Zero Copy still wins in terms of total 
-consumed memory bandwidth in the server
-
-The transmission throughput anomaly where the throughput of Zero Copy is limited while transferring a large set of small scattered records is best explained to 
-our knowledge with PCIe errors tapering off with 16 records per transmission.
-
-We argued for a client-assisted design with no-update-in-place records that can gain the benefits of Zero Copy while retaining the transmission throughput of larger records. 
-We get a 50\% reduction in memory bandwidth consumption using this approach without compromising transmission throughput. 
-Having no updates in place and latch and lock freedom make this approach clearly favorable for the modern NIC. 
-
-We also laid out the basic design for a new migration protocol in RAMCloud that makes use of Zero Copy, smart layout for transmission and bypassing re-replication using 
-RDMA.
 
 \section{Future Directions}
 

@@ -5,7 +5,7 @@
 In this chapter we evaluate our system using both labeled and unlabeled data. Our experiments in this section are conducted on a ubuntu16 virtual machine with 80 GB memory and 20 cpus of computing power. 
 
 \section{Dataset: description and clustering}
-The traffic analyzed here is collected at the University of Utah's emulab routers \cite{White+:osdi02}. This is a private repository that contains traces of bidirectional traffic into the emulab network and no payload. Traffic is collected on full duplex links at a speed of 1sGbps.
+The traffic analyzed here is collected at the University of Utah's emulab routers \cite{White+:osdi02}. This is a private repository that contains traces of bidirectional traffic into the emulab network and no payload. Traffic is collected on full duplex links at a speed of 1Gbps.
 
 We passed the NetFlow records collected over the last six months of 2017 through our system to determine the set of behaviors hosts exhibited over this time. We have hand picked 7 days of this data for analysis. The chosen days are October 15, October 16, November 14, November 23, December 5, December 12, December 16\footnote{Days are picked without any prior knowledge of any metadata related to NetFlow records}. We made sure that there is a mix of both week days , weekends, normal and heavy traffic days. Each days traffic is treated independently as the same host that appeared on two different days could exhibit different behaviors. For different evaluations in this section we used the data corresponding to the these days.
 
@@ -174,8 +174,7 @@ The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset conta
 	
 	\item \textbf{Precision:} 
 	\begin{itemize}	
-	
-		
+			
 		\item (22456)/28368 = 76.1\% precise in finding chinese hosts.
 		
 		\item (76713)/79610 = 96.3\% precise in finding normal hosts.
@@ -184,11 +183,35 @@ The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset conta
 	
 \end{itemize}
 
-
-
+This experiment confirms that our system does well in distinguishing normal hosts but fairs poorly in identifying chinese hosts.
 
 \subsection{Scenario 3:}
-Scenario 3 and Scenario 4 evaluations are yet to be included.
+The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contains hosts exhibiting three unique behaviors namely normal, background, UDP \& ICMP DDOS  traffic. This experiment is aimed to determine the functionality of our system in face of adversory attacks and mutliple types of traffic. When we passed this data through our system we found formation of three major clusters each dominated by a label and hence we retained the labels for these clusters and the results are as shown in \tabref{scenario3}.
+
+\begin{table}[t]
+	\caption{Scenario 3.}%
+	\centerline{\includegraphics[scale = 0.5]{scenario3.pdf}}	
+	\tablabel{scenario3}
+\end{table}
+
+\begin{itemize}
+	\item \textbf{Accuracy:}  (681167+66377+320011)/1111836 = 96.01\%
+	
+	\item \textbf{Misclassification Rate:} (3123+27169+139+1757+7943+4150+2897)/1111836 = 3.98\%
+	
+	\item \textbf{Precision:} 
+	\begin{itemize}	
+		
+		
+		\item (681167)/689249 = 98.8\% precise in finding hosts pertaining to normal traffic.
+		
+		\item (66377)/73650 = 91.17\% precise in finding background hosts.
+		
+		\item (320011)/348937 = 90.23\% precise in finding UDP \& ICMP DDOS hosts.
+		
+	\end{itemize}
+	
+\end{itemize}
 
 \subsection{Hosts Behavior with time:}
 

@@ -213,7 +213,35 @@ The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contai
 	
 \end{itemize}
 
-\subsection{Hosts Behavior with time:}
+\subsection{Scenario 4:}
+The scenario 4 is of duration 66.85 hours with 121 GB of data. This dataset contains hosts exhibiting multiple behaviors namely normal, background, UDP \& ICMP DDOS  traffic. This experiment is aimed to determine the functionality of our system in face of adversory attacks and mutliple types of traffic. When we passed this data through our system we found formation of three major clusters each dominated by a label and hence we retained the labels for these clusters and the results are as shown in \tabref{scenario3}.
+
+\begin{table}[t]
+	\caption{Scenario 3.}%
+	\centerline{\includegraphics[scale = 0.5]{scenario3.pdf}}	
+	\tablabel{scenario3}
+\end{table}
+
+\begin{itemize}
+	\item \textbf{Accuracy:}  (681167+66377+320011)/1111836 = 96.01\%
+	
+	\item \textbf{Misclassification Rate:} (3123+27169+139+1757+7943+4150+2897)/1111836 = 3.98\%
+	
+	\item \textbf{Precision:} 
+	\begin{itemize}	
+		
+		
+		\item (681167)/689249 = 98.8\% precise in finding hosts pertaining to normal traffic.
+		
+		\item (66377)/73650 = 91.17\% precise in finding background hosts.
+		
+		\item (320011)/348937 = 90.23\% precise in finding UDP \& ICMP DDOS hosts.
+		
+	\end{itemize}
+	
+\end{itemize}
+
+\subsection{Hosts behavior with time:}
 
 To determine the change in hosts behaviors over time we passed six months worth of data through our system similar to the experimental set up mentioned at the start of evaluation section. But this time we also invoked the method to calculate K value on every day. The K value determines the different behaviors the hosts are exhibitng on that day as mentioned in section \ref{cluster_labeling}. So, we have K unique behaviors on every day. We wanted to verify how this K value is changing with time. i.e, how are the behaviors changing with time. Hence, we plotted the K values for the last six months and it looks as follows \figref{constant}. The value of K on X-axis and the day on which we found this value on Y-axis. Except for few points it is a straight line indicating the constant behaviors that hosts are exhibiting in our system. This needn't be the case with all the networks. In an environment with multiple networks the K value could be differnt and we might see it changing frequently. It depends on the environment in which our system is going to be used.
 

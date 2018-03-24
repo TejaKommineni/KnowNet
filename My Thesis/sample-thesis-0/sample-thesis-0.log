@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  24 MAR 2018 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  24 MAR 2018 10:05
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -1225,19 +1225,26 @@ of our sys-tem. Our sys-tem groups
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [48])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [49]
-(sample-thesis-0.bbl [50
-
-]
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [51])
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[52] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
+[50] (sample-thesis-0.bbl [51
+
+]
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[52])
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[53] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
 (chap5.aux) (chap6.aux) (chap7.aux)) ) 
 Here is how much of TeX's memory you used:
  14012 strings out of 493323
@@ -1259,9 +1266,9 @@ Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
 pe1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/pal
 atino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (60 pages, 1958556 bytes).
+Output written on sample-thesis-0.pdf (61 pages, 1959743 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
+ 407 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

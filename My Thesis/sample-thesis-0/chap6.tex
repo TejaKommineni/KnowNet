@@ -214,32 +214,38 @@ The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contai
 \end{itemize}
 
 \subsection{Scenario 4:}
-The scenario 4 is of duration 66.85 hours with 121 GB of data. This dataset contains hosts exhibiting multiple behaviors namely normal, background, UDP \& ICMP DDOS  traffic. This experiment is aimed to determine the functionality of our system in face of adversory attacks and mutliple types of traffic. When we passed this data through our system we found formation of three major clusters each dominated by a label and hence we retained the labels for these clusters and the results are as shown in \tabref{scenario3}.
+The scenario 4 is of duration 66.85 hours with 121 GB of data. This dataset contains hosts exhibiting multiple behaviors namely normal, background, UDP \& ICMP DDOS, HTTP, Port Scan, DNS and Fast Flux traffic. This experiment is aimed to determine the functionality of our system in a complex network scenario where we see multiple behaviors. When we passed this data through our system we found formation of seven major clusters, interestingly the labeled dataset also exhibits seven different behaviors. When we looked at these clusters six of them are dominated by a label and hence we retained the labels for these clusters where as the last cluster didn't have any majority label and hence we labeled it by inspection as Heavy Hitters. cluster  results are as shown in \tabref{scenario4}.
 
 \begin{table}[t]
-	\caption{Scenario 3.}%
-	\centerline{\includegraphics[scale = 0.5]{scenario3.pdf}}	
-	\tablabel{scenario3}
+	\caption{Scenario 4.}%
+	\centerline{\includegraphics[scale = 0.5]{scenario4.pdf}}	
+	\tablabel{scenario4}
 \end{table}
 
 \begin{itemize}
-	\item \textbf{Accuracy:}  (681167+66377+320011)/1111836 = 96.01\%
+	\item \textbf{Accuracy:}  (930944+621778+401622+1299861+337343+599899)/4710639 = 89.78\%
 	
-	\item \textbf{Misclassification Rate:} (3123+27169+139+1757+7943+4150+2897)/1111836 = 3.98\%
+	\item \textbf{Misclassification Rate:} (518170)/4710639 = 10.22\%
 	
 	\item \textbf{Precision:} 
-	\begin{itemize}	
+	\begin{itemize}			
 		
+		\item (930944)/991297 = 93.9\% precise in finding hosts pertaining to normal traffic.
 		
-		\item (681167)/689249 = 98.8\% precise in finding hosts pertaining to normal traffic.
+		\item (621788)/673650 = 92.3\% precise in finding background hosts.
 		
-		\item (66377)/73650 = 91.17\% precise in finding background hosts.
+		\item (401622)/418659 = 91.23\% precise in finding UDP \& ICMP DDOS traffic.
 		
-		\item (320011)/348937 = 90.23\% precise in finding UDP \& ICMP DDOS hosts.
+		\item (1299861)/1367855 = 95.23\% precise in finding HTTP traffic.
 		
+		\item (337343)/368911 = 91.4\% precise in finding UDP \& ICMP DDOS hosts.
+		
+		\item (599899)/696994 = 86.06\% precise in finding DNS traffic.
 	\end{itemize}
 	
 \end{itemize}
+
+
 
 \subsection{Hosts behavior with time:}
 
@@ -266,7 +272,6 @@ To determine the change in hosts behaviors over time we passed six months worth 
  	represent the date on which this host behavior is observed and the number of hosts
  	which exhibited this behavior respectively.
  	
- 	** Will explain them in a detailed manner. **
  \end{itemize}
  
  

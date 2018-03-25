@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  24 MAR 2018 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  25 MAR 2018 09:01
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -1169,38 +1169,47 @@ Package pdftex.def Info: scenario3.pdf used on input line 193.
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [43]
-<constant.png, id=315, 394.47375pt x 233.87375pt>
-File: constant.png Graphic file (type png)
- <use constant.png>
-Package pdftex.def Info: constant.png used on input line 221.
-(pdftex.def)             Requested size: 394.47278pt x 233.87315pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+pdfTeX warning: pdflatex.exe (file ./scenario4.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<scenario4.pdf, id=315, 963.6pt x 542.025pt>
+File: scenario4.pdf Graphic file (type pdf)
+ <use scenario4.pdf>
+Package pdftex.def Info: scenario4.pdf used on input line 221.
+(pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [44 <./scenario3.pdf>] <tool_compare_days.png, id=331, 961.09062pt x 473.26813
+ [44 <./scenario3.pdf>] <constant.png, id=331, 394.47375pt x 233.87375pt>
+File: constant.png Graphic file (type png)
+
+<use constant.png>
+Package pdftex.def Info: constant.png used on input line 255.
+(pdftex.def)             Requested size: 394.47278pt x 233.87315pt.
+
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [45 <./scenario4.pdf>] <tool_compare_days.png, id=347, 961.09062pt x 473.26813
 pt>
 File: tool_compare_days.png Graphic file (type png)
 
 <use tool_compare_days.png>
-Package pdftex.def Info: tool_compare_days.png used on input line 246.
+Package pdftex.def Info: tool_compare_days.png used on input line 279.
 (pdftex.def)             Requested size: 432.48679pt x 212.96869pt.
 
-<tool_compare_week.png, id=332, 963.6pt x 542.025pt>
+<tool_compare_week.png, id=348, 963.6pt x 542.025pt>
 File: tool_compare_week.png Graphic file (type png)
 
 <use tool_compare_week.png>
-Package pdftex.def Info: tool_compare_week.png used on input line 253.
+Package pdftex.def Info: tool_compare_week.png used on input line 286.
 (pdftex.def)             Requested size: 433.616pt x 243.90898pt.
 )
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [45 <./constant.png>]
+ [46 <./constant.png>]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [46 <./tool_compare_days.png> <./tool_compare_week.png>]
+ [47 <./tool_compare_days.png> <./tool_compare_week.png>]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
@@ -1211,7 +1220,7 @@ CHAPTER 7.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47
+ [48
 
 
 
@@ -1224,51 +1233,52 @@ of our sys-tem. Our sys-tem groups
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [48])
+ [49])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [49]
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[50] (sample-thesis-0.bbl [51
+[50]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [51]
+(sample-thesis-0.bbl [52
 
 ]
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
-[52])
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+[53])
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
-
-[53] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
-(chap5.aux) (chap6.aux) (chap7.aux)) ) 
+ [54]
+(sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux
+) (chap6.aux) (chap7.aux)) ) 
 Here is how much of TeX's memory you used:
- 14012 strings out of 493323
- 272999 string characters out of 3138204
- 310308 words of memory out of 3000000
- 17117 multiletter control sequences out of 15000+200000
+ 14020 strings out of 493323
+ 273113 string characters out of 3138204
+ 310335 words of memory out of 3000000
+ 17124 multiletter control sequences out of 15000+200000
  58126 words of font info for 162 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,65p,2153b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9_1/fonts/enc/
-dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm
-/cmbsy10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx
-10.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmcsc10.pf
-b><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
-Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX 2.9_1/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX 2.
-9_1/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/ty
-pe1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/pal
-atino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a
-.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (61 pages, 1959967 bytes).
+ 55i,9n,65p,2153b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9_1/fonts/enc/dvips/base
+/8r.enc}<C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbsy10.p
+fb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:
+/Program Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Prog
+ram Files/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9_1/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
+TeX 2.9_1/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
+9_1/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/
+type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/pa
+latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr
+8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/P
+rogram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on sample-thesis-0.pdf (62 pages, 2053771 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
+ 423 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

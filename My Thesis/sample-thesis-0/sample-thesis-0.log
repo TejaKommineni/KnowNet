@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  25 MAR 2018 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  25 MAR 2018 09:26
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -1180,33 +1180,36 @@ Package pdftex.def Info: scenario4.pdf used on input line 221.
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [44 <./scenario3.pdf>] <constant.png, id=331, 394.47375pt x 233.87375pt>
+ [44 <./scenario3.pdf>]
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [45 <./scenario4.pdf>] <constant.png, id=346, 394.47375pt x 233.87375pt>
 File: constant.png Graphic file (type png)
 
 <use constant.png>
-Package pdftex.def Info: constant.png used on input line 255.
+Package pdftex.def Info: constant.png used on input line 256.
 (pdftex.def)             Requested size: 394.47278pt x 233.87315pt.
+
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [45 <./scenario4.pdf>] <tool_compare_days.png, id=347, 961.09062pt x 473.26813
-pt>
+ [46 <./constant.png>] <tool_compare_days.png, id=351, 961.09062pt x 473.26813p
+t>
 File: tool_compare_days.png Graphic file (type png)
 
 <use tool_compare_days.png>
-Package pdftex.def Info: tool_compare_days.png used on input line 279.
+Package pdftex.def Info: tool_compare_days.png used on input line 280.
 (pdftex.def)             Requested size: 432.48679pt x 212.96869pt.
 
-<tool_compare_week.png, id=348, 963.6pt x 542.025pt>
+<tool_compare_week.png, id=352, 963.6pt x 542.025pt>
 File: tool_compare_week.png Graphic file (type png)
 
 <use tool_compare_week.png>
-Package pdftex.def Info: tool_compare_week.png used on input line 286.
+Package pdftex.def Info: tool_compare_week.png used on input line 287.
 (pdftex.def)             Requested size: 433.616pt x 243.90898pt.
 )
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [46 <./constant.png>]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [47 <./tool_compare_days.png> <./tool_compare_week.png>]
@@ -1276,7 +1279,7 @@ type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/pa
 latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr
 8a.pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/P
 rogram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (62 pages, 2053771 bytes).
+Output written on sample-thesis-0.pdf (62 pages, 2054064 bytes).
 PDF statistics:
  423 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

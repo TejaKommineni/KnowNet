@@ -1,12 +1,12 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces SolarWinds in comparison with our system}}{2}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture.}}{10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NetFlow Fields captured in a Flow }}{11}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Skewed data before transformation}}{16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Normalized data}}{16}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Elbow Method}}{20}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Silhouette Method}}{22}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{27}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture.}}{14}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces NetFlow Fields captured in a Flow }}{15}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Skewed data before transformation}}{20}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Normalized data}}{20}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Elbow Method}}{24}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Silhouette Method}}{26}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{30}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{31}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Average Bytes feature CDF for clusters T1,T2,S1,S2}}{34}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}}{35}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled dataset by CAIDA.}}{38}

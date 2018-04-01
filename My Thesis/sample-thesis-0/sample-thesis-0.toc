@@ -25,17 +25,17 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {4.1.2.1}Missing Data}{15}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.2}Converting Categorical to Numerical Variables}{17}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Converting categorical to numerical variables}{17}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.3}Feature Scaling}{19}
+\contentsline {subsubsection}{\numberline {4.1.2.3}Feature scaling}{19}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.4}Feature Transformation}{19}
+\contentsline {subsubsection}{\numberline {4.1.2.4}Feature transformation}{19}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.5}Feature Selection}{19}
-\contentsline {section}{\numberline {4.2}Pattern Detector}{22}
-\contentsline {subsubsection}{\numberline {4.2.0.1}Why K-Means ??}{22}
-\contentsline {subsubsection}{\numberline {4.2.0.2}How to choose K ??}{23}
-\contentsline {subsubsection}{\numberline {4.2.0.3}Cluster Labeling and Comparison}{26}
+\contentsline {subsubsection}{\numberline {4.1.2.5}Feature selection}{19}
+\contentsline {section}{\numberline {4.2}Pattern detector}{22}
+\contentsline {subsection}{\numberline {4.2.1}Why K-Means ??}{22}
+\contentsline {subsection}{\numberline {4.2.2}How to choose K ??}{23}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Cluster labeling and comparison}{26}
 \contentsline {section}{\numberline {4.3}Applications}{27}
 \contentsline {chapter}{\numberline {5.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Implementation}\global \uuthesis@needtocspacetrue }{29}
 \contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{32}

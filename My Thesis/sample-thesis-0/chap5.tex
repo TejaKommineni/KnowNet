@@ -1,11 +1,11 @@
-%%% -*-LaTeX-*-
+\label{key}%%% -*-LaTeX-*-
 
 \chapter{Implementation}
 
 In this chapter we will discuss about the implementation details of our system. Let us look at tools/techniques used at each step.  
 
-\textit{NetFlow Collection},  The raw data collected at the routers is exported to NetFlow collectors as described in chapter 3. NFDUMP \cite{} tools are used to process the netflow data. They support netflow version v5,v7 and v9. The two tools of primary importance are nfcapd(netflow capture daemon) that reads the netflow data from the network and stores the data into files. nfdump (netflow dump) reads the netflow data from the files stored by nfcapd. Using nfdump we import the data on to our local machines
-from the NetFlow Collectors. This imported data forms the
+\textit{NetFlow Collection},  The raw data collected at the routers is exported to NetFlow collectors as described in chapter 3. NFDUMP \cite{} tools are used to process the NetFlow data. They support netflow version v5, v7 and v9. The two tools of primary importance are nfcapd(netflow capture daemon) that reads the netflow data from the network and stores the data into files. nfdump (netflow dump) reads the netflow data from the files stored by nfcapd. Using nfdump we import the data on to our local machines
+from the NetFlow collectors. This imported data forms the
 primary source for our experiments. But this data is not in a usable format for applying data mining algorithms and hence we convert it into text format and save it in a csv file.
 
 \textit{Feature Engineering}, We used different python libraries such as NumPy, Spacy and Pandas to clean and manipulate data. Specifically, the mean and median calculating methods from Pandas for missing data and min max scaler respectively, log transformer for transformation from NumPy. For aggregating all the feature values by a host we used MongoDB contrary to keeping counters in the code. This has reduced the time taken  for aggregation to under 2 minutes from 20 minutes for a days worth data. In this context we also wanted to try the approach of streaming algorithms such as bloom filters or count min sketch which gives the aggregate information with little memory foot print which we have explored a little but left for future work at this point.

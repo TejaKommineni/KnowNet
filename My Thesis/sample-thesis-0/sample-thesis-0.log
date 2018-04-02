@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  1 APR 2018 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  1 APR 2018 17:59
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -1251,10 +1251,10 @@ Overfull \vbox (7.643pt too high) has occurred while \output is active []
 (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux
 ) (chap6.aux) (chap7.aux)) ) 
 Here is how much of TeX's memory you used:
- 14021 strings out of 493323
- 273121 string characters out of 3138204
- 310312 words of memory out of 3000000
- 17125 multiletter control sequences out of 15000+200000
+ 14022 strings out of 493323
+ 273126 string characters out of 3138204
+ 310323 words of memory out of 3000000
+ 17126 multiletter control sequences out of 15000+200000
  58126 words of font info for 162 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,65p,2155b,249s stack positions out of 5000i,500n,10000p,200000b,50000s

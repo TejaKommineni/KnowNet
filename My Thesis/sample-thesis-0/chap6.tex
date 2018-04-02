@@ -153,7 +153,7 @@ The scenario 1 is of duration 11.63 hours with 37.6 GB of data. This dataset con
 \end{itemize}
 \begin{table}[t]
 	\caption{Scenario 1.}%
-	\centerline{\includegraphics[scale = 0.5]{scenario1.pdf}}	
+	\centerline{\includegraphics[scale = 0.45]{scenario1.pdf}}	
 	\tablabel{scenario1}
 \end{table}
 
@@ -161,12 +161,6 @@ From this we learn that our system can identify unique behaviors with high accur
 
 \subsection{Scenario 2:}
 The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset contains hosts exhibiting two unique behaviors namely normal traffic and chinese hosts. This experiment is aimed to determine the basic functionality of our system as scenario 1 and to determine the rate of detection of chinese hosts which are prevalent in our real data set collected at Emulab routers. When we passed this data through our system we found formation of two major clusters each dominated by a label and hence we retained the labels for these clusters and the results are as shown in \tabref{scenario2}.
-
-\begin{table}[b]
-	\caption{Scenario 2.}%
-	\centerline{\includegraphics[scale = 0.5]{scenario2.pdf}}	
-	\tablabel{scenario2}
-\end{table}
 
 \begin{itemize}
 	\item \textbf{Accuracy:}  (22456+76713)/107978 = 89.18\%
@@ -186,14 +180,14 @@ The scenario 2 is of duration 0.38 hours with 5.8 GB of data. This dataset conta
 
 This experiment confirms that our system does well in distinguishing normal hosts but fairs poorly in identifying chinese hosts.
 
+\begin{table}[t]
+	\caption{Scenario 2.}%
+	\centerline{\includegraphics[scale = 0.45]{scenario2.pdf}}	
+	\tablabel{scenario2}
+\end{table}
+
 \subsection{Scenario 3:}
 The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contains hosts exhibiting three unique behaviors namely normal, background, UDP \& ICMP DDOS  traffic. This experiment is aimed to determine the functionality of our system in face of adversory attacks and mutliple types of traffic. When we passed this data through our system we found formation of three major clusters each dominated by a label and hence we retained the labels for these clusters and the results are as shown in \tabref{scenario3}.
-
-\begin{table}[t]
-	\caption{Scenario 3.}%
-	\centerline{\includegraphics[scale = 0.5]{scenario3.pdf}}	
-	\tablabel{scenario3}
-\end{table}
 
 \begin{itemize}
 	\item \textbf{Accuracy:}  (681167+66377+320011)/1111836 = 96.01\%
@@ -213,15 +207,15 @@ The scenario 3 is of duration 4.21 hours with 53 GB of data. This dataset contai
 	\end{itemize}
 	
 \end{itemize}
+\begin{table}[t]
+	\caption{Scenario 3.}%
+	\centerline{\includegraphics[scale = 0.4]{scenario3.pdf}}	
+	\tablabel{scenario3}
+\end{table}
+
 
 \subsection{Scenario 4:}
 The scenario 4 is of duration 66.85 hours with 121 GB of data. This dataset contains hosts exhibiting multiple behaviors namely normal, background, UDP \& ICMP DDOS, HTTP, Port Scan, DNS and Fast Flux traffic. This experiment is aimed to determine the functionality of our system in a complex network scenario where we see multiple behaviors. When we passed this data through our system we found formation of seven major clusters, interestingly the labeled dataset also exhibits seven different behaviors. When we looked at these clusters six of them are dominated by a label and hence we retained the labels for these clusters where as the last cluster didn't have any majority label and hence we labeled it by inspection as Heavy Hitters. cluster  results are as shown in \tabref{scenario4}.
-
-\begin{table}[t]
-	\caption{Scenario 4.}%
-	\centerline{\includegraphics[scale = 0.5]{scenario4.pdf}}	
-	\tablabel{scenario4}
-\end{table}
 
 \begin{itemize}
 	\item \textbf{Accuracy:}  (930944+621778+401622+1299861+337343+599899)/4710639 = 89.78\%
@@ -245,6 +239,12 @@ The scenario 4 is of duration 66.85 hours with 121 GB of data. This dataset cont
 	\end{itemize}
 	
 \end{itemize}
+
+\begin{table}[b]
+	\caption{Scenario 4.}%
+	\centerline{\includegraphics[scale = 0.45]{scenario4.pdf}}	
+	\tablabel{scenario4}
+\end{table}
 
 Our system was unable to detect the hosts exhibitng Fast Flux behavior on the other hand it grouped hosts which are transferring heavy payload across all the different labeled behaviors. We believe there are certain areas that our system has to focus on when it comes to grouping hosts in multiple networks.
 

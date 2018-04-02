@@ -52,6 +52,5 @@
 \contentsline {chapter}{\numberline {7.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Conclusion}\global \uuthesis@needtocspacetrue }{48}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {section}{\numberline {7.1}Future Directions}{49}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{50}
-\contentsline {section}{\numberline {7.3}Parting Thoughts}{50}
-\contentsline {chapter}{REFERENCES}{52}
+\contentsline {section}{\numberline {7.2}Parting Thoughts}{50}
+\contentsline {chapter}{REFERENCES}{51}

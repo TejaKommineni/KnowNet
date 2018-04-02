@@ -30,7 +30,7 @@ def compareOverWeek():
     day_of_week  = weekdays[request.form['dayOfWeek']]    
     delta = end_date - start_date  
     z = np.array([start_date + timedelta(days=i) for i in range(delta.days + 1)])
-    yvals = {"DNS CLIENTS (Low Volume)":[],"Few Small Flows (TCP)":[],"DNS SERVERS (High Volume)":[],"DNS CLIENTS (High Volume)":[],"DNS SERVERS (Low Volume)":[],"Scanners":[],"Few Small Flows (UDP)":[]}
+    yvals = {"T1":[],"T2":[],"C1":[],"C2":[],"S1":[],"S2":[],"A1":[]}
     count = 0
     for i in range(delta.days + 1):
         temp = start_date + timedelta(days=i)
@@ -64,7 +64,8 @@ def compareOverTime():
     end_date  = datetime.strptime(request.form['endDate'], '%d/%m/%Y')   
     delta = end_date - start_date  
     z = np.array([start_date + timedelta(days=i) for i in range(delta.days + 1)])
-    yvals = {"DNS CLIENTS (Low Volume)":[],"Few Small Flows (TCP)":[],"DNS SERVERS (High Volume)":[],"DNS CLIENTS (High Volume)":[],"DNS SERVERS (Low Volume)":[],"Scanners":[],"Few Small Flows (UDP)":[]}
+    yvals = {"T1":[],"T2":[],"C1":[],"C2":[],"S1":[],"S2":[],"A1":[]}
+    #yvals = {"DNS CLIENTS (Low Volume)":[],"Few Small Flows (TCP)":[],"DNS SERVERS (High Volume)":[],"DNS CLIENTS (High Volume)":[],"DNS SERVERS (Low Volume)":[],"Scanners":[],"Few Small Flows (UDP)":[]}
     #yvals = {"Small UDP Flows":[],"Low DNS Query Responses":[],"Medium TCP Flows":[],"Heavy Incoming DNS Queries":[], "Small TCP Flows":[],"Low Incoming DNS Queries":[],"Heavy DNS Query Responses":[],"Scanners":[]}
     for i in range(delta.days + 1):
         temp = start_date + timedelta(days=i)        

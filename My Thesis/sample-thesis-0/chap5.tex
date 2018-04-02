@@ -12,7 +12,7 @@ primary source for our experiments. But this data is not in a usable format for 
 
 \textit{Pattern Detection}, As mentioned we have chosen K-Means for our pattern detector and to determine K we used elbow and silhouette approaches. Here we used scikit-learn package implementations of K-Means. To label the behaviors on a given day, we have selected a reference day and manually labeled its clusters mapping each cluster to a particular behavior as shown in \figref{cluster_comp}.
 
-\begin{figure}[t]
+\begin{figure}[b]
 	\centerline{\includegraphics[scale = 0.5]{cluster_comp.pdf}}
 	\caption{Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }%
 	\figlabel{cluster_comp}
@@ -21,12 +21,12 @@ primary source for our experiments. But this data is not in a usable format for 
  Now for every other day we compare the clusters formed on that given day with the reference day. Cluster comparison is an active research area and there are very few techniques to do this and hence we solved it by converting our cluster comparison problem in to an assignment problem. An assignment problem generally deals with assigning machines to tasks, workers to jobs etc.. The goal is to determine the optimum assignment that, for example, minimizes the total cost. The assignment problem is a fundamental problem in the area of combinatorial optimization. It has many polynomial time implementations and one of them is Hungarian Algorithm \cite{}. So, in our case the assignment problem is assigning the clusters on a given day to the clusters on the reference day. We use hungarian algorithm to solve this cluster assignment. As per this algorithm a cluster on a given day gets mapped to the cluster on a reference day based on the amount of effort it takes to move all the data points from this cluster to any of the reference day clusters center. Overall the goal is to make the assignments in such a way that the total effort is least. The least effort assignment for dec 12th is shown in the \figref{assign_prob}.
  
 
- \begin{figure}[t]
- 	\centerline{\includegraphics[scale = 0.5]{assign_prob.pdf}}
- 	\caption{Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }%
- 	\figlabel{assign_prob}
- \end{figure}
-
 A point to be noted here is that we might need to change the reference day with time. This could be because of change in the usage of applications over time. Our recommendation is to choose a reference day that suggests the changed behavior and keep visiting this periodically.
+
+ \begin{figure}[b]
+	\centerline{\includegraphics[scale = 0.5]{assign_prob.pdf}}
+	\caption{Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }%
+	\figlabel{assign_prob}
+\end{figure}
 % WE can write about why we ended up with log normalization%
 % Few numbers like number of code lines, programming languages used, machines on which or code is run machines on which the data is collected, data size every day, into evaluation --> execution time for each step after the nfdump we again have manual scripts to move data to other machines and from there we captre it in csv file. here these scripts are also used to feed the data into solarwinds like applications which does port based classification and we have used this technique for evaluations also.  %

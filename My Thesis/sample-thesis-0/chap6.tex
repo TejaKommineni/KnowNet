@@ -22,18 +22,18 @@ While T1 has long living flows with large average packet sizes. T2 has large num
 
 The above description clearly points out that host based behavior extraction produces a richer and finer classification of host behaviors than a port based classifier. For example, Http traffic is split across different clusters T or S which represents how the same protocol can be used by hosts exhibiting different behaviors. Same is the case with SSH traffic. While most of these clusters contain hosts using different protocols. They are similar in the sense that each cluster exhibits different functional behavior such as Server, Client or One-to-One traffic.
 
-We further examined the clusters to determine if there is any similarity in the way the clusters T1/T2 , C1/C2 and S1/S2 are formed. While we found that the clusters T1/T2 are distinguished by average byte size with hosts in T1 having an average byte size higher than hosts in the cluster T1, there were no such features that uniquely defined C1/C2 , S1/S2. This verifies the our system is not biased by any single feature.
+\figref{bytes_cdf} represents our further examination of clusters to determine if there is any similarity in the way the clusters T1/T2 , C1/C2 and S1/S2 are formed. While we found that the clusters T1/T2 are distinguished by average byte size with hosts in T1 having an average byte size higher than hosts in the cluster T1, there were no such features that uniquely defined C1/C2 , S1/S2. This verifies the our system is not biased by any single feature.
 
 \begin{figure}[t]
 	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.7]{bytes_cdf.pdf}}
-	\caption{ Average Bytes feature CDF for clusters T1,T2,S1,S2}%
+	\caption{ Average Bytes feature cdf for clusters T1,T2,S1,S2}%
 	\figlabel{bytes_cdf}
 \end{figure}
 
 
 
 
-The \figref{behaviorsdec12} is a comparison between the classification made by a traditional port based classifer 6.1(a) and our host based classifier 6.1(b). The traditional port based classifier identified the top 8 applications used by the hosts in the system. DNS(53) is the most used application with 11.95\% of the whole traffic trying to query DNS servers. It is followed by Telnet(23), SSH(22) with a share of 9.83\% and 5.08\% traffic respectively. We can also see web traffic both secured and unsecured in the top 8 accounting to 3.84\%, 0.66\% traffic. While, we can see the applications that accounted to majority of traffic by traditional classifier, Our system on the other hand provided an alternate view for the same NetFlow data by extracting the behaviors these hosts are exhibting. From the \figref{behaviorsdec12} we can see that, hosts that are behaving as clients account to 11.41\% (both C1 and C2 combined) of traffic and hosts that are behaving as servers account to 33.61\% (both S1 and S2 combined). The majority of the traffic(50.23\%) comprises of interactive communication between hosts while the anomalous hosts trying to invade into the network form the minority(4.75\%). 
+The \figref{behaviorsdec12} is a comparison between the classification made by a traditional port based classifer 6.2(a) and our host based classifier 6.2(b). The traditional port based classifier identified the top 8 applications used by the hosts in the system. DNS(53) is the most used application with 11.95\% of the whole traffic trying to query DNS servers. It is followed by Telnet(23), SSH(22) with a share of 9.83\% and 5.08\% traffic respectively. We can also see web traffic both secured and unsecured in the top 8 accounting to 3.84\%, 0.66\% traffic. While, we can see the applications that accounted to majority of traffic by traditional classifier, Our system on the other hand provided an alternate view for the same NetFlow data by extracting the behaviors these hosts are exhibting. From the \figref{behaviorsdec12} we can see that, hosts that are behaving as clients account to 11.41\% (both C1 and C2 combined) of traffic and hosts that are behaving as servers account to 33.61\% (both S1 and S2 combined). The majority of the traffic(50.23\%) comprises of interactive communication between hosts while the anomalous hosts trying to invade into the network form the minority(4.75\%). 
 
 \begin{figure}[t]
 	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.5]{dec12-port-behaviors.pdf}}
@@ -63,9 +63,9 @@ The row headers in the table correspond to the lables of the clusters generated 
 	
 	\item This also suggests that all the hosts that fall into a particular class based on port based analysis are not necessarily in the same cluster. They are dispersed across the clusters which shows the necessity of a host based behavior extraction.	
 \end{itemize}
-  For example, cluster S1 clearly confirms the fact that the hosts in this cluster are dealing with SSH traffic and the same traffic is also present in T1 and T2 clusters. Similary, hosts in the cluster S2 contains of servers that provide responses for web, ssh and other requests. This cluster has similar distribution as cluster C1 but they act exactly opposite like servers and clients respectively. Also, few points of observation from the table are, T1 has mostly requests and responses between hosts spread across different applications. hosts which are grouped as T2 have most of it's hosts labeled as Mix, which on further investigation revealed that many of the hosts in this class don't pass the majority test to be distinguished into any particular class. Finally, Scanners distribution was minimal across all the clusters. The sparsity of this table also serves as a confident measure for our proposed approach.
+  For example, cluster S1 clearly confirms the fact that the hosts in this cluster are dealing with SSH traffic and the same traffic is also present in T1 and T2 clusters. Similary, hosts in the cluster S2 contains of servers that provide responses for web, ssh and other requests. This cluster has similar distribution as cluster C1 but they act exactly opposite like servers and clients respectively. Some other noticeable points from the table are, T1 has mostly requests and responses between hosts spread across different applications. hosts which are grouped as T2 have most of it's hosts labeled as Mix, which on further investigation revealed that many of the hosts in this class don't pass the majority test to be distinguished into any particular class. Finally, Scanners distribution was minimal across all the clusters. The sparsity of this table also serves as a confident measure for our proposed approach.
 
-\section{Labeled Data: description and clustering}
+\section{Labeled data: description and clustering}
 
 In this section we are evaluating our system to determine its accuracy and precision on identifying host behaviors using labeled data. The labeled data that we used in this section is provided by Center for Applied Internet Data Analysis (CAIDA). CAIDA is a research group based at the San Diego Supercomputer Center (SDSC) on the UC San Diego campus who conduct network research and build research infrastructure to support data collection, and data distribution to the scientific research community.
 
@@ -75,30 +75,37 @@ CAIDAs dataset consists of thirteen different scenarios. Each scenario is a capt
 	\item In the first scenario they have generated traffic to emulate the situation of scanners in the network and hence their capture consists of two classes of traffic namely,  Normal and Scanning web proxies.
 	\item In the second scenario they have generated traffic to emulate the situation of chinese attackers in the network and hence their capture consists of two classes of traffic namely,  Normal and Chineses hosts.
 	\item The third scenario consists of synthesized traffic to emulate DDOS attacks. Also, they have let the background traffic to mix with normal traffic. Hence, in total we have three classes of traffic namely, Normal, Background and UDP\& ICMP DDOS attacks.
-	\item Fourth scenario consists of synthesized traffic to emulate a situation were multi-networks are interacting. 
+	\item Fourth scenario consists of synthesized traffic to emulate multiple classes of traffic which we are using to measure the scalability of system and its performance in face of multiple classes of traffic. 
 
 \end{itemize}
 
- These scenarios are captured into pcap files which are further processed to obtain information about NetFlows. \tabref{synthdesc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlows and the size of the file itself. The distinctive character of this data set is that the data captured in each scenario is manually examined and labeled. The labeled dataset looks similar to the one which we capture at the emulab router excpet for the last column where the flow is labeled which can be seen in the \figref{ss_labeled}.
+ These scenarios are captured into pcap files which are further processed to obtain information about NetFlows. \tabref{synthdesc} represents the duration of each scenario and the contents of the pcap file such as the number of packets, the number of NetFlow records and the size of the file itself.
+ 
+ 
+ \begin{table}[b]
+ 	\caption{Dataset description.}%
+ 	\centerline{\includegraphics[scale = 0.5]{synth_desc.pdf}}	
+ 	\tablabel{synthdesc}
+ \end{table}
 
+  The distinctive character of this data set is that the data captured in each scenario is manually examined and labeled. The labeled dataset looks similar to the one which we capture at the emulab router except for the last column where the flow is labeled which can be seen in the \figref{ss_labeled}.
 
-\begin{table}[t]
-	\caption{Dataset description.}%
-	\centerline{\includegraphics[scale = 0.5]{synth_desc.pdf}}	
-	\tablabel{synthdesc}
-\end{table}
+Using the different captures in \tabref{synthdesc}  we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple hosts from multiple networks communicating simultaneously). Before looking into these results let us examine some basic terminology to understand the evaluations.
 
-\begin{figure}[t]
-	\centerline{\includegraphics[trim=4cm 3cm 3cm 3cm, scale = 0.5]{ss_labeled.pdf}}
+\begin{figure}[b]
+	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.45]{ss_labeled.pdf}}
 	\caption{Manually labeled dataset by CAIDA.}%
 	\figlabel{ss_labeled}
 \end{figure}
 
+Let us consider a labeled dataset with two different labels A and B. The results produced when this dataset is sent through a classifier for classification can be tabulated as a confusion matrix as shown in \tabref{confusion}. This table tells us that datset consists of a total of N values both of label A and label B combined. TPA indicates number of data points that are labeled as A and are classified as A. TPB indicates the number of data points that are labeled as B and are classified as B. EAB indicates the number of data points that are labeled as B by the classifier but actually belong to label A. EBA indicates the number of data points that are labeled as A by the classifier but actually belong to label B. The key of this matrix is the number of correct and incorrect classifications are summarized with count values and broken down by each class. The confusion matrix shows the ways in which a classification model is confused when it is making classifications. It also gives insights into the errors classifier is making and more importantly the type of errors that are being made. From this matrix we can calculate accuracy and prediction of a system which are defined as follows:
+
+\begin{table}[t]
 	
-
-Using the different captures in \tabref{synthdesc}  we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple hosts from multiple networks communicating simultaneously). Before looking into these results let us examine some basic terminology to understand the evaluations.
-
-Let us consider a labeled dataset with two different labels A and B. The results produced when this dataset is sent through a classifier for classification can be tabulated as a confusion matrix as shown in \tabref{confusion}. This table tells us that datset cosists of a total of N values both of label A and label B combined. TPA indicates number of data points that are labeled as A and are classified as A. TPB indicates the number of data points that are labeled as B and are classified as B. EAB indicates the number of data points that are labeled as B by the classifier but actually belong to label A. EBA indicates the number of data points that are labeled as A by the classifier but actually belong to label B. The key of this matrix is the number of correct and incorrect classifications are summarized with count values and broken down by each class. The confusion matrix shows the ways in which a classification model is confused when it is making classifications. It also gives insights into the errors classifier is making and more importantly the type of errors that are being made. From this matrix we can calculate accuracy and prediction of a system which are defined as follows:
+	\caption{Confusion Matrix}%
+	\centerline{\includegraphics[scale = 0.5]{confusion.pdf}}	
+	\tablabel{confusion}
+\end{table}
 
 \begin{itemize}
 	\item \textbf{Accuracy:} is calculated as the sum of correct classifications divided by the total number of classifications.
@@ -120,12 +127,6 @@ Let us consider a labeled dataset with two different labels A and B. The results
 	
 \end{itemize}
 
-\begin{table}[b]
-	
-	\caption{Confusion Matrix}%
-	\centerline{\includegraphics[scale = 0.5]{confusion.pdf}}	
-	\tablabel{confusion}
-\end{table}
 On similar lines the confusion matrix can be extended to any number of classes and can be useful in calculating different performance numbers of this system. One important point to note here is when we pass this labeled dataset through our system we get clusters contrary to a classifier which gives a label for each data point. Inorder to circumvent this issue we look at the clusters and label them. If a cluster is dominated by any particular label we retain the label for that cluster and the other clusters are named according to the manual inspection. After this process the results obtained are as below. 
 
 

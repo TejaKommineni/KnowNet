@@ -7,9 +7,9 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Silhouette Method}}{26}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{30}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Process diagram on a reference day, with netflow eight dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{31}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Average Bytes feature CDF for clusters T1,T2,S1,S2}}{34}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Average Bytes feature cdf for clusters T1,T2,S1,S2}}{34}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}}{35}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled dataset by CAIDA.}}{38}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled dataset by CAIDA.}}{39}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Plot of number of clusters formed over a time period.}}{46}
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Compare Host Behaviors on two days.}}{47}
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Compare Host Behaviors over a time period.}}{47}

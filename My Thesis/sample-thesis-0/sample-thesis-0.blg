@@ -8,8 +8,12 @@ A level-1 auxiliary file: chap6.aux
 A level-1 auxiliary file: chap7.aux
 The style file: siam.bst
 Database file #1: sample-thesis-0.bib
+Repeated entry---line 456 of file sample-thesis-0.bib
+ : @article{kuhn1955hungarian
+ :                           ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
 Warning--can't use both volume and number fields in erman2007semi
 Warning--can't use both author and editor fields in Johnson2000
 Warning--can't use both volume and number fields in moore2005internet
-(There were 4 warnings)
+(There was 1 error message)

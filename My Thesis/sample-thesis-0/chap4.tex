@@ -143,24 +143,24 @@ Experimenting with centroid models especially K-Means gave us the advantage to p
  In many situations, parameters and variables chosen by the algorithm or by users affects the performance of the algorithm differently and results in different outputs. Similarly, an essential problem of the K-means clustering method is to define an appropriate number of clusters K. In the literature, there are different approaches proposed to determine an accurate value of K.
  These methods include direct methods and statistical testing methods. Direct methods consist of optimizing a criterion, such as the within-cluster sums of squares or the average silhouette. The corresponding methods are named elbow and silhouette methods, respectively. Statistical testing methods consist of comparing evidence against the null hypothesis. An example is the gap statistic. We have used the direct methods as they optimize a criterion, The elbow method was used to determine K and then cross-verified the values with the Silhouette Index obtained for this same data set.
  
- Recall that, the basic idea behind partitioning methods, such as K-Means clustering, is to define clusters such that the total intra-cluster variation [or a total within-cluster sum of square (WSS)] is minimized. The total WSS measures the compactness of the clustering and we want it to be as small as possible. The elbow method looks at the total WSS as a function of the number of clusters: One should choose a number of clusters so that adding another cluster doesn't improve much better the total WSS. 
- The optimal number of clusters can be defined as follow:
+ From \ref{unsupervised}, it is clear that K-Means clustering tries to map a data point to the closest cluster center. Thus, it tries to minimize the total within-cluster sum of square (WSS). The total WSS measures how compact the formed clusters are and this has to be as small as possible. The elbow method that we used to determine K measures the total WSS for each value of K. We chose a K value(i.e, number of clusters) such that an increment or decrement of K value shouldn't improve the total WSS. 
+ Steps in elbow method are outlined as follows:
  \begin{itemize}
- 	\item Compute k-means clustering for different values of k. For instance, by varying k from 1 to 50 clusters.
+ 	\item Compute k-means clustering for different values of k. We used k value ranging from 1 to 50.
  	
- 	\item For each k, calculate the total within-cluster sum of square ($W_k$).
+ 	\item For each k, calculate the total within-cluster sum of square ($WSS_k$).
  	\begin{center}
  	 	\boldsymbol{$D_k = \sum_{x_i \in C_k} \sum_{x_j \in C_k} ||{x_i -x_j}||^2$}	 \\
  	 	
  	 	
- 	 	\boldsymbol{$ W_k = \sum_{1}^{K} \frac{1}{n_k} D_k$}
+ 	 	\boldsymbol{$ WSS_k = \sum_{1}^{K} \frac{1}{n_k} D_k$}
  	\end{center}  
     Where K is the number of clusters, $n_k$ is the number of points in cluster k and $D_k$ is the sum of distances between all points in the cluster.
- 	\item Plot the curve of wss according to the number of clusters k. 	
- 	\item The location of a bend (knee) in the plot is generally considered as an indicator of the appropriate number of clusters.
+ 	\item Plot a curve with wss values on y-axis and corresponding k values on x-axis. 	
+ 	\item The location of a bend in the plot indicates the optimal number of clusters into which the given data has to be split into. The x-axis value at the bend is used for K.
  \end{itemize}
 
- 	The graph depicts the amount of information we are gaining with addition of each cluster. the first clusters will add much information, but at some point the marginal gain will drop, giving an angle in the graph. The number of clusters are chosen at this point, hence the elbow criterion. \figref{elbow} shows the elbow curve obtained for our data set on a chosen day. This method gave us a value of 7 for K.
+  \figref{elbow} shows the elbow curve obtained for our data set on a chosen day. We can observe from the graph that initial clusters added more information and this has dropped after a point, giving an angle in the graph. This x-value at this bent gives us the optimal value for K which turns out to be 7.
  	
 
 \begin{figure}[b]
@@ -169,24 +169,24 @@ Experimenting with centroid models especially K-Means gave us the advantage to p
 	\figlabel{elbow}
 \end{figure}
 
- However, the elbow method is not unambiguous. especially if the data is not very clustered we will notice that the elbow chart will not have a clear elbow. Instead, we see a fairly smooth curve, and it's unclear what is the best value of K to choose. In cases like this, we might try a different method for determining the optimal K. Hence, to corroborate the claim of elbow method for K we also ran our dataset through another technique called Silhouette.
-
-	The average silhouette approach measures the quality of a clustering. That is, it determines how well each object lies within its cluster. A high average silhouette width indicates a good clustering.	Average silhouette method computes the average silhouette of observations for different values of K. The optimal number of clusters K is the one that maximizes the average silhouette over a range of possible values for K.	The algorithm is similar to the elbow method and can be computed as follow: 
-	
-	\begin{itemize}
-		\item Compute k-means clustering for different values of k. For instance, by varying k from 1 to 50 clusters.
-		\item For each k, calculate the average silhouette of observations (avg.sil).
+ However, we cannot always rely on elbow method because it doesn't perform well if the data is not very clustered. Sometimes the plot doesn't have a bent instead it has a smooth curve. Hence, to overcome situations like this we also run our dataset through another technique called Silhouette to corroborate the claim of elbow method for K.
+ 
+ Silhouette approach measures the quality of a clustering. We calculate silhouette value for each data point and find average silhouette value as explained below. Higher the average value higher is the quality of clustering. Similar to elbow method we calculate average silhouette value for different values of K. and chose the K for which this value is maximum. Steps involved in calculating silhouette value are as follows:
+ 	
+		\begin{itemize}
+		\item Run K-means clustering for different values of K. We used K value ranging from 1 to 50.
+		\item Compute the average silhouette of observations for each K value (avg.sil).
 		
 		\begin{center}
 			\boldsymbol{$s(i) = \frac{b(i) - a(i)}{max(a(i),b(i))}$}
 		\end{center}
 		Here s(i) is the silhouette index of a cluster point i. Where a(i) is the average distance of point i to all the objects in the same cluster while b(i) is the minimum average distance from the point i to all the points of a different cluster. avg.sil is calculated by finding the mean of all the s(i) for each point in a cluster.
 		
-		\item Plot the curve of avg.sil according to the number of clusters k.
-		\item The location of the maximum is considered as the appropriate number of clusters.
+		\item Plot the graph for avg.sil, with K value on x-axis and corresponding avg.sil value on y-axis.
+		\item The peek of the graph is the optimal value for K.
 	\end{itemize}
  
-  The intuition behind this approach is for a point as $ a(i)$ is a measure of how dissimilar $i$ is to its own cluster, a small value means it is well matched. Furthermore, a large $b(i)$ implies that i is badly matched to its neighboring cluster. Thus an $s(i)$ close to one means that the data is appropriately clustered. if $s(i)$ is close to negative one, then by the same logic we see that i would be more appropriate if it was clustered in its neighboring cluster. The average $s(i)$ overall data of a cluster is a measure of how tightly grouped all the data in the cluster are. Thus the average $s(i)$ overall data of the entire dataset is a measure of how appropriately the data have been clustered. \figref{silhouette} shows the plot obtained using silhouette technique. 
+  The intuition behind this approach is for a point $i$, $ a(i)$ is  measure of how similar $i$ is to its own cluster, a small value of $ a(i)$ means it is well matched. Similarly, $b(i)$ is measure of how disimilar $i$ is to its own cluster, a larger value means $i$ is badly matched to its neighboring clusters. Thus a value of $s(i)$ that is positive and close to 1 indicates the point is correctly mapped. Further a negative value close to -1 indicates that it would be appropriate to group this point to its neighboring clusters. The average $s(i)$ on the whole data measures how tightly the data is grouped. Thus, higher avg.sil value defines that clusters formed are compact and of higher quality. \figref{silhouette} shows the plot obtained using silhouette technique. 
  
    An important point that has to be noted here is that, though we have a method to evaluate K, we don't invoke this method daily to determine the K value. We chose a reference day and determine the K value for that day and that K value is used for the remaining days till the network admin chooses to change this reference day. A reference day is selected generally to reflect all the behaviors that are seen in our network in day-to-day basis. The choice of changing this reference day also vests with the network admin as he knows how the usage of the network has been changed and whenever a reference day is changed we need to calculate the K value again.
    
@@ -198,7 +198,7 @@ Experimenting with centroid models especially K-Means gave us the advantage to p
  
 \subsubsection{Cluster labeling and comparison}  \label{cluster_labeling}
 
-The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. We observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior. These clusters were labeled accordingly.
+The output of the pattern detection step is a set of clusters. We explored these clusters to better understand the grouping of hosts. We observed that each cluster exhibits a unique behavior. That is all the hosts in a cluster exhibit similar behavior. These clusters were labeled accordingly which is further discussed in evaluation chapter.
 Recall the overarching premise of our work is to analyze the behavior of hosts looking at the aggregated host data. In order to analyze the behavior of hosts over a time period, we should be able to compare hosts behavior across days. We dealt with this by initially comparing the host's behavior for any two days and then extended it to any given time period. To achieve this we chose a reference day and label the clusters on that day through manual inspection. On any other day, we label the clusters by comparing it with this reference day. Cluster comparison is an active research area but in our case, it is slightly easier to solve because the number of clusters that are formed on each day is constant (i.e, as we choose the same K value as on reference day.) and each cluster maps to a unique behavior. So, all that we need to do is to find a one-to-one mapping with the reference day clusters. 
 Now, this turns out to be an assignment problem which is well studied \cite{kuhn1955hungarian}. Assignment problem is a special type of linear programming problem which deals with the allocation of the various resources to the various activities on one to one basis. It does it in such a way that the cost or time involved in the process is minimum and profit or sale is maximum. 
 

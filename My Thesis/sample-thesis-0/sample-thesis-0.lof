@@ -11,5 +11,5 @@
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}}{35}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled dataset by CAIDA.}}{39}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Plot of number of clusters formed over a time period.}}{46}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Compare Host Behaviors on two days.}}{47}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Compare Host Behaviors over a time period.}}{47}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Compare host behaviors on two days.}}{47}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Compare host behaviors over a time period.}}{47}

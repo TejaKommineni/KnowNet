@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  3 APR 2018 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  3 APR 2018 16:32
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -875,21 +875,21 @@ File: aggregated.png Graphic file (type png)
 Package pdftex.def Info: aggregated.png used on input line 80.
 (pdftex.def)             Requested size: 431.81659pt x 119.84866pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1237) has occurred while \output is active []
 
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [18 <./categorical.png>] <feature.png, id=123, 351.3125pt x 250.9375pt>
+ [18 <./categorical.png> <./aggregated.png>]
+<feature.png, id=123, 351.3125pt x 250.9375pt>
 File: feature.png Graphic file (type png)
-
-<use feature.png>
+ <use feature.png>
 Package pdftex.def Info: feature.png used on input line 93.
 (pdftex.def)             Requested size: 316.17831pt x 225.84164pt.
- <transformed.png, id=124, 351.3125pt x 250.9375pt>
-File: transformed.png Graphic file (type png)
 
-<use transformed.png>
+<transformed.png, id=124, 351.3125pt x 250.9375pt>
+File: transformed.png Graphic file (type png)
+ <use transformed.png>
 Package pdftex.def Info: transformed.png used on input line 99.
 (pdftex.def)             Requested size: 316.17831pt x 225.84164pt.
 
@@ -898,7 +898,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [19 <./aggregated.png>]
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -992,7 +992,7 @@ pdfTeX warning: pdflatex.exe (file ./assign_prob.pdf): PDF inclusion: found PDF
 <assign_prob.pdf, id=177, 963.6pt x 542.025pt>
 File: assign_prob.pdf Graphic file (type pdf)
  <use assign_prob.pdf>
-Package pdftex.def Info: assign_prob.pdf used on input line 27.
+Package pdftex.def Info: assign_prob.pdf used on input line 26.
 (pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
 )
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
@@ -1171,24 +1171,23 @@ File: constant.png Graphic file (type png)
 <use constant.png>
 Package pdftex.def Info: constant.png used on input line 257.
 (pdftex.def)             Requested size: 394.47278pt x 233.87315pt.
-
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [46 <./constant.png>] <tool_compare_days.png, id=352, 962.09438pt x 446.16687p
-t>
+ <tool_compare_days.png, id=348, 962.09438pt x 446.16687pt>
 File: tool_compare_days.png Graphic file (type png)
 
 <use tool_compare_days.png>
 Package pdftex.def Info: tool_compare_days.png used on input line 281.
 (pdftex.def)             Requested size: 432.93846pt x 200.77324pt.
 
-<tool_compare_week.png, id=353, 963.6pt x 542.025pt>
+<tool_compare_week.png, id=349, 963.6pt x 542.025pt>
 File: tool_compare_week.png Graphic file (type png)
 
 <use tool_compare_week.png>
 Package pdftex.def Info: tool_compare_week.png used on input line 288.
 (pdftex.def)             Requested size: 433.616pt x 243.90898pt.
 )
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [46 <./constant.png>]
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
  [47 <./tool_compare_days.png> <./tool_compare_week.png>]
@@ -1236,10 +1235,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 14036 strings out of 493323
- 273268 string characters out of 3138204
- 310399 words of memory out of 3000000
- 17137 multiletter control sequences out of 15000+200000
+ 14034 strings out of 493323
+ 273253 string characters out of 3138204
+ 310383 words of memory out of 3000000
+ 17135 multiletter control sequences out of 15000+200000
  59411 words of font info for 165 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,65p,2160b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1255,7 +1254,7 @@ pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/M
 iKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (61 pages, 2013305 bytes).
+Output written on sample-thesis-0.pdf (61 pages, 2012916 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

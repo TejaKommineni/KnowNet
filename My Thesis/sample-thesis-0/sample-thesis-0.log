@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  3 APR 2018 08:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  3 APR 2018 11:47
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -713,13 +713,13 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 [3]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 40.
+(Font)              scaled to size 15.0049pt on input line 42.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 40.
+(Font)              scaled to size 10.42007pt on input line 42.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 40.
+(Font)              scaled to size 15.0049pt on input line 42.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 40.
+(Font)              scaled to size 10.42007pt on input line 42.
 )
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
@@ -1174,13 +1174,13 @@ Package pdftex.def Info: constant.png used on input line 257.
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [46 <./constant.png>] <tool_compare_days.png, id=352, 962.09438pt x 475.27562p
+ [46 <./constant.png>] <tool_compare_days.png, id=352, 962.09438pt x 446.16687p
 t>
 File: tool_compare_days.png Graphic file (type png)
 
 <use tool_compare_days.png>
 Package pdftex.def Info: tool_compare_days.png used on input line 281.
-(pdftex.def)             Requested size: 432.93846pt x 213.87206pt.
+(pdftex.def)             Requested size: 432.93846pt x 200.77324pt.
 
 <tool_compare_week.png, id=353, 963.6pt x 542.025pt>
 File: tool_compare_week.png Graphic file (type png)
@@ -1207,7 +1207,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (1.07881pt too wide) in paragraph at lines 19--20
+Overfull \hbox (1.07881pt too wide) in paragraph at lines 18--19
 []\OT1/ppl/m/n/10.95 Investigate and build ap-pli-ca-tions us-ing the re-sults 
 of our sys-tem. Our sys-tem groups
  []
@@ -1255,7 +1255,7 @@ pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/M
 iKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (61 pages, 2014726 bytes).
+Output written on sample-thesis-0.pdf (61 pages, 2013409 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

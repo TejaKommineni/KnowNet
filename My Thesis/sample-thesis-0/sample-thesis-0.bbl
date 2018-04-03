@@ -40,6 +40,10 @@
 \bibitem{Derpanis06k-meansclustering}
 {\sc K.~G. Derpanis}, {\em K-means clustering}, 2006.
 
+\bibitem{DBLP:journals/corr/DeyRS17}
+{\sc T.~K. Dey, A.~Rossi, and A.~Sidiropoulos}, {\em Temporal clustering},
+  CoRR, abs/1704.05964 (2017).
+
 \bibitem{diibendorfer2005host}
 {\sc T.~Diibendorfer and B.~Plattner}, {\em Host behaviour based early
   detection of worm outbreaks in internet backbones}, in Enabling Technologies:
@@ -71,6 +75,14 @@
 {\sc P.~Garcia-Teodoro, J.~Diaz-Verdejo, G.~Maci{\'a}-Fern{\'a}ndez, and
   E.~V{\'a}zquez}, {\em Anomaly-based network intrusion detection: Techniques,
   systems and challenges}, computers \& security, 28 (2009), pp.~18--28.
+
+\bibitem{guha2016clustering}
+{\sc S.~Guha and N.~Mishra}, {\em Clustering data streams}, in Data Stream
+  Management, Springer, 2016, pp.~169--187.
+
+\bibitem{haag2005watch}
+{\sc P.~Haag}, {\em Watch your flows with nfsen and nfdump}, in 50th RIPE
+  Meeting, 2005.
 
 \bibitem{Johnson2000}
 {\sc E.~L. Johnson and H.~Kargupta}, {\em Collective, Hierarchical Clustering

@@ -304,12 +304,12 @@ To determine the change in hosts behaviors over time we passed six months worth 
 
 \subsection{Cost of cluster mapping:}
 
-To determine the change in hosts behaviors over time we passed six months worth of data through our system similar to the experimental set up mentioned at the start of evaluation section. But this time we also invoked the method to calculate K value on every day. The K value determines the different behaviors the hosts are exhibiting on that day as mentioned in section \ref{cluster_labeling}. So, we have K unique behaviors on every day. We wanted to verify how this K value is changing with time. i.e, how are the behaviors changing with time? Hence, we plotted the K values for the last six months and it looks as follows \figref{constant}. The value of K on X-axis and the day on which we found this value on Y-axis. Except for few points, it is a straight line indicating the constant behaviors that hosts are exhibiting in our system. This needn't be the case with all the networks. In an environment with multiple networks, the K value could be different and we might see it changing frequently. It depends on the environment in which our system is going to be used.
+In chapter \ref{implementation}, we described how we perform one-one mapping with clusters on a reference day to label clusters on a non-reference day. Hungarian algorithm is used to perform one-to-one mapping. Mapping clusters involves cost, lower cost implies a good mapping, as it indicates we are able to move cluster center and the data points corresponding to that cluster on a non-reference day to a reference day cluster with less effort. We calculated this cost of mapping all clusters on a given day over a time period and plotted a graph as shown in \figref{cost}. The cost to map all the clusters on a given day is a residue of hungarian algorithm. From the \figref{cost} we can observe that in our experiment setting the cost of mapping clusters was in a range of 0 to 4. Trying to minimze the cost of this mapping is one interesting area of future work.
 
-\begin{figure}[b]
-	\centerline{\includegraphics{constant.png}}
+\begin{figure}[t]
+	\centerline{\includegraphics{cost.png}}
 	\caption{ Plot of number of clusters formed over a time period.}%
-	\figlabel{constant}
+	\figlabel{cost}
 \end{figure}
 
 

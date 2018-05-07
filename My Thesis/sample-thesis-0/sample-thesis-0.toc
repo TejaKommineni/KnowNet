@@ -27,11 +27,11 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {4.1.2.2}Converting categorical to numerical variables}{17}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.3}Feature scaling}{18}
+\contentsline {subsubsection}{\numberline {4.1.2.3}Feature scaling}{19}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {4.1.2.4}Feature transformation}{19}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.5}Feature selection}{21}
+\contentsline {subsubsection}{\numberline {4.1.2.5}Feature selection}{19}
 \contentsline {section}{\numberline {4.2}Pattern detector}{22}
 \contentsline {subsection}{\numberline {4.2.1}Why K-Means ??}{22}
 \contentsline {subsection}{\numberline {4.2.2}How to choose K ??}{23}

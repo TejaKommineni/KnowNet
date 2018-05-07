@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  6 MAY 2018 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.7)  6 MAY 2018 19:06
 entering extended mode
 **./sample-thesis-0.tex
 (sample-thesis-0.tex
@@ -513,11 +513,7 @@ This is uuthesis-2016-h.sty version 1.08 <2 May 2016>
 (dissertationapproval.sty)
 \uuthesis@chaptersectionspace=\dimen172
 ) (mythesis.sty) (sample-thesis-0.aux (chap1.aux)
-(chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux
-
-LaTeX Warning: Label `fig:constant' multiply defined.
-
-) (chap7.aux))
+(chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux) (chap7.aux))
 \openout1 = `sample-thesis-0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 197.
@@ -534,7 +530,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 197.
 LaTeX Font Info:    ... okay on input line 197.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 197.
 
- ("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\ot1ppl.fd"
+
+("C:\Program Files\MiKTeX 2.9_1\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 ("C:\Program Files\MiKTeX 2.9_1\tex\context\base\supp-pdf.mkii"
@@ -878,21 +875,21 @@ File: aggregated.png Graphic file (type png)
 Package pdftex.def Info: aggregated.png used on input line 80.
 (pdftex.def)             Requested size: 431.81659pt x 119.84866pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1237) has occurred while \output is active []
 
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [18 <./categorical.png>] <feature.png, id=123, 351.3125pt x 250.9375pt>
+ [18 <./categorical.png> <./aggregated.png>]
+<feature.png, id=123, 351.3125pt x 250.9375pt>
 File: feature.png Graphic file (type png)
-
-<use feature.png>
+ <use feature.png>
 Package pdftex.def Info: feature.png used on input line 93.
 (pdftex.def)             Requested size: 386.44493pt x 276.03209pt.
- <transformed.png, id=124, 351.3125pt x 250.9375pt>
-File: transformed.png Graphic file (type png)
 
-<use transformed.png>
+<transformed.png, id=124, 351.3125pt x 250.9375pt>
+File: transformed.png Graphic file (type png)
+ <use transformed.png>
 Package pdftex.def Info: transformed.png used on input line 99.
 (pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
 
@@ -901,7 +898,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [19 <./aggregated.png>]
+ [19]
 
 LaTeX Warning: Text page 20 contains only floats.
 
@@ -926,9 +923,6 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
 [22]
-Underfull \vbox (badness 1603) has occurred while \output is active []
-
-
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
@@ -940,16 +934,17 @@ Package pdftex.def Info: elbow.png used on input line 159.
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [24 <./elbow.png>]
-Overfull \vbox (7.47873pt too high) has occurred while \output is active []
-
-
-[25] <silhouette.png, id=150, 702.625pt x 501.875pt>
+ [24 <./elbow.png>] <silhouette.png, id=147, 702.625pt x 501.875pt>
 File: silhouette.png Graphic file (type png)
- <use silhouette.png>
+
+<use silhouette.png>
 Package pdftex.def Info: silhouette.png used on input line 186.
 (pdftex.def)             Requested size: 421.57825pt x 301.12732pt.
 
+Overfull \vbox (7.47873pt too high) has occurred while \output is active []
+
+
+[25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1206,32 +1201,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (7.643pt too high) has occurred while \output is active []
 
- [48 <./constant.png>]
-File: constant.png Graphic file (type png)
- <use constant.png>
-Package pdftex.def Info: constant.png used on input line 310.
-(pdftex.def)             Requested size: 394.47278pt x 233.87315pt.
+ [48 <./constant.png>] <cost.png, id=361, 353.82187pt x 250.9375pt>
+File: cost.png Graphic file (type png)
+ <use cost.png>
+Package pdftex.def Info: cost.png used on input line 310.
+(pdftex.def)             Requested size: 353.821pt x 250.93687pt.
 
-Underfull \vbox (badness 1048) has occurred while \output is active []
-
-
-Overfull \vbox (7.643pt too high) has occurred while \output is active []
-
- [49]
-<tool_compare_days.png, id=364, 962.09438pt x 446.16687pt>
+<tool_compare_days.png, id=362, 962.09438pt x 446.16687pt>
 File: tool_compare_days.png Graphic file (type png)
 
 <use tool_compare_days.png>
 Package pdftex.def Info: tool_compare_days.png used on input line 332.
 (pdftex.def)             Requested size: 432.93846pt x 200.77324pt.
 
-<tool_compare_week.png, id=365, 963.6pt x 542.025pt>
+<tool_compare_week.png, id=363, 963.6pt x 542.025pt>
 File: tool_compare_week.png Graphic file (type png)
 
 <use tool_compare_week.png>
 Package pdftex.def Info: tool_compare_week.png used on input line 339.
 (pdftex.def)             Requested size: 433.616pt x 243.90898pt.
 )
+Overfull \vbox (7.643pt too high) has occurred while \output is active []
+
+ [49 <./cost.png>]
 Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 
 
@@ -1277,14 +1269,14 @@ Overfull \vbox (7.47873pt too high) has occurred while \output is active []
 [56] (sample-thesis-0.aux (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
 (chap5.aux) (chap6.aux) (chap7.aux))
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 14063 strings out of 493323
- 273736 string characters out of 3138204
- 310548 words of memory out of 3000000
- 17161 multiletter control sequences out of 15000+200000
+ 14072 strings out of 493323
+ 273836 string characters out of 3138204
+ 310545 words of memory out of 3000000
+ 17169 multiletter control sequences out of 15000+200000
  59411 words of font info for 165 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,65p,2160b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1300,9 +1292,9 @@ pfb><C:/Program Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/M
 iKTeX 2.9_1/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9_1/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on sample-thesis-0.pdf (64 pages, 2043803 bytes).
+Output written on sample-thesis-0.pdf (64 pages, 2073086 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
+ 434 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

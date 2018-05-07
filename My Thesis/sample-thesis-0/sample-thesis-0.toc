@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {2.1}Unsupervised learning}{6}
 \contentsline {chapter}{\numberline {3.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Related Work}\global \uuthesis@needtocspacetrue }{9}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {3.1}Data Mining and Machine Learning techniques for intrusion detection}{9}
+\contentsline {section}{\numberline {3.1}Data Mining and machine learning techniques for intrusion detection}{9}
 \contentsline {section}{\numberline {3.2}Machine Learning for traffic classification}{10}
 \contentsline {section}{\numberline {3.3}Usage of flow records for IDS/Classification}{12}
 \contentsline {chapter}{\numberline {4.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Design Overview}\global \uuthesis@needtocspacetrue }{13}
@@ -23,15 +23,15 @@
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsection}{\numberline {4.1.2}Feature Engineering}{14}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.1}Missing Data}{15}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Missing data}{15}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {4.1.2.2}Converting categorical to numerical variables}{17}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.3}Feature scaling}{19}
+\contentsline {subsubsection}{\numberline {4.1.2.3}Feature scaling}{18}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {subsubsection}{\numberline {4.1.2.4}Feature transformation}{19}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {subsubsection}{\numberline {4.1.2.5}Feature selection}{19}
+\contentsline {subsubsection}{\numberline {4.1.2.5}Feature selection}{21}
 \contentsline {section}{\numberline {4.2}Pattern detector}{22}
 \contentsline {subsection}{\numberline {4.2.1}Why K-Means ??}{22}
 \contentsline {subsection}{\numberline {4.2.2}How to choose K ??}{23}
@@ -41,16 +41,18 @@
 \contentsline {chapter}{\numberline {6.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Results}\global \uuthesis@needtocspacetrue }{32}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
 \contentsline {section}{\numberline {6.1}Dataset: description and clustering}{32}
-\contentsline {section}{\numberline {6.2}Cross Validation}{35}
-\contentsline {section}{\numberline {6.3}Labeled data: description and clustering}{37}
-\contentsline {subsection}{\numberline {6.3.1}Scenario 1:}{41}
-\contentsline {subsection}{\numberline {6.3.2}Scenario 2:}{41}
-\contentsline {subsection}{\numberline {6.3.3}Scenario 3:}{42}
-\contentsline {subsection}{\numberline {6.3.4}Scenario 4:}{43}
-\contentsline {subsection}{\numberline {6.3.5}Hosts behavior with time:}{45}
-\contentsline {subsection}{\numberline {6.3.6}Applications:}{46}
-\contentsline {chapter}{\numberline {7.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Conclusion}\global \uuthesis@needtocspacetrue }{48}
+\contentsline {section}{\numberline {6.2}Cluster Labeling}{35}
+\contentsline {section}{\numberline {6.3}Cross Validation}{37}
+\contentsline {section}{\numberline {6.4}Labeled data: description and clustering}{40}
+\contentsline {subsection}{\numberline {6.4.1}Scenario 1:}{43}
+\contentsline {subsection}{\numberline {6.4.2}Scenario 2:}{44}
+\contentsline {subsection}{\numberline {6.4.3}Scenario 3:}{45}
+\contentsline {subsection}{\numberline {6.4.4}Scenario 4:}{46}
+\contentsline {subsection}{\numberline {6.4.5}Hosts behavior with time:}{47}
+\contentsline {subsection}{\numberline {6.4.6}Cost of cluster mapping:}{48}
+\contentsline {subsection}{\numberline {6.4.7}Applications:}{49}
+\contentsline {chapter}{\numberline {7.}\hyphenpenalty =10000\exhyphenpenalty =10000\relax \linepenalty =0 \uppercase {Conclusion}\global \uuthesis@needtocspacetrue }{51}
 \ifuuthesis@needtocspace \vspace {\uuthesis@chaptersectionspace } \fi \global \uuthesis@needtocspacefalse 
-\contentsline {section}{\numberline {7.1}Future Directions}{49}
-\contentsline {section}{\numberline {7.2}Parting Thoughts}{50}
-\contentsline {chapter}{REFERENCES}{51}
+\contentsline {section}{\numberline {7.1}Future Directions}{52}
+\contentsline {section}{\numberline {7.2}Parting Thoughts}{53}
+\contentsline {chapter}{REFERENCES}{54}

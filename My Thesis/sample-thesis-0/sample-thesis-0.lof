@@ -5,11 +5,15 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Normalized data}}{20}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Elbow Method}}{24}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Silhouette Method}}{26}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Process diagram on a reference day, with netflow eight-dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }}{30}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Process diagram on a reference day}}{30}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Process diagram on a non-reference day.}}{31}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Average Bytes feature cdf for clusters T1,T2,S1,S2}}{34}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Average bytes feature cdf for clusters T1,T2,S1,S2}}{34}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of hosts using port based classifier (left) and host behavior extractor (right) on December 12, 2017.}}{35}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Manually labeled dataset by CAIDA.}}{39}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Plot of number of clusters formed over a time period.}}{46}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Compare host behaviors on two days.}}{47}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Compare host behaviors over a time period.}}{47}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Cumulative histogram for feature unique destinations}}{36}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Scatter plots of cluster C1}}{36}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Scatter plot of cluster C1 for feature Unique Source Ports}}{37}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Feature unique destinations distribution for cluster C1}}{38}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Plot of number of clusters formed over a time period.}}{48}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Plot of number of clusters formed over a time period.}}{49}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Compare host behaviors on two days.}}{50}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Compare host behaviors over a time period.}}{50}

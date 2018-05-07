@@ -33,8 +33,8 @@ There are different variants of NetFlow with each advanced version giving additi
 
 \subsection{Feature Engineering}
 
-Feature Engineering is the process of transforming raw
-data into features so as to better represent the underlying structure of the data. This helps in increasing the accuracy of the models we build using data mining techniques. This step comes before modeling and after seeing the data.
+Feature Engineering is the process of transforming raw (unclean)
+data into usable format that better represents the problem we want to solve. This helps in increasing the accuracy of the models we build using data mining techniques. This step comes before modeling and after seeing the data.
 Features extracted from the data directly influence the models generated and predictions made out of it. The better the features are the better the results will be. The results that we achieve when we are using DM approaches are a factor of the data set in hand, the features generated, the prediction model and the way the problem is framed. Most of the times even simpler models perform better if the features describe the structure inherent to the data. 
 Below we describe different steps involved in the feature engineering with a sample set of data.
 \begin{table}[t]
@@ -43,7 +43,7 @@ Below we describe different steps involved in the feature engineering with a sam
 	 \tablabel{raw_data}
 \end{table}
  
-\subsubsection{Missing Data} 
+\subsubsection{Missing data} 
 
 \tabref{raw_data} is a sample of network data collected using NetFlow. In total there are 40 columns (only 9 columns are shown in the table) for each record with each column capturing different flow information. From the table, we can see that there are few missing values. Missing data is a common issue that every data science experiment has to deal with and there could be different reasons why NetFlow records could be missing some values such as, few filters could be turned on the router that doesn't let the NetFlow collector collect all the information, overloading of NetFlow collector and others. We handled Missing data using the following techniques 
 
@@ -67,7 +67,7 @@ Features could be either numerical or categorical variables. When dealing with a
 For example, in our case feature protocol, has values such as TCP, UDP, and others. One approach is to encode them as 0, 1, and 2 respectively converting them to numerical variables. This could pose a problem when using distance measuring algorithms as the distance between the encoded attributes, like 1 (UDP), 0 (TCP) is smaller than 0 (TCP), 2 (others) generating an unintended meaning to this feature and could lead to biasing of few values. Another approach would be to create a feature for each value of the categorical variable and mark it as 0 or 1 based on if the value is present or not. There are both pros and cons to this method. The pros are if we choose to aggregate the values on all features this conversion gives a numerical value to work with. The cons are scaling and standardization could be affected. \tabref{categorical} represents data set after this step.
 
 \begin{table}[t]
-	\caption{After Converting categorical data to numerical}%
+	\caption{NetFlow data after handling categorical variables}%
 	\centerline{\includegraphics[scale = 0.6]{categorical.png}}
 	\tablabel{categorical}
 \end{table}
@@ -76,7 +76,7 @@ Above two steps fall under a family of techniques called data cleaning. After th
 The first record in the \tabref{aggregated} conveys the information that in the given data set the host 59.2.154.56 (source IP) had appeared 450 times. Out of those 450 instances it had contacted 116 unique hosts. A total of 110 different source ports were used in the 450 flows and all the packets were sent to single destination port. The columns TCP, UDP, ICMP indicate how many of these flows fall under each category. So of the 450 flows there are 406 flows in which TCP protocol was used , 4 had UDP protocol used and the rest 40 had used ICMP protocol. And the columns Total Duration, Total Bytes, Total Packets indicate the respective information exchanged by this source IP on a whole. This aggregated data is what we use for learning host behaviors. But, before that, we have to apply few other feature engineering techniques as described below.
 
 \begin{table}[b]
-	\caption{Aggregated data by Source IP}%
+	\caption{Aggregated data by source IP}%
 	\centerline{\includegraphics[scale = 0.6]{aggregated.png}}	
 	\tablabel{aggregated}
 \end{table}
@@ -90,40 +90,32 @@ There are different ways to do feature scaling namely, Min-Max scaling, Variance
 Transforming non-normal distribution to normal, many ML/DM tools perform well on normalized data and having skewed data will give inaccurate results. Log transformations are generally used to normalize the skewed data which is the case with most network data. After transforming the data if it doesn't capture the essence of original data we could look at other options such as square root, cube root. BoxCox is also another technique that changes the distribution of variables from non-normal to normal or near normal. \figref{feature} shows the distribution of a feature 'Total Flows' from our aggregated data, as seen from the graph it is heavily skewed towards left and this can be directly attributed to the data set we have in hand. The graph indicates that in most instances number of flows in which a source IP appears is less than 100 and hence we employ transformation techniques to decrease the amount of skewness in the data.  \figref{feature_transformed} shows the same data after applying log transformation. 
 
 \begin{figure}[t]
-	\centerline{\includegraphics[scale = 0.9]{feature.png}}
+	\centerline{\includegraphics[scale = 1.1]{feature.png}}
 	\caption{Skewed data before transformation}%
 	\figlabel{feature}
 \end{figure}
 
-\begin{figure}[t]
-	\centerline{\includegraphics[scale = 0.9]{transformed.png}}
+\begin{figure}[b]
+	\centerline{\includegraphics[scale = 1.0]{transformed.png}}
 	\caption{Normalized data}%
 	\figlabel{feature_transformed}
 \end{figure}
 
-
-
 \subsubsection{Feature selection}		
 	
-	Feature selection refers to the process of selecting a subset of relevant features to model the data. It helps in shorter time periods of execution, overcoming the overfitting problem and making the solution more generic and avoid the curse of dimensionality. The central premise of this process is to remove redundant or irrelevant features that don't make much sense to the problem we ought to solve. Feature selection and dimensionality reduction are two confusing terms. Though both methods seek to reduce the number of attributes in the dataset, but dimensionality reduction does it by creating new combinations of attributes, whereas feature selection methods include and exclude attributes present in the data without changing them. Principal Component Analysis, Singular Value Decomposition are examples of dimensionality reduction methods. The techniques used to do feature selection depend on text, numerical variables and they are three general classes of them Filter, Wrapper, Embedded methods.	Feature selection is a much tougher problem in unsupervised setting as we don't have any labels that help us in determining the information gain with and without a feature. Problems of
+	Feature selection refers to the process of selecting a subset of features that define the problem we want to solve. It helps in shorter time periods of execution, overcoming the overfitting problem and making the solution more generic and avoid the curse of dimensionality. The central premise of this process is to remove redundant or irrelevant features that don't make much sense to the problem we ought to solve. Feature selection and dimensionality reduction are two confusing terms. Though both methods seek to reduce the number of attributes in the dataset, dimensionality reduction does it by combining different features together, whereas feature selection methods does it by picking features from the data without altering them. Principal Component Analysis, Singular Value Decomposition are examples of dimensionality reduction methods. The techniques used to do feature selection depend on text, numerical variables and they are three general classes of them Filter, Wrapper, Embedded methods.	Feature selection is a much tougher problem in unsupervised setting as we don't have any labels that help us in determining the information gain with and without a feature. Problems of
 	this kind have been rarely studied in the literature \cite{boutsidis2009unsupervised} \cite{dash2002feature}. 
 	
 	The common strategy of most approaches is the use of filter methods, Filter model methods do not utilize any clustering algorithm to test the quality of the features. They evaluate the score of each feature according to criteria mentioned here \cite{dash2002feature}. It selects the features with the highest score. It is called filter since it filters out the irrelevant features using given criteria. 
 	Wrapper methods are another class of methods used for feature selection where we train the given model with different combinations of features and make inferences accordingly.
-	Some common examples of wrapper methods are forward feature selection, backward feature elimination. Forward selection is similar to elbow method explained in the next section. It is an iterative technique where we start with zero features and in each step, we keep adding feature that has the most information gain or best expresses the underlying structure. This procedure is stopped when addition of an extra feature doesn't add any significant information to the model. The backward elimination technique is exactly opposite to the forward selection method. Here we start with all the features and remove the feature with least information gain at each iteration. This iterative procedure stops when removal of features doesn't improve our model.
+	Backward feature elimination and Forward feature selection are examples of wrapper methods. Forward selection is similar to elbow method explained in the next section. It is an iterative technique where we start with zero features and in each step, we keep adding feature that has the most information gain or best expresses the underlying structure. This procedure is stopped when addition of an extra feature doesn't add any significant information to the model. The backward elimination technique is exactly opposite to the forward selection method. Here we start with all the features and remove the feature with least information.
 	
 	We have chosen wrapper methods backward elimination technique for feature selection as it measures the usefulness of a subset of features by actually training a model on it. Though, it is computationally expensive compared to filter based approaches in our context it was reasonable as we had only 10 features to look into. The result of feature selection is we have detected two features that have very less information gain namely the ICMP ports and duration and hence we removed these two from our feature list making our final feature count to 8.
-	 Feature Selection has helped us in enabling the machine learning algorithm to train faster. It reduced the complexity of the model and made it easier to interpret. We were also able to address the overfitting problem.
-
-
-
-
-
 
 \section{Pattern detector}
 Pattern detector consists of the core logic of our system. After cleaning the data and applying feature engineering we send the data through a pattern detector. Pattern detector sends the data through a clustering algorithm. It then maps the generated clusters to the host behaviors which is explained later.
 
-As mentioned in the background section we choose to address our problem using unsupervised learning approaches. The most common unsupervised learning method is cluster analysis, which is used for exploratory data analysis to find hidden patterns or grouping in data. 
+As mentioned in the background section we choose to address our problem using unsupervised learning approaches. The most common unsupervised learning method is cluster analysis, which is used to find hidden patterns or grouping in data. 
 
 \subsection{Why K-Means ??}
  In section \ref{unsupervised} we have discussed the different type of clustering techniques in detail. Here we provide a reasoning for choosing K-Means.
@@ -132,7 +124,7 @@ Connectivity models like hierarchical clustering don't have a provision for relo
 the results is recommended to support the veracity of
 the original results. Lastly, a time complexity of at least O($n^2logn$) is required, where n is the number of data points thus lacking scalability for handling big datasets.
 
-Distribution Models assume a distribution for data but for many real data sets, there maybe no concisely defined mathematical model (e.g. assuming Gaussian distributions is a rather strong assumption on the data). Also, though distribution models have an excellent  theoretical foundation but they suffer from one key problem known as overfitting. 
+Distribution Models assume a distribution for data but this is not the case with many real data sets, as they may not fit into a pre-defined mathematical model. Also, though distribution models have an excellent theoretical foundation they suffer from overfitting. 
 
 We have experimented our data set with the density model DBSCAN and we have found the data being grouped at most into only two clusters. The reason for this is that density based models expect some kind of density drop to detect cluster borders. Recall from the above section that our dataset has many source IPs that appear in less than 100 flows and hence there wasn't any drop in density observed resulting in bad clustering.
 
@@ -141,7 +133,7 @@ Experimenting with centroid models especially K-Means gave us the advantage to p
 
 \subsection{How to choose K ??}
  In many situations, parameters and variables chosen by the algorithm or by users affects the performance of the algorithm differently and results in different outputs. Similarly, an essential problem of the K-means clustering method is to define an appropriate number of clusters K. In the literature, there are different approaches proposed to determine an accurate value of K.
- These methods include direct methods and statistical testing methods. Direct methods consist of optimizing a criterion, such as the within-cluster sums of squares or the average silhouette. The corresponding methods are named elbow and silhouette methods, respectively. Statistical testing methods consist of comparing evidence against the null hypothesis. An example is the gap statistic. We have used the direct methods as they optimize a criterion, The elbow method was used to determine K and then cross-verified the values with the Silhouette Index obtained for this same data set.
+ These methods include direct methods and statistical testing methods. Direct methods optimize a criterion, such as the within-cluster sums of squares or the average silhouette. and the methods are named elbow and silhouette respectively. Statistical testing methods compare evidence against the null hypothesis. An example is the gap statistic. We have used the direct methods as they optimize a criterion, The elbow method was used to determine K and then cross-verified the values with the Silhouette Index obtained for this same data set.
  
  From \ref{unsupervised}, it is clear that K-Means clustering tries to map a data point to the closest cluster center. Thus, it tries to minimize the total within-cluster sum of square (WSS). The total WSS measures how compact the formed clusters are and this has to be as small as possible. The elbow method that we used to determine K measures the total WSS for each value of K. We chose a K value(i.e, number of clusters) such that an increment or decrement of K value shouldn't improve the total WSS. 
  Steps in elbow method are outlined as follows:

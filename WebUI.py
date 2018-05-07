@@ -150,28 +150,45 @@ def compare_clusters(start_date,end_date):
         od = collections.OrderedDict(sorted(data[start_date][0]['cluster_mappings'].items()))   
         profiles = [v for k, v in od.items()] 
     matrix = distance.cdist(centres1, centres2, 'euclidean')
-    print(matrix)
+    matrix[0][0] = 1
+    matrix[1][1] = 1
+    matrix[2][2] = 1
+    matrix[3][3] = 1
+    matrix[4][4] = 1
+    matrix[5][5] = 1
+    matrix[6][6] = 1
+    #print(matrix)
+    
     m = Munkres()
     indexes = m.compute(matrix)
-    print(matrix) 
+    #print(matrix) 
+    
+    temp_matrix = distance.cdist(centres1, centres2, 'euclidean')
+    temp_matrix[0][0] = 1
+    temp_matrix[1][1] = 1
+    temp_matrix[2][2] = 1
+    temp_matrix[3][3] = 1
+    temp_matrix[4][4] = 1
+    temp_matrix[5][5] = 1
+    temp_matrix[6][6] = 1
     total = 0
     mapping=[]
     for row, column in indexes:        
-        value = matrix[row][column]
+        value = temp_matrix[row][column]
         total += value
         temp =[]
         temp.append(row)
         temp.append(column)
-        print( '(%d, %d) -> %f' % (row, column, value))
-        #print( 'total cost: %f' % total)
+        #print( '(%d, %d) -> %f' % (row, column, value))        
         mapping.append(temp)
+    print(total)
     ax=plt.figure().add_subplot(111)
     od = collections.OrderedDict(sorted(set1.items()))
     value1 = [v for k, v in od.items()]
-    print(value1)
+    #print(value1)
     od = collections.OrderedDict(sorted(set2.items()))   
     value2 = [v for k, v in od.items()]
-    print(value2)
+    #print(value2)
     plt.axis([-2,2,-1,max(len(value1),len(value2))+1])
     frame=plt.gca()
     frame.axes.get_xaxis().set_ticks([])

@@ -4,12 +4,12 @@
 
 In this chapter, we evaluate our system using both labeled and unlabeled data. Our experiments in this section are conducted on a ubuntu16 virtual machine with 80 GB memory and 20 CPUs of computing power. 
 
-\section{Dataset: description and clustering}
+\section{Dataset: description and clustering} \label{dataset_description}
 The traffic analyzed here is collected at the University of Utah's emulab routers \cite{White+:osdi02}. This is a private repository that contains traces of bidirectional traffic into the emulab network and no payload. Traffic is collected on full duplex links at a speed of 1Gbps.
 
 We passed the NetFlow records collected over the last six months of 2017 through our system to determine the set of behaviors hosts exhibited over this time. We have handpicked 7 days of this data for analysis. The chosen days are October 15, October 16, November 14, November 23, December 5, December 12, December 16\footnote{Days are picked without any prior knowledge of any metadata related to NetFlow records}. We made sure that there is a mix of both weekdays , weekends, normal and heavy traffic days. Each days traffic is treated independently as the same host that appeared on two different days could exhibit different behaviors. For different evaluations in this section, we used the data corresponding to these days.
 
-As mentioned earlier in the section \ref{cluster_labeling} we have chosen a reference day for labeling the clusters. We applied following techniques to label the clusters on the reference day. The first one is port-based analysis to identify applications such as web, mail, and DNS. The second one is the anomaly detection methods. Finally, a set of heuristic rules to label manually the behavior of the hosts. After the above steps, we found the following clusters. Clusters labeled as T consists of hosts which use few ports on both sides to exchange interactive traffic. Clusters labeled as S consists of hosts which serve clients requests and conversely clusters labeled C consists of hosts which request servers for information. Let us list the differences in these behaviors in detail.
+As mentioned earlier in the section \ref{cluster_labeling} we have chosen a reference day and induced domain knowledge for labeling the clusters. We applied following techniques to label the clusters on the reference day. The first one is port-based analysis to identify applications such as web, mail, and DNS. The second one is the anomaly detection methods. Finally, a set of heuristic rules to label manually the behavior of the hosts. After the above steps, we found the following clusters. Clusters labeled as T contains hosts which exchange interactive traffic. Clusters labeled as S consists of hosts which serve clients requests and conversely clusters labeled C consists of hosts which request servers for information. Let us list the differences in these behaviors in detail.
 
 \textbf{Clusters T1-T2} are mostly one-to-one connections, the dominant traffic in these clusters is http/https, ssh and peer to peer traffic. P2P traffic is defined as traffic where hosts use both TCP and UDP ports concurrently for communication, They also choose arbitrary ports for communication. Further analysis, reveals that clusters are split based on packet size and flow size.
 While T1 has long living flows with large average packet sizes. T2 has a large number of flows which are short-lived and an average packet size less than T1.
@@ -26,12 +26,9 @@ The above description clearly points out that host-based behavior extraction pro
 
 \begin{figure}[t]
 	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.7]{bytes_cdf.pdf}}
-	\caption{ Average Bytes feature cdf for clusters T1,T2,S1,S2}%
+	\caption{ Average bytes feature cdf for clusters T1,T2,S1,S2}%
 	\figlabel{bytes_cdf}
 \end{figure}
-
-
-
 
 The \figref{behaviorsdec12} is a comparison between the classification made by a traditional port-based classifier 6.2(a) and our host-based classifier 6.2(b). The traditional port-based classifier identified the top 8 applications used by the hosts in the system. DNS(53) is the most used application with 11.95\% of the whole traffic trying to query DNS servers. It is followed by Telnet(23), SSH(22) with a share of 9.83\% and 5.08\% traffic respectively. We can also see web traffic both secured and unsecured in the top 8 accounting to 3.84\%, 0.66\% traffic. While we can see the applications that accounted to majority of traffic by a traditional classifier, Our system, on the other hand, provided an alternate view for the same NetFlow data by extracting the behaviors these hosts are exhibiting. From the \figref{behaviorsdec12} we can see that, hosts that are behaving as clients account to 11.41\% (both C1 and C2 combined) of traffic and hosts that are behaving as servers account to 33.61\% (both S1 and S2 combined). The majority of the traffic(50.23\%) comprises of interactive communication between hosts while the anomalous hosts trying to invade into the network form the minority(4.75\%). 
 
@@ -41,12 +38,58 @@ The \figref{behaviorsdec12} is a comparison between the classification made by a
 	\figlabel{behaviorsdec12}
 \end{figure}
 
+\section{Cluster Labeling}
+As mentioned in the section \ref{cluster_labeling}, we induced domain knowledge for labeling clusters. Here we considered different information pertaining to each cluster to label them. In this section we will see how we choose C1 as label for a particular cluster and the process of analyzing the clusters in different dimensions to label them.
+
+Initially, we observed how many unique destinations the hosts in a cluster are interacting with on a given day. \figref{cumulative_histogram} is a cumulative histogram drawn for feature unique destinations. The annotated point on the graph (3,685) represents that 685 hosts in this cluster interacted with only 3 destinations on a given day. Also, from the graph we observe that all the hosts in this cluster communicate with atmost 5 unique hosts on a given day. From this, we deduce that this cluster does not contain hosts that function as servers or hosts which are trying to scan into the network as in both cases the number of destinations reached out will be significant.
+
+
+\begin{figure}[t]
+	\centerline{
+		\includegraphics[scale = 1.0]{cumulative_histogram.png}
+	}
+		\caption{Cumulative histogram for feature unique destinations}%
+		\figlabel{cumulative_histogram}
+\end{figure}
+
+We also looked at the distribution of packets and bytes being sent by each host in correlation with the number of flows in which it appeared. This helped us in gaining insights about distribution around cluster centers and the outlier behavior in the cluster as shown in \figref{c1_packets}.  
+
+\begin{figure}[b]
+	\centerline{
+		\includegraphics[scale = 0.6]{c1_packets.png}
+	}
+	\caption{Scatter plots of cluster C1}%
+	\figlabel{c1_packets}
+\end{figure}
+
+Our correlation graph \figref{c1_sourceports} shows that the relation between the feature unique source ports and the number of flows in which a host appeared is increasing linearly which indicates that every time a host is exchanging traffic with another host it is changing the port through which it is communicating. From the previous observations we know that each host is communicating with fewer destinations and they are distributed across the center of cluster with less number of outliers and now we know that they are using different ports in each flow. This is how general clients behave, where they interact with only few servers but initiate the request from different ports, as the source ports are selected randomly when we are making a request to the server. Inorder to confirm this we looked at unique destination ports each host is hitting. The result were as follows \figref{c1_ports}, ports 80, 25, 465 are the most used destination ports. That is majority of destinations were web or mail servers and this confirmed the fact that this cluster contains of hosts behaving as clients and accordingly they are labeled as Clients.
+
+\begin{figure}[b]
+	\centerline{
+		\includegraphics[scale = 0.6]{c1_sourceports.png}
+	}
+	\caption{Scatter plot of cluster C1 for feature Unique Source Ports}%
+	\figlabel{c1_sourceports}
+\end{figure}
+
+
+\begin{figure}[t]
+	\centerline{
+		\includegraphics[scale = 1.0]{c1_ports.png}
+	}
+	\caption{Feature unique destinations distribution for cluster C1}%
+	\figlabel{c1_ports}
+\end{figure}
+
+
+
+
 
 \section{Cross Validation} \label{cross_validation}
 We compared the results obtained from our system with other classification techniques to better understand the significance of our approach.
 
 \textbf{\textit{Cross Validation with a port based classifier}}, We used a classic port based classifying technique to cross-validate our results. Though, it isn't a perfect measure and fails in many cases it is good enough to classify a host to a particular class in most of the cases.
-In the scenarios when this technique cannot classify a host to particular class we label it as a 'Mix' traffic. The heuristic that we used for labeling as 'Mix' traffic is when the dominant class accounts for less than 50 percent of the traffic by that host. Applying this procedure we observed 20 different classes of traffic, out of which the most frequently observed are discussed here: HTTP, DNS, SSH, MAIL, TELNET, FTP, CHAT, SCAN, SMTP, MIX. Most of these classes are self explanatory based on the ports they operate. SCAN is a class that is different from others while all the other classes deal with single port SCAN deals with multiple ports. A host falls under SCAN category if majority of its traffic is trying to hit multiple ports on a system trying to find an open port to infiltrate. The cross-validation between the port based approach and our procedure on one of the chosen day December 12th is reported in \tabref{validation}.
+In the scenarios when this technique cannot classify a host to particular class we label it as a 'Mix' traffic. Applying this procedure we observed 20 different classes of traffic, out of which the most frequently observed are discussed here: HTTP, DNS, SSH, MAIL, TELNET, FTP, CHAT, SCAN, SMTP, MIX. Most of these classes are self explanatory based on the ports they operate. SCAN is a class that is different from others while all the other classes deal with single port SCAN deals with multiple ports. A host falls under SCAN category if majority of its traffic is trying to hit multiple ports on a system trying to find an open port to infiltrate. The cross-validation between the port based approach and our procedure on one of the chosen day December 12th is reported in \tabref{validation}.
 
 \begin{table}[b]
 	\caption{Cross-valdation of the host behavior extraction with port based analysis.}%
@@ -88,21 +131,21 @@ CAIDAs dataset consists of thirteen different scenarios. Each scenario is a capt
  	\tablabel{synthdesc}
  \end{table}
 
-  The distinctive character of this data set is that the data captured in each scenario is manually examined and labeled. The labeled dataset looks similar to the one which we capture at the emulab router except for the last column where the flow is labeled which can be seen in the \figref{ss_labeled}.
+  The distinctive character of this data set is that the data captured in each scenario is manually examined and labeled. The labeled dataset looks similar to the one which we capture at the emulab router except for the last column where the flow is labeled.
 
 Using the different captures in \tabref{synthdesc}  we evaluated our systems basic functionality such as how effectively our system is able to extract the host behaviors, the detection rate of the different possible attacks and how will it respond with scale (when there are multiple hosts from multiple networks communicating simultaneously). Before looking into these results let us examine some basic terminology to understand the evaluations.
 
-\begin{figure}[b]
-	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.45]{ss_labeled.pdf}}
-	\caption{Manually labeled dataset by CAIDA.}%
-	\figlabel{ss_labeled}
-\end{figure}
+%\begin{figure}[b]
+%	\centerline{\includegraphics[trim=2cm 2cm 2cm 2cm, scale = 0.45]{ss_labeled.pdf}}
+%	\caption{Manually labeled dataset by CAIDA.}%
+%	\figlabel{ss_labeled}
+%\end{figure}
 
-Let us consider a labeled dataset with two different labels A and B. The results produced when this dataset is sent through a classifier for classification can be tabulated as a confusion matrix as shown in \tabref{confusion}. This table tells us that dataset consists of a total of N values both of label A and label B combined. $TP_A$ indicates number of data points that are labeled as A and are classified as A. $TP_B$ indicates the number of data points that are labeled as B and are classified as B. $E_{AB}$ indicates the number of data points that are labeled as B by the classifier but actually belong to label A. $E_{BA}$ indicates the number of data points that are labeled as A by the classifier but actually belong to label B. The key of this matrix is the number of correct and incorrect classifications are summarized with count values and broken down by each class. The confusion matrix shows the ways in which a classification model is confused when it is making classifications. It also gives insights into the errors classifier is making and more importantly the type of errors that are being made. From this matrix we can calculate accuracy and prediction of a system which are defined as follows:
+Let us consider a labeled dataset with two different labels A and B. The results produced when this dataset is sent through a classifier for classification can be tabulated as a confusion matrix as shown in \tabref{confusion}. This table tells us that dataset consists of a total of N values both of label A and label B combined. $TP_A$ indicates number of data points that are labeled as A and are classified as A. $TP_B$ indicates the number of data points that are labeled as B and are classified as B. $E_{AB}$ indicates the number of data points that are labeled as B by the classifier but actually belong to label A. $E_{BA}$ indicates the number of data points that are labeled as A by the classifier but actually belong to label B. The key of this matrix is the number of correct and incorrect classifications are summarized with count values and broken down by each class. The confusion matrix gives insights into the errors a classifier is making and the type of errors it is making. From this matrix we can calculate accuracy and prediction of a system which are defined as follows:
 
 \begin{table}[t]
 	
-	\caption{Confusion Matrix}%
+	\caption{Confusion matrix}%
 	\centerline{\includegraphics[scale = 0.5]{confusion.pdf}}	
 	\tablabel{confusion}
 \end{table}
@@ -253,13 +296,21 @@ Our system was unable to detect the hosts exhibitng Fast Flux behavior on the ot
 
 To determine the change in hosts behaviors over time we passed six months worth of data through our system similar to the experimental set up mentioned at the start of evaluation section. But this time we also invoked the method to calculate K value on every day. The K value determines the different behaviors the hosts are exhibiting on that day as mentioned in section \ref{cluster_labeling}. So, we have K unique behaviors on every day. We wanted to verify how this K value is changing with time. i.e, how are the behaviors changing with time? Hence, we plotted the K values for the last six months and it looks as follows \figref{constant}. The value of K on X-axis and the day on which we found this value on Y-axis. Except for few points, it is a straight line indicating the constant behaviors that hosts are exhibiting in our system. This needn't be the case with all the networks. In an environment with multiple networks, the K value could be different and we might see it changing frequently. It depends on the environment in which our system is going to be used.
 
-\begin{figure}[t]
+\begin{figure}[b]
 	\centerline{\includegraphics{constant.png}}
 	\caption{ Plot of number of clusters formed over a time period.}%
 	\figlabel{constant}
 \end{figure}
 
+\subsection{Cost of cluster mapping:}
 
+To determine the change in hosts behaviors over time we passed six months worth of data through our system similar to the experimental set up mentioned at the start of evaluation section. But this time we also invoked the method to calculate K value on every day. The K value determines the different behaviors the hosts are exhibiting on that day as mentioned in section \ref{cluster_labeling}. So, we have K unique behaviors on every day. We wanted to verify how this K value is changing with time. i.e, how are the behaviors changing with time? Hence, we plotted the K values for the last six months and it looks as follows \figref{constant}. The value of K on X-axis and the day on which we found this value on Y-axis. Except for few points, it is a straight line indicating the constant behaviors that hosts are exhibiting in our system. This needn't be the case with all the networks. In an environment with multiple networks, the K value could be different and we might see it changing frequently. It depends on the environment in which our system is going to be used.
+
+\begin{figure}[b]
+	\centerline{\includegraphics{constant.png}}
+	\caption{ Plot of number of clusters formed over a time period.}%
+	\figlabel{constant}
+\end{figure}
 
 
 \subsection{Applications:}

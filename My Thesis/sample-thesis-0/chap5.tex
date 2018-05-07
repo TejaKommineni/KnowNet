@@ -10,11 +10,11 @@ primary source for our experiments. But this data is not in a usable format for 
 
 \textit{Feature Engineering}, We used different python libraries such as NumPy, Spacy and Pandas to clean and manipulate data. Specifically, the mean and median calculating methods from Pandas for missing data and min-max scaler respectively, log transformer for transformation from NumPy. For aggregating all the feature values by a host we used MongoDB contrary to keeping counters in the code. This has reduced the time taken  for aggregation to under 2 minutes from 20 minutes for a day's worth data. In this context, we also wanted to try the approach of streaming algorithms such as bloom filters or count-min sketch which gives the aggregate information with little memory footprint which we have explored a little, but left for future work at this point.
 
-\textit{Pattern Detection}, As mentioned we have chosen K-Means for our pattern detector and to determine K we used elbow and silhouette approaches. Here we used scikit-learn package implementations of K-Means. To label the behaviors on a given day, we have selected a reference day and manually labeled its clusters mapping each cluster to a particular behavior as shown in \figref{cluster_comp}.
+\textit{Pattern Detection}, As mentioned we have chosen K-Means for our pattern detector and to determine K we used elbow and silhouette approaches. Here we used scikit-learn package implementations of K-Means. To label the behaviors on a given day, we have selected a reference day and manually labeled its clusters mapping each cluster to a particular behavior as shown in \figref{cluster_comp}. \figref{cluster_comp} represents netflow eight-dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly.
 
 \begin{figure}[b]
 	\centerline{\includegraphics[scale = 0.5]{cluster_comp.pdf}}
-	\caption{Process diagram on a reference day, with netflow eight-dimensional data aggregated based on host shown as a 2D data point which when passed through our pattern detector split into three clusters. These clusters are manually inspected and labeled accordingly. }%
+	\caption{Process diagram on a reference day}%
 	\figlabel{cluster_comp}
 \end{figure}
 
